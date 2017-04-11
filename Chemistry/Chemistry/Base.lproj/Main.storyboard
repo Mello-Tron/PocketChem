@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="04I-ZG-yz2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="04I-ZG-yz2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--HOME-->
@@ -15,95 +18,61 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7Z-PV-dh1">
-                                <rect key="frame" x="12" y="228" width="576" height="69"/>
-                                <color key="backgroundColor" red="0.33793747429999998" green="0.59083080290000001" blue="0.35252153870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqJ-pm-Us9">
+                                <rect key="frame" x="16" y="255" width="343" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                                 <state key="normal" title="IDENTIFY">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUM-iz-THc">
-                                <rect key="frame" x="12" y="340" width="576" height="69"/>
-                                <color key="backgroundColor" red="0.33793747429999998" green="0.59083080290000001" blue="0.35252153870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5M7-UJ-LwY">
+                                <rect key="frame" x="16" y="397" width="343" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                                 <state key="normal" title="CHALLENGE">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0S-72-38N">
-                                <rect key="frame" x="12" y="113" width="576" height="69"/>
-                                <color key="backgroundColor" red="0.33793747425079346" green="0.59083080291748047" blue="0.35252153873443604" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
-                                <state key="normal" title="STUDY SET">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ke6-BU-OS9">
+                                <rect key="frame" x="16" y="110" width="343" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <state key="normal" title="STUDY SETS">
+                                    <color key="titleColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.91755962371826172" green="0.91771018505096436" blue="0.91752761602401733" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="W0S-72-38N" secondAttribute="trailing" constant="-16" id="09g-9P-MC8"/>
-                            <constraint firstItem="W0S-72-38N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="2BY-u4-Meq"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="LUM-iz-THc" secondAttribute="trailing" constant="-8" id="48Z-oC-m8D"/>
-                            <constraint firstItem="W0S-72-38N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-8" id="FqC-Bo-JQV"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="S7Z-PV-dh1" secondAttribute="trailing" constant="-16" id="XFJ-A0-Fhu"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="W0S-72-38N" secondAttribute="trailing" constant="-8" id="ZUm-cS-0WF"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="LUM-iz-THc" secondAttribute="trailing" constant="-8" id="bae-hu-z9s"/>
-                            <constraint firstItem="S7Z-PV-dh1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-8" id="duB-x3-HRE"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="W0S-72-38N" secondAttribute="trailing" constant="-16" id="iwG-Ah-hal"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="W0S-72-38N" secondAttribute="trailing" constant="-8" id="jlO-EO-JsF"/>
-                            <constraint firstItem="W0S-72-38N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-8" id="o3G-gz-eIm"/>
-                            <constraint firstItem="LUM-iz-THc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-8" id="q7u-hK-pyv"/>
-                            <constraint firstItem="W0S-72-38N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-15" id="r6i-58-DwL"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="S7Z-PV-dh1" secondAttribute="trailing" constant="-8" id="vg9-Vj-cDu"/>
-                            <constraint firstItem="LUM-iz-THc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-8" id="wnL-nY-7Ni"/>
-                            <constraint firstItem="S7Z-PV-dh1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="xsB-QL-DDr"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="09g-9P-MC8"/>
-                                <exclude reference="2BY-u4-Meq"/>
-                                <exclude reference="FqC-Bo-JQV"/>
-                                <exclude reference="ZUm-cS-0WF"/>
-                                <exclude reference="iwG-Ah-hal"/>
-                                <exclude reference="jlO-EO-JsF"/>
-                                <exclude reference="o3G-gz-eIm"/>
-                                <exclude reference="r6i-58-DwL"/>
-                                <exclude reference="XFJ-A0-Fhu"/>
-                                <exclude reference="duB-x3-HRE"/>
-                                <exclude reference="vg9-Vj-cDu"/>
-                                <exclude reference="xsB-QL-DDr"/>
-                                <exclude reference="48Z-oC-m8D"/>
-                                <exclude reference="bae-hu-z9s"/>
-                                <exclude reference="q7u-hK-pyv"/>
-                                <exclude reference="wnL-nY-7Ni"/>
-                            </mask>
-                        </variation>
+                        <color key="backgroundColor" red="0.89720028638839722" green="0.89736479520797729" blue="0.89714449644088745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="HOME" id="Elf-Ht-Lhm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="849" y="42"/>
+            <point key="canvasLocation" x="848.79999999999995" y="41.829085457271368"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="s8Y-2L-aC5">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VMB-g1-Mi4" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="04I-ZG-yz2" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xpK-vR-hyH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.33793747429999998" green="0.59083080290000001" blue="0.35252153870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.27715405821800232" green="0.53031933307647705" blue="0.28178468346595764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -111,9 +80,65 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3X2-oa-2yv"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VMB-g1-Mi4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="37" y="42"/>
+        </scene>
+        <!--IDENTIFY-->
+        <scene sceneID="urd-wn-TQa">
+            <objects>
+                <viewController title="IDENTIFY" id="hqV-yF-mob" customClass="ViewController" customModule="Chemistry" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RIs-nc-Yg6"/>
+                        <viewControllerLayoutGuide type="bottom" id="LC7-jA-joa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tSL-xH-hA5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.89720028640000005" green="0.89736479520000001" blue="0.89714449640000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="HOME" id="eHj-AS-lce"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AgA-ef-Gcl" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1666" y="42"/>
+        </scene>
+        <!--SET SELECTION-->
+        <scene sceneID="0SU-Qr-dWc">
+            <objects>
+                <viewController title="SET SELECTION" id="rS3-KB-0Ei" customClass="ViewController" customModule="Chemistry" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HJv-w7-0Ur"/>
+                        <viewControllerLayoutGuide type="bottom" id="PYh-iL-qzG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TaP-U4-lU2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.89720028640000005" green="0.89736479520000001" blue="0.89714449640000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="HOME" id="DnA-hI-RqD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="50F-jd-gR4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="849" y="713"/>
+        </scene>
+        <!--SET-->
+        <scene sceneID="8G3-v2-I9T">
+            <objects>
+                <viewController title="SET" id="9WZ-0P-9R4" customClass="ViewController" customModule="Chemistry" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uOu-n2-zZo"/>
+                        <viewControllerLayoutGuide type="bottom" id="P0U-Zl-24G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="juQ-GD-hDM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.89720028640000005" green="0.89736479520000001" blue="0.89714449640000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="HOME" id="3Ye-Ac-aKO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5WL-MA-E4a" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1665" y="713"/>
         </scene>
     </scenes>
 </document>
