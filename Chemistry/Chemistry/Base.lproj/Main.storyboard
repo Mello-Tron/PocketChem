@@ -32,6 +32,9 @@
                                 <state key="normal" title="STUDY SETS">
                                     <color key="titleColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="rS3-KB-0Ei" kind="show" id="JUw-aL-al0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPy-eR-T47">
                                 <rect key="frame" x="16" y="226" width="343" height="120"/>
@@ -43,6 +46,9 @@
                                 <state key="normal" title="IDENTIFY">
                                     <color key="titleColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="hqV-yF-mob" kind="show" id="lwd-33-AAN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6f9-Eu-ASV">
                                 <rect key="frame" x="16" y="364" width="343" height="120"/>
@@ -111,7 +117,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.89720028640000005" green="0.89736479520000001" blue="0.89714449640000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="HOME" id="eHj-AS-lce"/>
+                    <navigationItem key="navigationItem" title="IDENTIFY" id="eHj-AS-lce"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AgA-ef-Gcl" sceneMemberID="firstResponder"/>
             </objects>
@@ -130,11 +136,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.89720028640000005" green="0.89736479520000001" blue="0.89714449640000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="HOME" id="DnA-hI-RqD"/>
+                    <navigationItem key="navigationItem" title="SET SELECTION" id="DnA-hI-RqD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="50F-jd-gR4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="849" y="713"/>
+            <point key="canvasLocation" x="849" y="762"/>
         </scene>
         <!--SET-->
         <scene sceneID="8G3-v2-I9T">
@@ -153,7 +159,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5WL-MA-E4a" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1665" y="713"/>
+            <point key="canvasLocation" x="1665" y="762"/>
         </scene>
     </scenes>
 </document>
