@@ -22,13 +22,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ia1-Rh-aAp" customClass="KDCircularProgress" customModule="Chemistry" customModuleProvider="target">
+                                <rect key="frame" x="95" y="72" width="184" height="184"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="22 HOURS" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dF3-de-iBh">
+                                        <rect key="frame" x="44" y="77" width="97" height="30"/>
+                                        <color key="textColor" red="0.37698134779999998" green="0.58847445249999997" blue="0.38092279429999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="dF3-de-iBh" firstAttribute="top" secondItem="Ia1-Rh-aAp" secondAttribute="top" constant="77" id="Z2r-gQ-5er"/>
+                                    <constraint firstItem="dF3-de-iBh" firstAttribute="leading" secondItem="Ia1-Rh-aAp" secondAttribute="leading" constant="44" id="hQm-bO-e2g"/>
+                                    <constraint firstAttribute="bottom" secondItem="dF3-de-iBh" secondAttribute="bottom" constant="77" id="hYV-eL-knS"/>
+                                    <constraint firstAttribute="trailing" secondItem="dF3-de-iBh" secondAttribute="trailing" constant="43" id="had-Aq-zA2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
+                                        <color key="value" cocoaTouchSystemColor="lightTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundedCorners" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="angle">
+                                        <real key="value" value="240"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="IBColor1">
+                                        <color key="value" red="0.37698134779999998" green="0.58847445249999997" blue="0.38092279429999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startAngle">
+                                        <real key="value" value="180"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Klr-BI-wI3">
-                                <rect key="frame" x="16" y="88" width="343" height="120"/>
+                                <rect key="frame" x="27" y="275" width="320" height="100"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="o3i-c0-3Rl"/>
+                                    <constraint firstAttribute="height" constant="100" id="o3i-c0-3Rl"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
                                 <state key="normal" title="STUDY SETS">
                                     <color key="titleColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -37,12 +70,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPy-eR-T47">
-                                <rect key="frame" x="16" y="226" width="343" height="120"/>
+                                <rect key="frame" x="27" y="393" width="320" height="100"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="5wy-RC-5aW"/>
+                                    <constraint firstAttribute="height" constant="100" id="5wy-RC-5aW"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
                                 <state key="normal" title="IDENTIFY">
                                     <color key="titleColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -51,12 +84,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6f9-Eu-ASV">
-                                <rect key="frame" x="16" y="364" width="343" height="120"/>
+                                <rect key="frame" x="27" y="511" width="320" height="100"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="vxl-99-ufO"/>
+                                    <constraint firstAttribute="height" constant="100" id="vxl-99-ufO"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
                                 <state key="normal" title="CHALLENGE">
                                     <color key="titleColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -64,15 +97,21 @@
                         </subviews>
                         <color key="backgroundColor" red="0.89720028638839722" green="0.89736479520797729" blue="0.89714449644088745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="nPy-eR-T47" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2gG-0t-eVe"/>
-                            <constraint firstItem="nPy-eR-T47" firstAttribute="top" secondItem="Klr-BI-wI3" secondAttribute="bottom" constant="18" id="5eB-Dg-dxM"/>
-                            <constraint firstItem="6f9-Eu-ASV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="UC2-y9-pEI"/>
-                            <constraint firstItem="Klr-BI-wI3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="Vy6-Ce-sKX"/>
-                            <constraint firstItem="6f9-Eu-ASV" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="gkb-lx-lxl"/>
-                            <constraint firstItem="nPy-eR-T47" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ivl-od-swR"/>
-                            <constraint firstItem="Klr-BI-wI3" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="kti-NL-UZb"/>
-                            <constraint firstItem="6f9-Eu-ASV" firstAttribute="top" secondItem="nPy-eR-T47" secondAttribute="bottom" constant="18" id="qPr-q6-x8Q"/>
-                            <constraint firstItem="Klr-BI-wI3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ypL-gX-BDZ"/>
+                            <constraint firstItem="Klr-BI-wI3" firstAttribute="top" secondItem="Ia1-Rh-aAp" secondAttribute="bottom" constant="19" id="0vc-iX-xNk"/>
+                            <constraint firstItem="6f9-Eu-ASV" firstAttribute="top" secondItem="nPy-eR-T47" secondAttribute="bottom" constant="18" id="4Z4-76-hTY"/>
+                            <constraint firstItem="6f9-Eu-ASV" firstAttribute="top" secondItem="nPy-eR-T47" secondAttribute="bottom" constant="18" id="9lI-RT-2vu"/>
+                            <constraint firstItem="nPy-eR-T47" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="11" id="Abr-6C-3qa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nPy-eR-T47" secondAttribute="trailing" constant="12" id="HHe-wU-7dh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6f9-Eu-ASV" secondAttribute="bottom" constant="56" id="Hr6-yV-BUb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6f9-Eu-ASV" secondAttribute="trailing" constant="12" id="Jhb-BA-xPq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ia1-Rh-aAp" secondAttribute="trailing" constant="80" id="K5M-Zy-szH"/>
+                            <constraint firstItem="Klr-BI-wI3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="11" id="QGc-cO-oSY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Klr-BI-wI3" secondAttribute="trailing" constant="12" id="QYs-gy-A0M"/>
+                            <constraint firstItem="nPy-eR-T47" firstAttribute="top" secondItem="Klr-BI-wI3" secondAttribute="bottom" constant="18" id="Vvg-kk-4ru"/>
+                            <constraint firstItem="6f9-Eu-ASV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="11" id="XvX-cy-Dk0"/>
+                            <constraint firstItem="Ia1-Rh-aAp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="79" id="mzI-Cz-Eai"/>
+                            <constraint firstItem="Ia1-Rh-aAp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="t42-wt-Waq"/>
+                            <constraint firstItem="nPy-eR-T47" firstAttribute="top" secondItem="Klr-BI-wI3" secondAttribute="bottom" constant="18" id="xR1-L4-Zxa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="HOME" id="Elf-Ht-Lhm"/>
