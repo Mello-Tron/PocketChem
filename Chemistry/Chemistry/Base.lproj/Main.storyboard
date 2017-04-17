@@ -115,6 +115,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="HOME" id="Elf-Ht-Lhm"/>
+                    <connections>
+                        <outlet property="challengeButton" destination="6f9-Eu-ASV" id="y4S-qB-Z40"/>
+                        <outlet property="identifyButton" destination="nPy-eR-T47" id="yj2-hU-xdh"/>
+                        <outlet property="studySetsButton" destination="Klr-BI-wI3" id="HUP-Zb-va1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

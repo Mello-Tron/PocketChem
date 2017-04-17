@@ -10,17 +10,32 @@ import UIKit
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    @IBOutlet var studySetsButton: UIButton!
+    @IBOutlet var identifyButton: UIButton!
+    @IBOutlet var challengeButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //Patrick: I'm sure there is a better way to do this,
+        //but until then...
+        if (studySetsButton != nil) {
+            setShadowButton(button: studySetsButton)
+        }
+        if (identifyButton != nil) {
+            setShadowButton(button: identifyButton)
+        }
+        if (challengeButton != nil) {
+            setShadowButton(button: challengeButton)
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
 
-
+    //Identify Button, click causes camera to open
     @IBAction func openCamera(_ sender: AnyObject) {
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
                 let imagePicker = UIImagePickerController()
@@ -29,6 +44,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 imagePicker.allowsEditing = false
                 self.present(imagePicker, animated: true, completion: nil)
         }
+    }
+    
+    func setShadowButton(button: UIButton){
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        button.layer.masksToBounds = false
+        button.layer.shadowRadius = 1.0
+        button.layer.shadowOpacity = 0.1
     }
 }
 
