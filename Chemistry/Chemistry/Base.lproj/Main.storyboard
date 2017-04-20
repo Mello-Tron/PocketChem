@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="04I-ZG-yz2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="04I-ZG-yz2">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--SETTINGS-->
+        <scene sceneID="hWn-oS-1Ib">
+            <objects>
+                <viewController title="SETTINGS" id="vDT-tS-OhI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PiN-vi-2Gt"/>
+                        <viewControllerLayoutGuide type="bottom" id="ImH-f9-Fv6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sGu-OJ-SWf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.89794141049999998" green="0.89809560779999997" blue="0.89793163539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ubn-Hz-RNw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1665" y="42"/>
+        </scene>
         <!--HOME-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -95,7 +113,7 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.89720028638839722" green="0.89736479520797729" blue="0.89714449644088745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.89794141054153442" green="0.89809560775756836" blue="0.89793163537979126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Klr-BI-wI3" firstAttribute="top" secondItem="Ia1-Rh-aAp" secondAttribute="bottom" constant="19" id="0vc-iX-xNk"/>
                             <constraint firstItem="6f9-Eu-ASV" firstAttribute="top" secondItem="nPy-eR-T47" secondAttribute="bottom" constant="18" id="4Z4-76-hTY"/>
@@ -114,7 +132,13 @@
                             <constraint firstItem="nPy-eR-T47" firstAttribute="top" secondItem="Klr-BI-wI3" secondAttribute="bottom" constant="18" id="xR1-L4-Zxa"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="HOME" id="Elf-Ht-Lhm"/>
+                    <navigationItem key="navigationItem" title="HOME" id="Elf-Ht-Lhm">
+                        <barButtonItem key="rightBarButtonItem" image="gear_without_hub.png" id="bRC-F6-6Xg">
+                            <connections>
+                                <segue destination="vDT-tS-OhI" kind="show" id="Zfg-Ig-xvZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="challengeButton" destination="6f9-Eu-ASV" id="y4S-qB-Z40"/>
                         <outlet property="identifyButton" destination="nPy-eR-T47" id="yj2-hU-xdh"/>
@@ -187,4 +211,7 @@
             <point key="canvasLocation" x="1665" y="762"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="gear_without_hub.png" width="30" height="30"/>
+    </resources>
 </document>

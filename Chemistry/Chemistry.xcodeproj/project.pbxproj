@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BA812CB1EA9696100FC5EB9 /* gear_without_hub.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BA812CA1EA9696100FC5EB9 /* gear_without_hub.png */; };
 		6061D8EB1E9D83870034E0CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6061D8EA1E9D83870034E0CB /* AppDelegate.swift */; };
 		6061D8ED1E9D83870034E0CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6061D8EC1E9D83870034E0CB /* ViewController.swift */; };
 		6061D8F01E9D83870034E0CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6061D8EE1E9D83870034E0CB /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BA812CA1EA9696100FC5EB9 /* gear_without_hub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gear_without_hub.png; path = Assets.xcassets/gear_without_hub.png; sourceTree = "<group>"; };
 		6061D8E71E9D83870034E0CB /* Chemistry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chemistry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6061D8EA1E9D83870034E0CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6061D8EC1E9D83870034E0CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				6061D8EC1E9D83870034E0CB /* ViewController.swift */,
 				6061D8EE1E9D83870034E0CB /* Main.storyboard */,
 				6061D8F11E9D83870034E0CB /* Assets.xcassets */,
+				2BA812CA1EA9696100FC5EB9 /* gear_without_hub.png */,
 				6061D8F31E9D83870034E0CB /* LaunchScreen.storyboard */,
 				6061D8F61E9D83870034E0CB /* Info.plist */,
 				CDBEFDA41EA46CEB00697468 /* KDCircularProgress.swift */,
@@ -130,6 +133,7 @@
 				6061D8F51E9D83870034E0CB /* LaunchScreen.storyboard in Resources */,
 				6061D8F21E9D83870034E0CB /* Assets.xcassets in Resources */,
 				6061D8F01E9D83870034E0CB /* Main.storyboard in Resources */,
+				2BA812CB1EA9696100FC5EB9 /* gear_without_hub.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
