@@ -13,6 +13,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet var studySetsButton: UIButton!
     @IBOutlet var identifyButton: UIButton!
     @IBOutlet var challengeButton: UIButton!
+    @IBOutlet var cardsButton: UIButton!
+    @IBOutlet var quizButton: UIButton!
+    @IBOutlet var drawButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +31,20 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         if (challengeButton != nil) {
             setShadowButton(button: challengeButton)
         }
+        
+        //Kat: I believe we could implement a switch to do this more effectively but for quick coding....
+        //ERROR: This is not communicating to storyboard
+        if (cardsButton != nil) {
+            setShadowButton(button: cardsButton)
+        }
+        if (quizButton != nil) {
+            setShadowButton(button: quizButton)
+        }
+        if (drawButton != nil) {
+            setShadowButton(button: drawButton)
+        }
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
