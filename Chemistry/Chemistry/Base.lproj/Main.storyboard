@@ -533,7 +533,7 @@
                     <view key="view" contentMode="scaleToFill" id="RxJ-BY-Mc8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.89796036479999997" green="0.89808970690000001" blue="0.89793205259999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="CARDS" id="UZq-gg-fJq" userLabel="Cards"/>
                 </viewController>
@@ -552,7 +552,7 @@
                     <view key="view" contentMode="scaleToFill" id="FKr-Dx-OSM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.89796036479999997" green="0.89808970690000001" blue="0.89793205259999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="QUIZ" id="O6B-rR-Voy" userLabel="Quiz"/>
                 </viewController>
@@ -571,13 +571,23 @@
                     <view key="view" contentMode="scaleToFill" id="okw-D5-rmu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mV9-b1-8g3">
+                                <rect key="frame" x="16" y="82" width="343" height="269"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.9999127984046936" green="1" blue="0.99988144636154175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.897960364818573" green="0.8980897068977356" blue="0.89793205261230469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="DRAW" id="IJ2-Lt-Pgd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HCB-Yr-cum" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1665" y="1522"/>
+            <point key="canvasLocation" x="1664.8" y="1521.5892053973014"/>
         </scene>
     </scenes>
     <resources>

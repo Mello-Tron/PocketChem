@@ -1,9 +1,5 @@
 //
 //  ViewController.swift
-//  Chemistry
-//
-//  Created by Kaitlyn Duarte on 4/11/17.
-//  Copyright © 2017 bleh. All rights reserved.
 //
 
 import UIKit
@@ -39,6 +35,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         button.layer.shadowOpacity = 0.1
     }
 }
+
+//////////////////
+//  UI Classes  //
+//////////////////
 
 class ShadowButton: UIButton {
     override func awakeFromNib() {
