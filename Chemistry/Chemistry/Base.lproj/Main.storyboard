@@ -21,7 +21,7 @@
                     <view key="view" contentMode="scaleToFill" id="sGu-OJ-SWf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.89794141049999998" green="0.89809560779999997" blue="0.89793163539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ubn-Hz-RNw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -45,7 +45,7 @@
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="22 HOURS" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dF3-de-iBh">
                                         <rect key="frame" x="44" y="77" width="97" height="30"/>
-                                        <color key="textColor" red="0.33389988541603088" green="0.28214329481124878" blue="0.44778949022293091" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -113,7 +113,7 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.89794141054153442" green="0.89809560775756836" blue="0.89793163537979126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Klr-BI-wI3" firstAttribute="top" secondItem="Ia1-Rh-aAp" secondAttribute="bottom" constant="19" id="0vc-iX-xNk"/>
                             <constraint firstItem="6f9-Eu-ASV" firstAttribute="top" secondItem="nPy-eR-T47" secondAttribute="bottom" constant="18" id="4Z4-76-hTY"/>
@@ -348,7 +348,7 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.89720028640000005" green="0.89736479520000001" blue="0.89714449640000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="q7Q-99-C5P" firstAttribute="leading" secondItem="TaP-U4-lU2" secondAttribute="leadingMargin" id="0In-b8-Qwr"/>
                             <constraint firstItem="vFj-Qa-Y4z" firstAttribute="top" secondItem="h9m-84-x4l" secondAttribute="bottom" constant="18" id="1sq-Zh-bpH"/>
@@ -493,7 +493,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.89720028640000005" green="0.89736479520000001" blue="0.89714449640000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="oC5-fq-8MD" secondAttribute="trailing" constant="3" id="56M-Y2-qZs"/>
                             <constraint firstItem="P0U-Zl-24G" firstAttribute="top" secondItem="rOI-nr-kdF" secondAttribute="bottom" constant="18" id="7ae-60-b63"/>
@@ -533,7 +533,7 @@
                     <view key="view" contentMode="scaleToFill" id="RxJ-BY-Mc8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.89796036479999997" green="0.89808970690000001" blue="0.89793205259999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="CARDS" id="UZq-gg-fJq" userLabel="Cards"/>
                 </viewController>
@@ -552,7 +552,7 @@
                     <view key="view" contentMode="scaleToFill" id="FKr-Dx-OSM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.89796036479999997" green="0.89808970690000001" blue="0.89793205259999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="QUIZ" id="O6B-rR-Voy" userLabel="Quiz"/>
                 </viewController>
@@ -666,7 +666,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.897960364818573" green="0.8980897068977356" blue="0.89793205261230469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="0YA-Le-DVC" firstAttribute="trailing" secondItem="okw-D5-rmu" secondAttribute="trailingMargin" id="3om-hd-FBq"/>
                             <constraint firstItem="5LN-Fn-ZjX" firstAttribute="top" secondItem="F5n-ea-YQO" secondAttribute="bottom" constant="94" id="49B-Fw-nui"/>
