@@ -9,41 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
-    @IBOutlet var studySetsButton: UIButton!
-    @IBOutlet var identifyButton: UIButton!
-    @IBOutlet var challengeButton: UIButton!
-    @IBOutlet var cardsButton: UIButton!
-    @IBOutlet var quizButton: UIButton!
-    @IBOutlet var drawButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //Patrick: I'm sure there is a better way to do this,
-        //but until then...
-        if (studySetsButton != nil) {
-            setShadowButton(button: studySetsButton)
-        }
-        if (identifyButton != nil) {
-            setShadowButton(button: identifyButton)
-        }
-        if (challengeButton != nil) {
-            setShadowButton(button: challengeButton)
-        }
-        
-        //Kat: I believe we could implement a switch to do this more effectively but for quick coding....
-        //ERROR: This is not communicating to storyboard
-        if (cardsButton != nil) {
-            setShadowButton(button: cardsButton)
-        }
-        if (quizButton != nil) {
-            setShadowButton(button: quizButton)
-        }
-        if (drawButton != nil) {
-            setShadowButton(button: drawButton)
-        }
-        
         
     }
 
@@ -69,6 +37,32 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         button.layer.masksToBounds = false
         button.layer.shadowRadius = 1.0
         button.layer.shadowOpacity = 0.1
+    }
+}
+
+class ShadowButton: UIButton {
+    override func awakeFromNib() {
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        layer.masksToBounds = false
+        layer.shadowRadius = 1.0
+        layer.shadowOpacity = 0.1
+    }
+}
+
+class ShadowLabel: UILabel {
+    override func awakeFromNib() {
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        layer.masksToBounds = false
+        layer.shadowRadius = 1.0
+        layer.shadowOpacity = 0.1
+    }
+}
+
+class ShadowNavBar: UINavigationBar {
+    override func awakeFromNib() {
+        //...
     }
 }
 

@@ -73,7 +73,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Klr-BI-wI3">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Klr-BI-wI3" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
                                 <rect key="frame" x="27" y="275" width="320" height="100"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -87,7 +87,7 @@
                                     <segue destination="rS3-KB-0Ei" kind="show" id="JUw-aL-al0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPy-eR-T47">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPy-eR-T47" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
                                 <rect key="frame" x="27" y="393" width="320" height="100"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -101,7 +101,7 @@
                                     <action selector="openCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y9s-El-Iv4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6f9-Eu-ASV">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6f9-Eu-ASV" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
                                 <rect key="frame" x="27" y="511" width="320" height="100"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -139,11 +139,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="challengeButton" destination="6f9-Eu-ASV" id="y4S-qB-Z40"/>
-                        <outlet property="identifyButton" destination="nPy-eR-T47" id="yj2-hU-xdh"/>
-                        <outlet property="studySetsButton" destination="Klr-BI-wI3" id="HUP-Zb-va1"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -154,7 +149,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="04I-ZG-yz2" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xpK-vR-hyH">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="xpK-vR-hyH" customClass="ShadowNavBar" customModule="Chemistry" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -184,169 +179,169 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJW-qB-lf6">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJW-qB-lf6" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
                                 <rect key="frame" x="19" y="82" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="uMp-Gk-EnE"/>
-                                    <constraint firstAttribute="height" constant="100" id="vMQ-ez-fKf"/>
+                                    <constraint firstAttribute="width" constant="100" id="T4C-VB-Y2u"/>
+                                    <constraint firstAttribute="height" constant="100" id="cdM-7k-b9Z"/>
                                 </constraints>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLt-vz-RHj">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLt-vz-RHj" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
                                 <rect key="frame" x="137" y="82" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="kiU-CF-kAb"/>
-                                    <constraint firstAttribute="height" constant="100" id="vA0-lz-Ugr"/>
+                                    <constraint firstAttribute="width" constant="100" id="Fxq-Xo-ey5"/>
+                                    <constraint firstAttribute="height" constant="100" id="cMa-e2-t0b"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="AMINO ACIDS">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <segue destination="9WZ-0P-9R4" kind="show" id="jol-bE-gxh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="his-ce-wKW">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="his-ce-wKW" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
                                 <rect key="frame" x="259" y="82" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="SU7-of-ru2"/>
-                                    <constraint firstAttribute="height" constant="100" id="ZnP-ka-g5W"/>
+                                    <constraint firstAttribute="height" constant="100" id="b3I-Ut-PGB"/>
+                                    <constraint firstAttribute="width" constant="100" id="kVA-pu-9du"/>
                                 </constraints>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Af-ff-Ifl">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Af-ff-Ifl" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
                                 <rect key="frame" x="137" y="200" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="9Fx-KM-Wa0"/>
-                                    <constraint firstAttribute="height" constant="100" id="rdu-9k-Uod"/>
+                                    <constraint firstAttribute="height" constant="100" id="3gg-S9-anf"/>
+                                    <constraint firstAttribute="width" constant="100" id="uzX-zx-Bev"/>
                                 </constraints>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xB-cj-aX0">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xB-cj-aX0" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
                                 <rect key="frame" x="259" y="200" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="Fvt-db-VFJ"/>
-                                    <constraint firstAttribute="width" constant="100" id="bwm-lN-Jmg"/>
+                                    <constraint firstAttribute="width" constant="100" id="95A-g8-9Gp"/>
+                                    <constraint firstAttribute="height" constant="100" id="FHp-1f-48a"/>
                                 </constraints>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQj-k3-am7">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQj-k3-am7" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
                                 <rect key="frame" x="16" y="318" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="XUK-YJ-j6j"/>
-                                    <constraint firstAttribute="width" constant="100" id="x6A-qC-JhA"/>
+                                    <constraint firstAttribute="height" constant="100" id="6f0-Jc-1Dl"/>
+                                    <constraint firstAttribute="width" constant="100" id="Okh-aW-MDQ"/>
                                 </constraints>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9m-84-x4l">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9m-84-x4l" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
                                 <rect key="frame" x="137" y="318" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="6sF-fd-qLg"/>
-                                    <constraint firstAttribute="width" constant="100" id="siE-MY-5R3"/>
+                                    <constraint firstAttribute="height" constant="100" id="hW8-BT-cCS"/>
+                                    <constraint firstAttribute="width" constant="100" id="laX-Mc-yVA"/>
                                 </constraints>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3m-3w-Gho">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3m-3w-Gho" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
                                 <rect key="frame" x="259" y="318" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Wyl-l2-HWP"/>
-                                    <constraint firstAttribute="height" constant="100" id="omb-JU-uLr"/>
+                                    <constraint firstAttribute="width" constant="100" id="1He-dO-D3V"/>
+                                    <constraint firstAttribute="height" constant="100" id="aLb-8X-bo4"/>
                                 </constraints>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wx2-HK-jF6">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wx2-HK-jF6" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
                                 <rect key="frame" x="16" y="436" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Dhw-eX-OHM"/>
-                                    <constraint firstAttribute="height" constant="100" id="lci-ks-wfK"/>
+                                    <constraint firstAttribute="height" constant="100" id="YGU-YI-zyY"/>
+                                    <constraint firstAttribute="width" constant="100" id="ccM-MO-L7o"/>
                                 </constraints>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFj-Qa-Y4z">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFj-Qa-Y4z" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
                                 <rect key="frame" x="137" y="436" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="d1R-Z3-PpI"/>
-                                    <constraint firstAttribute="height" constant="100" id="nH8-y0-dc7"/>
+                                    <constraint firstAttribute="height" constant="100" id="X46-ig-aMK"/>
+                                    <constraint firstAttribute="width" constant="100" id="vRo-rd-fTa"/>
                                 </constraints>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78n-gy-8xP">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78n-gy-8xP" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
                                 <rect key="frame" x="259" y="436" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Bqs-3I-aCJ"/>
-                                    <constraint firstAttribute="height" constant="100" id="T0z-iu-9l4"/>
+                                    <constraint firstAttribute="width" constant="100" id="aLa-gs-coU"/>
+                                    <constraint firstAttribute="height" constant="100" id="x9B-5h-9sY"/>
                                 </constraints>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7Q-99-C5P">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7Q-99-C5P" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
                                 <rect key="frame" x="16" y="554" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="RVb-O9-lgt"/>
-                                    <constraint firstAttribute="height" constant="100" id="pwe-bE-1at"/>
+                                    <constraint firstAttribute="width" constant="100" id="OKE-hB-CZK"/>
+                                    <constraint firstAttribute="height" constant="100" id="mHL-cQ-Bbh"/>
                                 </constraints>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27r-UO-W9h">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27r-UO-W9h" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
                                 <rect key="frame" x="137" y="554" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="Tlj-Hx-uX0"/>
-                                    <constraint firstAttribute="width" constant="100" id="er9-gj-jk1"/>
+                                    <constraint firstAttribute="height" constant="100" id="6D4-Bg-p1F"/>
+                                    <constraint firstAttribute="width" constant="100" id="inE-Hr-5oY"/>
                                 </constraints>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERN-TZ-M8k">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERN-TZ-M8k" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
                                 <rect key="frame" x="16" y="200" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Wd8-u1-ECt"/>
-                                    <constraint firstAttribute="height" constant="100" id="gom-wu-r0A"/>
+                                    <constraint firstAttribute="height" constant="100" id="7Lv-W0-hka"/>
+                                    <constraint firstAttribute="width" constant="100" id="Sfs-hr-mzz"/>
                                 </constraints>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXP-O2-zge">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXP-O2-zge" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
                                 <rect key="frame" x="259" y="554" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="KTh-Ns-MlQ"/>
-                                    <constraint firstAttribute="height" constant="100" id="aaf-YA-Ptd"/>
+                                    <constraint firstAttribute="width" constant="100" id="fob-WE-SHM"/>
+                                    <constraint firstAttribute="height" constant="100" id="n96-C0-n15"/>
                                 </constraints>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -355,24 +350,44 @@
                         </subviews>
                         <color key="backgroundColor" red="0.89720028640000005" green="0.89736479520000001" blue="0.89714449640000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="XLt-vz-RHj" firstAttribute="top" secondItem="HJv-w7-0Ur" secondAttribute="bottom" constant="18" id="0gV-Au-krX"/>
-                            <constraint firstItem="h9m-84-x4l" firstAttribute="top" secondItem="2Af-ff-Ifl" secondAttribute="bottom" constant="18" id="1jt-zu-kuY"/>
-                            <constraint firstItem="QXP-O2-zge" firstAttribute="top" secondItem="78n-gy-8xP" secondAttribute="bottom" constant="18" id="4gC-t3-fuF"/>
-                            <constraint firstItem="27r-UO-W9h" firstAttribute="top" secondItem="vFj-Qa-Y4z" secondAttribute="bottom" constant="18" id="6QB-uS-pN8"/>
-                            <constraint firstItem="q7Q-99-C5P" firstAttribute="top" secondItem="wx2-HK-jF6" secondAttribute="bottom" constant="18" id="9eh-Pg-dfY"/>
-                            <constraint firstItem="ERN-TZ-M8k" firstAttribute="top" secondItem="uJW-qB-lf6" secondAttribute="bottom" constant="18" id="CP4-nV-mvN"/>
-                            <constraint firstItem="78n-gy-8xP" firstAttribute="top" secondItem="r3m-3w-Gho" secondAttribute="bottom" constant="18" id="EzD-Bf-taK"/>
-                            <constraint firstItem="uJW-qB-lf6" firstAttribute="top" secondItem="HJv-w7-0Ur" secondAttribute="bottom" constant="18" id="Eza-tP-gcy"/>
-                            <constraint firstItem="XLt-vz-RHj" firstAttribute="leading" secondItem="uJW-qB-lf6" secondAttribute="trailing" constant="18" id="FR4-hE-Z68"/>
-                            <constraint firstItem="r3m-3w-Gho" firstAttribute="top" secondItem="9xB-cj-aX0" secondAttribute="bottom" constant="18" id="HOa-Vq-Ohf"/>
-                            <constraint firstItem="9xB-cj-aX0" firstAttribute="top" secondItem="his-ce-wKW" secondAttribute="bottom" constant="18" id="OcN-lw-QZl"/>
-                            <constraint firstItem="wx2-HK-jF6" firstAttribute="top" secondItem="vQj-k3-am7" secondAttribute="bottom" constant="18" id="Sft-Mb-xem"/>
-                            <constraint firstItem="vFj-Qa-Y4z" firstAttribute="top" secondItem="h9m-84-x4l" secondAttribute="bottom" constant="18" id="X0O-AE-DW3"/>
-                            <constraint firstItem="his-ce-wKW" firstAttribute="trailing" secondItem="TaP-U4-lU2" secondAttribute="trailingMargin" id="flG-HJ-zmJ"/>
-                            <constraint firstItem="his-ce-wKW" firstAttribute="top" secondItem="HJv-w7-0Ur" secondAttribute="bottom" constant="18" id="m2w-Yh-BG3"/>
-                            <constraint firstItem="uJW-qB-lf6" firstAttribute="leading" secondItem="TaP-U4-lU2" secondAttribute="leadingMargin" constant="3" id="ocu-EQ-PoL"/>
-                            <constraint firstItem="vQj-k3-am7" firstAttribute="top" secondItem="ERN-TZ-M8k" secondAttribute="bottom" constant="18" id="ueE-FG-o2C"/>
-                            <constraint firstItem="2Af-ff-Ifl" firstAttribute="top" secondItem="XLt-vz-RHj" secondAttribute="bottom" constant="18" id="ys0-7L-y7T"/>
+                            <constraint firstItem="q7Q-99-C5P" firstAttribute="leading" secondItem="TaP-U4-lU2" secondAttribute="leadingMargin" id="0In-b8-Qwr"/>
+                            <constraint firstItem="vFj-Qa-Y4z" firstAttribute="top" secondItem="h9m-84-x4l" secondAttribute="bottom" constant="18" id="1sq-Zh-bpH"/>
+                            <constraint firstItem="PYh-iL-qzG" firstAttribute="top" secondItem="27r-UO-W9h" secondAttribute="bottom" constant="13" id="2VM-zd-q5q"/>
+                            <constraint firstItem="PYh-iL-qzG" firstAttribute="top" secondItem="q7Q-99-C5P" secondAttribute="bottom" constant="13" id="2XB-fG-rTs"/>
+                            <constraint firstItem="9xB-cj-aX0" firstAttribute="leading" secondItem="2Af-ff-Ifl" secondAttribute="trailing" constant="22" id="3z6-kj-kwG"/>
+                            <constraint firstItem="q7Q-99-C5P" firstAttribute="top" secondItem="wx2-HK-jF6" secondAttribute="bottom" constant="18" id="41e-Bl-Giq"/>
+                            <constraint firstItem="9xB-cj-aX0" firstAttribute="trailing" secondItem="TaP-U4-lU2" secondAttribute="trailingMargin" id="6cA-Zj-vgd"/>
+                            <constraint firstItem="2Af-ff-Ifl" firstAttribute="leading" secondItem="ERN-TZ-M8k" secondAttribute="trailing" constant="21" id="7rb-7y-eTJ"/>
+                            <constraint firstItem="uJW-qB-lf6" firstAttribute="leading" secondItem="TaP-U4-lU2" secondAttribute="leadingMargin" constant="3" id="9pf-ek-Gcr"/>
+                            <constraint firstItem="vFj-Qa-Y4z" firstAttribute="leading" secondItem="wx2-HK-jF6" secondAttribute="trailing" constant="21" id="BkY-EI-aFR"/>
+                            <constraint firstItem="vQj-k3-am7" firstAttribute="top" secondItem="ERN-TZ-M8k" secondAttribute="bottom" constant="18" id="CHT-bV-IIN"/>
+                            <constraint firstItem="PYh-iL-qzG" firstAttribute="top" secondItem="QXP-O2-zge" secondAttribute="bottom" constant="13" id="D2M-lq-kqI"/>
+                            <constraint firstItem="wx2-HK-jF6" firstAttribute="leading" secondItem="TaP-U4-lU2" secondAttribute="leadingMargin" id="MD7-qv-Pgw"/>
+                            <constraint firstItem="vQj-k3-am7" firstAttribute="leading" secondItem="TaP-U4-lU2" secondAttribute="leadingMargin" id="OFv-GY-vQ4"/>
+                            <constraint firstItem="78n-gy-8xP" firstAttribute="top" secondItem="r3m-3w-Gho" secondAttribute="bottom" constant="18" id="OIF-UJ-fvR"/>
+                            <constraint firstItem="wx2-HK-jF6" firstAttribute="top" secondItem="vQj-k3-am7" secondAttribute="bottom" constant="18" id="PlQ-rF-sR7"/>
+                            <constraint firstItem="r3m-3w-Gho" firstAttribute="trailing" secondItem="TaP-U4-lU2" secondAttribute="trailingMargin" id="Qo2-jr-a9F"/>
+                            <constraint firstItem="XLt-vz-RHj" firstAttribute="leading" secondItem="uJW-qB-lf6" secondAttribute="trailing" constant="18" id="TKR-uB-agV"/>
+                            <constraint firstItem="QXP-O2-zge" firstAttribute="top" secondItem="78n-gy-8xP" secondAttribute="bottom" constant="18" id="UTt-FA-UN2"/>
+                            <constraint firstItem="r3m-3w-Gho" firstAttribute="leading" secondItem="h9m-84-x4l" secondAttribute="trailing" constant="22" id="X5j-ue-mvD"/>
+                            <constraint firstItem="ERN-TZ-M8k" firstAttribute="leading" secondItem="TaP-U4-lU2" secondAttribute="leadingMargin" id="XdZ-Jf-efO"/>
+                            <constraint firstItem="78n-gy-8xP" firstAttribute="leading" secondItem="vFj-Qa-Y4z" secondAttribute="trailing" constant="22" id="Z4b-pJ-QZf"/>
+                            <constraint firstItem="27r-UO-W9h" firstAttribute="top" secondItem="vFj-Qa-Y4z" secondAttribute="bottom" constant="18" id="abB-LN-Ywn"/>
+                            <constraint firstItem="QXP-O2-zge" firstAttribute="trailing" secondItem="TaP-U4-lU2" secondAttribute="trailingMargin" id="eAS-Yl-NgE"/>
+                            <constraint firstItem="2Af-ff-Ifl" firstAttribute="top" secondItem="XLt-vz-RHj" secondAttribute="bottom" constant="18" id="fYA-CM-VAi"/>
+                            <constraint firstItem="r3m-3w-Gho" firstAttribute="top" secondItem="9xB-cj-aX0" secondAttribute="bottom" constant="18" id="fcH-j6-0MZ"/>
+                            <constraint firstItem="his-ce-wKW" firstAttribute="trailing" secondItem="TaP-U4-lU2" secondAttribute="trailingMargin" id="gUe-5z-Vjj"/>
+                            <constraint firstItem="ERN-TZ-M8k" firstAttribute="top" secondItem="uJW-qB-lf6" secondAttribute="bottom" constant="18" id="gd3-4F-LDv"/>
+                            <constraint firstItem="his-ce-wKW" firstAttribute="leading" secondItem="XLt-vz-RHj" secondAttribute="trailing" constant="22" id="h8q-QA-Rf3"/>
+                            <constraint firstItem="XLt-vz-RHj" firstAttribute="top" secondItem="HJv-w7-0Ur" secondAttribute="bottom" constant="18" id="k4O-Hb-csi"/>
+                            <constraint firstItem="27r-UO-W9h" firstAttribute="leading" secondItem="q7Q-99-C5P" secondAttribute="trailing" constant="21" id="lwF-KX-Ura"/>
+                            <constraint firstItem="h9m-84-x4l" firstAttribute="leading" secondItem="vQj-k3-am7" secondAttribute="trailing" constant="21" id="qV1-je-gfc"/>
+                            <constraint firstItem="uJW-qB-lf6" firstAttribute="top" secondItem="HJv-w7-0Ur" secondAttribute="bottom" constant="18" id="qmu-TB-gKu"/>
+                            <constraint firstItem="his-ce-wKW" firstAttribute="top" secondItem="HJv-w7-0Ur" secondAttribute="bottom" constant="18" id="r68-hn-7pL"/>
+                            <constraint firstItem="78n-gy-8xP" firstAttribute="trailing" secondItem="TaP-U4-lU2" secondAttribute="trailingMargin" id="sXc-xl-RRR"/>
+                            <constraint firstItem="9xB-cj-aX0" firstAttribute="top" secondItem="his-ce-wKW" secondAttribute="bottom" constant="18" id="ugJ-0V-59M"/>
+                            <constraint firstItem="h9m-84-x4l" firstAttribute="top" secondItem="2Af-ff-Ifl" secondAttribute="bottom" constant="18" id="w7i-Zc-qZH"/>
+                            <constraint firstItem="QXP-O2-zge" firstAttribute="leading" secondItem="27r-UO-W9h" secondAttribute="trailing" constant="22" id="ygA-yA-nbO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="SETS" id="DnA-hI-RqD"/>
@@ -393,7 +408,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oC5-fq-8MD" userLabel="Cards Button">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oC5-fq-8MD" userLabel="Cards Button" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
                                 <rect key="frame" x="19" y="82" width="337" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -407,7 +422,7 @@
                                     <segue destination="lcQ-9U-nfj" kind="show" id="iBk-r5-Yxf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T83-Nb-SfM" userLabel="Draw Button">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T83-Nb-SfM" userLabel="Draw Button" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
                                 <rect key="frame" x="19" y="180" width="337" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -421,7 +436,7 @@
                                     <segue destination="gBp-fb-7z8" kind="show" id="1Dq-oU-gdR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGe-mE-c49" userLabel="Quiz Button">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGe-mE-c49" userLabel="Quiz Button" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
                                 <rect key="frame" x="19" y="278" width="337" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -435,7 +450,7 @@
                                     <segue destination="HZl-H1-suN" kind="show" id="SpX-CL-s3M"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     SERINE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZQ-v3-vyl" userLabel="Molecule Label">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     SERINE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZQ-v3-vyl" userLabel="Molecule Label" customClass="ShadowLabel" customModule="Chemistry" customModuleProvider="target">
                                 <rect key="frame" x="19" y="376" width="337" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
