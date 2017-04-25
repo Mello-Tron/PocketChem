@@ -4,6 +4,13 @@
 
 import UIKit
 
+////////////////////////////////////////
+//           ViewController           //
+////////////////////////////////////////
+// Make sure this is the class for every
+// view in our project (option can be
+// found in the storyboard).
+
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     override func viewDidLoad() {
@@ -16,8 +23,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
     }
 
-    //Identify Button, click causes camera to open
-    @IBAction func openCamera(_ sender: AnyObject) {
+    @IBAction func openCameraIdentifyView(_ sender: AnyObject) {
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
                 let imagePicker = UIImagePickerController()
                 imagePicker.delegate = self
@@ -27,18 +33,21 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
     }
     
-    func setShadowButton(button: UIButton){
-        button.layer.shadowColor = UIColor.black.cgColor
-        button.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
-        button.layer.masksToBounds = false
-        button.layer.shadowRadius = 1.0
-        button.layer.shadowOpacity = 0.1
+    @IBAction func openCameraDrawView(_ sender: AnyObject) {
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerControllerSourceType.camera;
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+        }
     }
+    
 }
 
-//////////////////
-//  UI Classes  //
-//////////////////
+////////////////////////////////////////
+//             UI Classes             //
+////////////////////////////////////////
 
 class ShadowButton: UIButton {
     override func awakeFromNib() {
