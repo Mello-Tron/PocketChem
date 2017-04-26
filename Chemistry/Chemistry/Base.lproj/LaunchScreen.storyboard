@@ -22,14 +22,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo1" translatesAutoresizingMaskIntoConstraints="NO" id="bt6-5F-0Ny">
-                                <rect key="frame" x="66" y="200" width="243" height="155"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Logo 2" translatesAutoresizingMaskIntoConstraints="NO" id="bt6-5F-0Ny">
+                                <rect key="frame" x="66" y="230" width="243" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="155" id="j3C-LQ-ueU"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.89794141054153442" green="0.89809560775756836" blue="0.89793163537979126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bt6-5F-0Ny" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="180" id="3TB-Ux-JOo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bt6-5F-0Ny" secondAttribute="trailing" constant="50" id="9zZ-Od-0ra"/>
@@ -43,6 +43,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Logo1" width="614" height="544"/>
+        <image name="Logo 2" width="578" height="303"/>
     </resources>
 </document>
