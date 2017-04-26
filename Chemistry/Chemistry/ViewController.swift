@@ -15,6 +15,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -75,6 +77,21 @@ class ShadowLabel: UILabel {
 class ShadowNavBar: UINavigationBar {
     override func awakeFromNib() {
         //...
+    }
+}
+
+class RoundButton: UIButton {
+    override func awakeFromNib() {
+        //Make circular
+        layer.cornerRadius = 0.5 * bounds.size.width
+        //setImage(UIImage(named: "plussign.png"), for: .normal)    //set plus sign image
+        
+        //Give Shadow
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        layer.masksToBounds = false
+        layer.shadowRadius = 1.0
+        layer.shadowOpacity = 0.1
     }
 }
 
