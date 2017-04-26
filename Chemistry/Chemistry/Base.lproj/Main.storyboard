@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="04I-ZG-yz2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="04I-ZG-yz2">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -41,10 +41,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ia1-Rh-aAp" customClass="KDCircularProgress" customModule="Chemistry" customModuleProvider="target">
-                                <rect key="frame" x="95" y="72" width="184" height="184"/>
+                                <rect key="frame" x="95" y="72" width="184" height="171"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="22 HOURS" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dF3-de-iBh">
-                                        <rect key="frame" x="44" y="77" width="97" height="30"/>
+                                        <rect key="frame" x="44" y="77" width="97" height="17"/>
                                         <color key="textColor" red="0.92549019610000005" green="0.33725490200000002" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -73,63 +73,96 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Klr-BI-wI3" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
-                                <rect key="frame" x="27" y="275" width="320" height="100"/>
-                                <color key="backgroundColor" red="0.22745098039215686" green="0.60784313725490191" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="o3i-c0-3Rl"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
-                                <state key="normal" title="STUDY SETS">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="rS3-KB-0Ei" kind="show" id="JUw-aL-al0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPy-eR-T47" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
-                                <rect key="frame" x="27" y="393" width="320" height="100"/>
-                                <color key="backgroundColor" red="0.97254901959999995" green="0.75294117650000003" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="5wy-RC-5aW"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
-                                <state key="normal" title="IDENTIFY">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="openCameraIdentifyView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0nl-Dc-Xze"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6f9-Eu-ASV" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
-                                <rect key="frame" x="27" y="511" width="320" height="100"/>
-                                <color key="backgroundColor" red="0.61176470589999998" green="0.69803921570000005" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="vxl-99-ufO"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
-                                <state key="normal" title="CHALLENGE">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HAM-AQ-izp">
+                                <rect key="frame" x="48" y="325" width="269" height="289"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.94891661405563354" green="0.94907897710800171" blue="0.94890636205673218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.75" y="0.0" width="1" height="1"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fS1-n5-p0J">
+                                    <size key="itemSize" width="127" height="127"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="wWz-bl-sYp">
+                                        <rect key="frame" x="0.0" y="0.0" width="127" height="127"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="127" height="127"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SlQ-ht-ze0">
+                                                    <rect key="frame" x="20" y="43" width="85" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Amino Acids"/>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.22753113508224487" green="0.6045219898223877" blue="0.62686002254486084" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="9WZ-0P-9R4" kind="show" id="Tgn-aD-uK0"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="dmt-at-P8F">
+                                        <rect key="frame" x="142" y="0.0" width="127" height="127"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="127" height="127"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFR-kG-FK7">
+                                                    <rect key="frame" x="33" y="43" width="59" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Alcohols"/>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.22345227003097534" green="0.60059750080108643" blue="0.62293046712875366" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Mcg-zs-OKY">
+                                        <rect key="frame" x="0.0" y="137" width="127" height="127"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="127" height="127"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xrt-Sd-fZc">
+                                                    <rect key="frame" x="14" y="43" width="97" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Another name"/>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.21637284755706787" green="0.58103460073471069" blue="0.59918457269668579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="pLw-15-j3d">
+                                        <rect key="frame" x="142" y="137" width="127" height="127"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="127" height="127"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yB6-vn-cwR">
+                                                    <rect key="frame" x="24" y="47" width="79" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <state key="normal" title="Another">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.22379806637763977" green="0.59666770696640015" blue="0.61898630857467651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Klr-BI-wI3" firstAttribute="top" secondItem="Ia1-Rh-aAp" secondAttribute="bottom" constant="19" id="0vc-iX-xNk"/>
-                            <constraint firstItem="6f9-Eu-ASV" firstAttribute="top" secondItem="nPy-eR-T47" secondAttribute="bottom" constant="18" id="4Z4-76-hTY"/>
-                            <constraint firstItem="6f9-Eu-ASV" firstAttribute="top" secondItem="nPy-eR-T47" secondAttribute="bottom" constant="18" id="9lI-RT-2vu"/>
-                            <constraint firstItem="nPy-eR-T47" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="11" id="Abr-6C-3qa"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="nPy-eR-T47" secondAttribute="trailing" constant="12" id="HHe-wU-7dh"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6f9-Eu-ASV" secondAttribute="bottom" constant="56" id="Hr6-yV-BUb"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="6f9-Eu-ASV" secondAttribute="trailing" constant="12" id="Jhb-BA-xPq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ia1-Rh-aAp" secondAttribute="trailing" constant="80" id="K5M-Zy-szH"/>
-                            <constraint firstItem="Klr-BI-wI3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="11" id="QGc-cO-oSY"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Klr-BI-wI3" secondAttribute="trailing" constant="12" id="QYs-gy-A0M"/>
-                            <constraint firstItem="nPy-eR-T47" firstAttribute="top" secondItem="Klr-BI-wI3" secondAttribute="bottom" constant="18" id="Vvg-kk-4ru"/>
-                            <constraint firstItem="6f9-Eu-ASV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="11" id="XvX-cy-Dk0"/>
                             <constraint firstItem="Ia1-Rh-aAp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="79" id="mzI-Cz-Eai"/>
                             <constraint firstItem="Ia1-Rh-aAp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="t42-wt-Waq"/>
-                            <constraint firstItem="nPy-eR-T47" firstAttribute="top" secondItem="Klr-BI-wI3" secondAttribute="bottom" constant="18" id="xR1-L4-Zxa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="POCKETCHEM" id="Elf-Ht-Lhm">
@@ -149,7 +182,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="04I-ZG-yz2" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="xpK-vR-hyH" customClass="ShadowNavBar" customModule="Chemistry" customModuleProvider="target">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xpK-vR-hyH" customClass="ShadowNavBar" customModule="Chemistry" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -165,235 +198,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VMB-g1-Mi4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="37" y="42"/>
-        </scene>
-        <!--SET SELECTION-->
-        <scene sceneID="0SU-Qr-dWc">
-            <objects>
-                <viewController title="SET SELECTION" id="rS3-KB-0Ei" customClass="ViewController" customModule="Chemistry" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="HJv-w7-0Ur"/>
-                        <viewControllerLayoutGuide type="bottom" id="PYh-iL-qzG"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TaP-U4-lU2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJW-qB-lf6" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
-                                <rect key="frame" x="19" y="82" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.2274509804" green="0.60784313729999995" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="T4C-VB-Y2u"/>
-                                    <constraint firstAttribute="height" constant="100" id="cdM-7k-b9Z"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLt-vz-RHj" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
-                                <rect key="frame" x="137" y="82" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.2274509804" green="0.60784313729999995" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Fxq-Xo-ey5"/>
-                                    <constraint firstAttribute="height" constant="100" id="cMa-e2-t0b"/>
-                                </constraints>
-                                <state key="normal" title="AMINO ACIDS">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="9WZ-0P-9R4" kind="show" id="jol-bE-gxh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="his-ce-wKW" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
-                                <rect key="frame" x="259" y="82" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.2274509804" green="0.60784313729999995" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="b3I-Ut-PGB"/>
-                                    <constraint firstAttribute="width" constant="100" id="kVA-pu-9du"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Af-ff-Ifl" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
-                                <rect key="frame" x="137" y="200" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.2274509804" green="0.60784313729999995" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="3gg-S9-anf"/>
-                                    <constraint firstAttribute="width" constant="100" id="uzX-zx-Bev"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xB-cj-aX0" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
-                                <rect key="frame" x="259" y="200" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.2274509804" green="0.60784313729999995" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="95A-g8-9Gp"/>
-                                    <constraint firstAttribute="height" constant="100" id="FHp-1f-48a"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQj-k3-am7" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
-                                <rect key="frame" x="16" y="318" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.2274509804" green="0.60784313729999995" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="6f0-Jc-1Dl"/>
-                                    <constraint firstAttribute="width" constant="100" id="Okh-aW-MDQ"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9m-84-x4l" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
-                                <rect key="frame" x="137" y="318" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.2274509804" green="0.60784313729999995" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="hW8-BT-cCS"/>
-                                    <constraint firstAttribute="width" constant="100" id="laX-Mc-yVA"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3m-3w-Gho" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
-                                <rect key="frame" x="259" y="318" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.2274509804" green="0.60784313729999995" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="1He-dO-D3V"/>
-                                    <constraint firstAttribute="height" constant="100" id="aLb-8X-bo4"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wx2-HK-jF6" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
-                                <rect key="frame" x="16" y="436" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.2274509804" green="0.60784313729999995" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="YGU-YI-zyY"/>
-                                    <constraint firstAttribute="width" constant="100" id="ccM-MO-L7o"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFj-Qa-Y4z" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
-                                <rect key="frame" x="137" y="436" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.2274509804" green="0.60784313729999995" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="X46-ig-aMK"/>
-                                    <constraint firstAttribute="width" constant="100" id="vRo-rd-fTa"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78n-gy-8xP" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
-                                <rect key="frame" x="259" y="436" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.2274509804" green="0.60784313729999995" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="aLa-gs-coU"/>
-                                    <constraint firstAttribute="height" constant="100" id="x9B-5h-9sY"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7Q-99-C5P" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
-                                <rect key="frame" x="16" y="554" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.2274509804" green="0.60784313729999995" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="OKE-hB-CZK"/>
-                                    <constraint firstAttribute="height" constant="100" id="mHL-cQ-Bbh"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27r-UO-W9h" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
-                                <rect key="frame" x="137" y="554" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.2274509804" green="0.60784313729999995" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="6D4-Bg-p1F"/>
-                                    <constraint firstAttribute="width" constant="100" id="inE-Hr-5oY"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERN-TZ-M8k" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
-                                <rect key="frame" x="16" y="200" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.2274509804" green="0.60784313729999995" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="7Lv-W0-hka"/>
-                                    <constraint firstAttribute="width" constant="100" id="Sfs-hr-mzz"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXP-O2-zge" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
-                                <rect key="frame" x="259" y="554" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.2274509804" green="0.60784313729999995" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="fob-WE-SHM"/>
-                                    <constraint firstAttribute="height" constant="100" id="n96-C0-n15"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="q7Q-99-C5P" firstAttribute="leading" secondItem="TaP-U4-lU2" secondAttribute="leadingMargin" id="0In-b8-Qwr"/>
-                            <constraint firstItem="vFj-Qa-Y4z" firstAttribute="top" secondItem="h9m-84-x4l" secondAttribute="bottom" constant="18" id="1sq-Zh-bpH"/>
-                            <constraint firstItem="PYh-iL-qzG" firstAttribute="top" secondItem="27r-UO-W9h" secondAttribute="bottom" constant="13" id="2VM-zd-q5q"/>
-                            <constraint firstItem="PYh-iL-qzG" firstAttribute="top" secondItem="q7Q-99-C5P" secondAttribute="bottom" constant="13" id="2XB-fG-rTs"/>
-                            <constraint firstItem="9xB-cj-aX0" firstAttribute="leading" secondItem="2Af-ff-Ifl" secondAttribute="trailing" constant="22" id="3z6-kj-kwG"/>
-                            <constraint firstItem="q7Q-99-C5P" firstAttribute="top" secondItem="wx2-HK-jF6" secondAttribute="bottom" constant="18" id="41e-Bl-Giq"/>
-                            <constraint firstItem="9xB-cj-aX0" firstAttribute="trailing" secondItem="TaP-U4-lU2" secondAttribute="trailingMargin" id="6cA-Zj-vgd"/>
-                            <constraint firstItem="2Af-ff-Ifl" firstAttribute="leading" secondItem="ERN-TZ-M8k" secondAttribute="trailing" constant="21" id="7rb-7y-eTJ"/>
-                            <constraint firstItem="uJW-qB-lf6" firstAttribute="leading" secondItem="TaP-U4-lU2" secondAttribute="leadingMargin" constant="3" id="9pf-ek-Gcr"/>
-                            <constraint firstItem="vFj-Qa-Y4z" firstAttribute="leading" secondItem="wx2-HK-jF6" secondAttribute="trailing" constant="21" id="BkY-EI-aFR"/>
-                            <constraint firstItem="vQj-k3-am7" firstAttribute="top" secondItem="ERN-TZ-M8k" secondAttribute="bottom" constant="18" id="CHT-bV-IIN"/>
-                            <constraint firstItem="PYh-iL-qzG" firstAttribute="top" secondItem="QXP-O2-zge" secondAttribute="bottom" constant="13" id="D2M-lq-kqI"/>
-                            <constraint firstItem="wx2-HK-jF6" firstAttribute="leading" secondItem="TaP-U4-lU2" secondAttribute="leadingMargin" id="MD7-qv-Pgw"/>
-                            <constraint firstItem="vQj-k3-am7" firstAttribute="leading" secondItem="TaP-U4-lU2" secondAttribute="leadingMargin" id="OFv-GY-vQ4"/>
-                            <constraint firstItem="78n-gy-8xP" firstAttribute="top" secondItem="r3m-3w-Gho" secondAttribute="bottom" constant="18" id="OIF-UJ-fvR"/>
-                            <constraint firstItem="wx2-HK-jF6" firstAttribute="top" secondItem="vQj-k3-am7" secondAttribute="bottom" constant="18" id="PlQ-rF-sR7"/>
-                            <constraint firstItem="r3m-3w-Gho" firstAttribute="trailing" secondItem="TaP-U4-lU2" secondAttribute="trailingMargin" id="Qo2-jr-a9F"/>
-                            <constraint firstItem="XLt-vz-RHj" firstAttribute="leading" secondItem="uJW-qB-lf6" secondAttribute="trailing" constant="18" id="TKR-uB-agV"/>
-                            <constraint firstItem="QXP-O2-zge" firstAttribute="top" secondItem="78n-gy-8xP" secondAttribute="bottom" constant="18" id="UTt-FA-UN2"/>
-                            <constraint firstItem="r3m-3w-Gho" firstAttribute="leading" secondItem="h9m-84-x4l" secondAttribute="trailing" constant="22" id="X5j-ue-mvD"/>
-                            <constraint firstItem="ERN-TZ-M8k" firstAttribute="leading" secondItem="TaP-U4-lU2" secondAttribute="leadingMargin" id="XdZ-Jf-efO"/>
-                            <constraint firstItem="78n-gy-8xP" firstAttribute="leading" secondItem="vFj-Qa-Y4z" secondAttribute="trailing" constant="22" id="Z4b-pJ-QZf"/>
-                            <constraint firstItem="27r-UO-W9h" firstAttribute="top" secondItem="vFj-Qa-Y4z" secondAttribute="bottom" constant="18" id="abB-LN-Ywn"/>
-                            <constraint firstItem="QXP-O2-zge" firstAttribute="trailing" secondItem="TaP-U4-lU2" secondAttribute="trailingMargin" id="eAS-Yl-NgE"/>
-                            <constraint firstItem="2Af-ff-Ifl" firstAttribute="top" secondItem="XLt-vz-RHj" secondAttribute="bottom" constant="18" id="fYA-CM-VAi"/>
-                            <constraint firstItem="r3m-3w-Gho" firstAttribute="top" secondItem="9xB-cj-aX0" secondAttribute="bottom" constant="18" id="fcH-j6-0MZ"/>
-                            <constraint firstItem="his-ce-wKW" firstAttribute="trailing" secondItem="TaP-U4-lU2" secondAttribute="trailingMargin" id="gUe-5z-Vjj"/>
-                            <constraint firstItem="ERN-TZ-M8k" firstAttribute="top" secondItem="uJW-qB-lf6" secondAttribute="bottom" constant="18" id="gd3-4F-LDv"/>
-                            <constraint firstItem="his-ce-wKW" firstAttribute="leading" secondItem="XLt-vz-RHj" secondAttribute="trailing" constant="22" id="h8q-QA-Rf3"/>
-                            <constraint firstItem="XLt-vz-RHj" firstAttribute="top" secondItem="HJv-w7-0Ur" secondAttribute="bottom" constant="18" id="k4O-Hb-csi"/>
-                            <constraint firstItem="27r-UO-W9h" firstAttribute="leading" secondItem="q7Q-99-C5P" secondAttribute="trailing" constant="21" id="lwF-KX-Ura"/>
-                            <constraint firstItem="h9m-84-x4l" firstAttribute="leading" secondItem="vQj-k3-am7" secondAttribute="trailing" constant="21" id="qV1-je-gfc"/>
-                            <constraint firstItem="uJW-qB-lf6" firstAttribute="top" secondItem="HJv-w7-0Ur" secondAttribute="bottom" constant="18" id="qmu-TB-gKu"/>
-                            <constraint firstItem="his-ce-wKW" firstAttribute="top" secondItem="HJv-w7-0Ur" secondAttribute="bottom" constant="18" id="r68-hn-7pL"/>
-                            <constraint firstItem="78n-gy-8xP" firstAttribute="trailing" secondItem="TaP-U4-lU2" secondAttribute="trailingMargin" id="sXc-xl-RRR"/>
-                            <constraint firstItem="9xB-cj-aX0" firstAttribute="top" secondItem="his-ce-wKW" secondAttribute="bottom" constant="18" id="ugJ-0V-59M"/>
-                            <constraint firstItem="h9m-84-x4l" firstAttribute="top" secondItem="2Af-ff-Ifl" secondAttribute="bottom" constant="18" id="w7i-Zc-qZH"/>
-                            <constraint firstItem="QXP-O2-zge" firstAttribute="leading" secondItem="27r-UO-W9h" secondAttribute="trailing" constant="22" id="ygA-yA-nbO"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="SETS" id="DnA-hI-RqD"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="50F-jd-gR4" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="849" y="761"/>
         </scene>
         <!--SET-->
         <scene sceneID="8G3-v2-I9T">
@@ -460,7 +264,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9aA-kv-mGg">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9aA-kv-mGg">
                                 <rect key="frame" x="19" y="439" width="337" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="qiN-Bo-qOD"/>
