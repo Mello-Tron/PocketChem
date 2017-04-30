@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0461E3411EB65106009C31E1 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461E3371EB65106009C31E1 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0461E3421EB65106009C31E1 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461E3391EB65106009C31E1 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0461E3431EB65106009C31E1 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461E33B1EB65106009C31E1 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0461E3441EB65106009C31E1 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461E33D1EB65106009C31E1 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0461E3451EB65106009C31E1 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0461E3401EB65106009C31E1 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0461E3481EB65139009C31E1 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0461E3471EB65139009C31E1 /* libsqlite3.0.tbd */; };
+		0461E34B1EB651C1009C31E1 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0461E34A1EB651C1009C31E1 /* DBManager.swift */; };
+		0461E34D1EB651DE009C31E1 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0461E34C1EB651DE009C31E1 /* Utility.swift */; };
+		0461E34F1EB651F9009C31E1 /* MoleculeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0461E34E1EB651F9009C31E1 /* MoleculeInfo.swift */; };
 		2BA812CB1EA9696100FC5EB9 /* gear_without_hub.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BA812CA1EA9696100FC5EB9 /* gear_without_hub.png */; };
 		6061D8EB1E9D83870034E0CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6061D8EA1E9D83870034E0CB /* AppDelegate.swift */; };
 		6061D8ED1E9D83870034E0CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6061D8EC1E9D83870034E0CB /* ViewController.swift */; };
@@ -17,6 +26,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0461E3351EB65106009C31E1 /* Chemistry-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chemistry-Bridging-Header.h"; sourceTree = "<group>"; };
+		0461E3361EB65106009C31E1 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = "../../../../Downloads/fmdb-master-2/src/fmdb/FMDatabase.h"; sourceTree = "<group>"; };
+		0461E3371EB65106009C31E1 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = "../../../../Downloads/fmdb-master-2/src/fmdb/FMDatabase.m"; sourceTree = "<group>"; };
+		0461E3381EB65106009C31E1 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = "../../../../Downloads/fmdb-master-2/src/fmdb/FMDatabaseAdditions.h"; sourceTree = "<group>"; };
+		0461E3391EB65106009C31E1 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = "../../../../Downloads/fmdb-master-2/src/fmdb/FMDatabaseAdditions.m"; sourceTree = "<group>"; };
+		0461E33A1EB65106009C31E1 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = "../../../../Downloads/fmdb-master-2/src/fmdb/FMDatabasePool.h"; sourceTree = "<group>"; };
+		0461E33B1EB65106009C31E1 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = "../../../../Downloads/fmdb-master-2/src/fmdb/FMDatabasePool.m"; sourceTree = "<group>"; };
+		0461E33C1EB65106009C31E1 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = "../../../../Downloads/fmdb-master-2/src/fmdb/FMDatabaseQueue.h"; sourceTree = "<group>"; };
+		0461E33D1EB65106009C31E1 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = "../../../../Downloads/fmdb-master-2/src/fmdb/FMDatabaseQueue.m"; sourceTree = "<group>"; };
+		0461E33E1EB65106009C31E1 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = "../../../../Downloads/fmdb-master-2/src/fmdb/FMDB.h"; sourceTree = "<group>"; };
+		0461E33F1EB65106009C31E1 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = "../../../../Downloads/fmdb-master-2/src/fmdb/FMResultSet.h"; sourceTree = "<group>"; };
+		0461E3401EB65106009C31E1 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = "../../../../Downloads/fmdb-master-2/src/fmdb/FMResultSet.m"; sourceTree = "<group>"; };
+		0461E3471EB65139009C31E1 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		0461E3491EB651B0009C31E1 /* mol.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = mol.db; path = ../../../database/mol.db; sourceTree = "<group>"; };
+		0461E34A1EB651C1009C31E1 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBManager.swift; path = ../DBManager.swift; sourceTree = "<group>"; };
+		0461E34C1EB651DE009C31E1 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = ../Utility.swift; sourceTree = "<group>"; };
+		0461E34E1EB651F9009C31E1 /* MoleculeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoleculeInfo.swift; path = ../MoleculeInfo.swift; sourceTree = "<group>"; };
 		2BA812CA1EA9696100FC5EB9 /* gear_without_hub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gear_without_hub.png; path = Assets.xcassets/gear_without_hub.png; sourceTree = "<group>"; };
 		6061D8E71E9D83870034E0CB /* Chemistry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chemistry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6061D8EA1E9D83870034E0CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,17 +59,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0461E3481EB65139009C31E1 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0461E3341EB650E4009C31E1 /* FMDB - 3rd party sql wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				0461E3361EB65106009C31E1 /* FMDatabase.h */,
+				0461E3371EB65106009C31E1 /* FMDatabase.m */,
+				0461E3381EB65106009C31E1 /* FMDatabaseAdditions.h */,
+				0461E3391EB65106009C31E1 /* FMDatabaseAdditions.m */,
+				0461E33A1EB65106009C31E1 /* FMDatabasePool.h */,
+				0461E33B1EB65106009C31E1 /* FMDatabasePool.m */,
+				0461E33C1EB65106009C31E1 /* FMDatabaseQueue.h */,
+				0461E33D1EB65106009C31E1 /* FMDatabaseQueue.m */,
+				0461E33E1EB65106009C31E1 /* FMDB.h */,
+				0461E33F1EB65106009C31E1 /* FMResultSet.h */,
+				0461E3401EB65106009C31E1 /* FMResultSet.m */,
+				0461E3351EB65106009C31E1 /* Chemistry-Bridging-Header.h */,
+			);
+			name = "FMDB - 3rd party sql wrapper";
+			sourceTree = "<group>";
+		};
+		0461E3461EB65139009C31E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0461E3471EB65139009C31E1 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6061D8DE1E9D83870034E0CB = {
 			isa = PBXGroup;
 			children = (
 				6061D8E91E9D83870034E0CB /* Chemistry */,
 				6061D8E81E9D83870034E0CB /* Products */,
+				0461E3461EB65139009C31E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +113,7 @@
 		6061D8E91E9D83870034E0CB /* Chemistry */ = {
 			isa = PBXGroup;
 			children = (
+				0461E3341EB650E4009C31E1 /* FMDB - 3rd party sql wrapper */,
 				6061D8EA1E9D83870034E0CB /* AppDelegate.swift */,
 				6061D8EC1E9D83870034E0CB /* ViewController.swift */,
 				6061D8EE1E9D83870034E0CB /* Main.storyboard */,
@@ -66,6 +122,10 @@
 				6061D8F31E9D83870034E0CB /* LaunchScreen.storyboard */,
 				6061D8F61E9D83870034E0CB /* Info.plist */,
 				CDBEFDA41EA46CEB00697468 /* KDCircularProgress.swift */,
+				0461E34A1EB651C1009C31E1 /* DBManager.swift */,
+				0461E34E1EB651F9009C31E1 /* MoleculeInfo.swift */,
+				0461E34C1EB651DE009C31E1 /* Utility.swift */,
+				0461E3491EB651B0009C31E1 /* mol.db */,
 			);
 			path = Chemistry;
 			sourceTree = "<group>";
@@ -103,7 +163,7 @@
 					6061D8E61E9D83870034E0CB = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 6C8PUPR5FG;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -144,9 +204,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0461E34D1EB651DE009C31E1 /* Utility.swift in Sources */,
+				0461E34F1EB651F9009C31E1 /* MoleculeInfo.swift in Sources */,
 				CDBEFDA51EA46CEB00697468 /* KDCircularProgress.swift in Sources */,
+				0461E3431EB65106009C31E1 /* FMDatabasePool.m in Sources */,
 				6061D8ED1E9D83870034E0CB /* ViewController.swift in Sources */,
+				0461E3441EB65106009C31E1 /* FMDatabaseQueue.m in Sources */,
+				0461E34B1EB651C1009C31E1 /* DBManager.swift in Sources */,
 				6061D8EB1E9D83870034E0CB /* AppDelegate.swift in Sources */,
+				0461E3411EB65106009C31E1 /* FMDatabase.m in Sources */,
+				0461E3451EB65106009C31E1 /* FMResultSet.m in Sources */,
+				0461E3421EB65106009C31E1 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,10 +334,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Chemistry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = game.Chemistry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Chemistry/Chemistry-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -278,10 +349,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Chemistry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = game.Chemistry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Chemistry/Chemistry-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

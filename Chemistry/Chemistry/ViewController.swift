@@ -15,6 +15,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // attempt to test DBManager
+        
+        let marrMolInfo : NSMutableArray = DBManager().getAllData()
+        print(marrMolInfo)
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,6 +48,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
 }
+
 
 ////////////////////////////////////////
 //             UI Classes             //
