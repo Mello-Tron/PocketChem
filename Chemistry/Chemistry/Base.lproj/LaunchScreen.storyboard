@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,17 +23,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo 2" translatesAutoresizingMaskIntoConstraints="NO" id="bt6-5F-0Ny">
-                                <rect key="frame" x="66" y="215" width="243" height="155"/>
+                                <rect key="frame" x="66" y="244" width="243" height="115"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="243" id="i41-Kn-lBv"/>
-                                    <constraint firstAttribute="height" constant="155" id="j3C-LQ-ueU"/>
+                                    <constraint firstAttribute="width" constant="243" id="Exk-gp-6WB"/>
+                                    <constraint firstAttribute="height" constant="115" id="LBK-BR-60I"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="bt6-5F-0Ny" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="195" id="NWz-Dy-BJN"/>
-                            <constraint firstItem="bt6-5F-0Ny" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Ni0-Q8-dld"/>
+                            <constraint firstItem="bt6-5F-0Ny" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="224" id="KAs-AZ-Khm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bt6-5F-0Ny" secondAttribute="trailing" constant="50" id="U5j-9B-p8L"/>
+                            <constraint firstItem="bt6-5F-0Ny" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="50" id="fS6-Yt-zIH"/>
                         </constraints>
                     </view>
                 </viewController>
