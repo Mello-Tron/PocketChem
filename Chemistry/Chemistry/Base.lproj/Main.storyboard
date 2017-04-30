@@ -119,16 +119,22 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0J-D4-DxN" customClass="RoundButton" customModule="Chemistry" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0J-D4-DxN" customClass="RoundButton" customModule="Chemistry" customModuleProvider="target">
                                 <rect key="frame" x="284" y="572" width="75" height="75"/>
                                 <color key="backgroundColor" red="0.9269263744354248" green="0.33858892321586609" blue="0.40648648142814636" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="MZe-wv-pI5"/>
                                     <constraint firstAttribute="height" constant="75" id="r2H-jr-GQE"/>
                                 </constraints>
-                                <state key="normal">
+                                <state key="normal" image="PlusSign">
                                     <color key="titleColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="butonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wNf-c5-JzC"/>
+                                    <action selector="tasone:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qEN-Og-R5t"/>
+                                    <outletCollection property="gestureRecognizers" destination="yDA-qT-XI8" appends="YES" id="CgT-oD-UDO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -152,6 +158,7 @@
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="yDA-qT-XI8"/>
             </objects>
             <point key="canvasLocation" x="848.79999999999995" y="41.829085457271368"/>
         </scene>
@@ -409,7 +416,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mV9-b1-8g3" customClass="ShadowLabel" customModule="Chemistry" customModuleProvider="target">
-                                <rect key="frame" x="16" y="101" width="343" height="313"/>
+                                <rect key="frame" x="16" y="145" width="343" height="269"/>
                                 <color key="backgroundColor" red="0.9999127984046936" green="1" blue="0.99988144636154175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="LhR-zf-XpW"/>
@@ -419,26 +426,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     AMINO ACIDS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YA-Le-DVC" userLabel="Molecule Label" customClass="ShadowLabel" customModule="Chemistry" customModuleProvider="target">
-                                <rect key="frame" x="16" y="38" width="343" height="45"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="343" id="185-PG-t51"/>
-                                    <constraint firstAttribute="height" constant="45" id="Kwd-W8-B5j"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3 RIGHT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ms9-vS-fk1">
-                                <rect key="frame" x="195" y="82" width="68" height="45"/>
+                                <rect key="frame" x="191" y="38" width="68" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2 WRONG" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUy-jp-LKE">
-                                <rect key="frame" x="267" y="82" width="96" height="45"/>
+                                <rect key="frame" x="267" y="38" width="96" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -501,6 +497,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     AMINO ACIDS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YA-Le-DVC" userLabel="Molecule Label" customClass="ShadowLabel" customModule="Chemistry" customModuleProvider="target">
+                                <rect key="frame" x="16" y="38" width="343" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="185-PG-t51"/>
+                                    <constraint firstAttribute="height" constant="45" id="Kwd-W8-B5j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -508,9 +515,8 @@
                             <constraint firstItem="5LN-Fn-ZjX" firstAttribute="top" secondItem="F5n-ea-YQO" secondAttribute="bottom" constant="94" id="49B-Fw-nui"/>
                             <constraint firstItem="F5n-ea-YQO" firstAttribute="trailing" secondItem="okw-D5-rmu" secondAttribute="trailingMargin" id="76q-G2-RoT"/>
                             <constraint firstItem="Qal-1h-cZs" firstAttribute="top" secondItem="QWe-e5-fyY" secondAttribute="bottom" constant="155" id="B98-x7-iS8"/>
-                            <constraint firstItem="0YA-Le-DVC" firstAttribute="leading" secondItem="okw-D5-rmu" secondAttribute="leadingMargin" id="DYe-fN-WQE"/>
                             <constraint firstItem="d2T-3B-jzj" firstAttribute="top" secondItem="Qal-1h-cZs" secondAttribute="bottom" constant="18" id="Gnh-qT-QQ0"/>
-                            <constraint firstItem="mV9-b1-8g3" firstAttribute="top" secondItem="0YA-Le-DVC" secondAttribute="bottom" constant="18" id="J1v-PP-bG5"/>
+                            <constraint firstItem="0YA-Le-DVC" firstAttribute="top" secondItem="nAl-e1-IhM" secondAttribute="bottom" constant="18" id="Ivr-yz-RPq"/>
                             <constraint firstItem="5LN-Fn-ZjX" firstAttribute="leading" secondItem="okw-D5-rmu" secondAttribute="leadingMargin" id="J8I-R2-78x"/>
                             <constraint firstItem="Qal-1h-cZs" firstAttribute="leading" secondItem="okw-D5-rmu" secondAttribute="leadingMargin" id="KdN-sy-ST8"/>
                             <constraint firstItem="Qal-1h-cZs" firstAttribute="top" secondItem="mV9-b1-8g3" secondAttribute="bottom" constant="37" id="LM0-qv-4bd"/>
@@ -519,7 +525,6 @@
                             <constraint firstItem="mV9-b1-8g3" firstAttribute="trailing" secondItem="okw-D5-rmu" secondAttribute="trailingMargin" id="bVR-3m-aWX"/>
                             <constraint firstItem="mV9-b1-8g3" firstAttribute="leading" secondItem="okw-D5-rmu" secondAttribute="leadingMargin" id="ccr-Ow-IWt"/>
                             <constraint firstItem="OWp-SQ-wRY" firstAttribute="top" secondItem="d2T-3B-jzj" secondAttribute="bottom" constant="38" id="dyK-j1-tRr"/>
-                            <constraint firstItem="0YA-Le-DVC" firstAttribute="top" secondItem="nAl-e1-IhM" secondAttribute="bottom" constant="18" id="hla-Rx-R6v"/>
                             <constraint firstItem="d2T-3B-jzj" firstAttribute="leading" secondItem="okw-D5-rmu" secondAttribute="leadingMargin" id="kfz-yz-C5T"/>
                             <constraint firstItem="5LN-Fn-ZjX" firstAttribute="trailing" secondItem="okw-D5-rmu" secondAttribute="trailingMargin" id="lSD-Gn-Ob8"/>
                             <constraint firstItem="d2T-3B-jzj" firstAttribute="trailing" secondItem="okw-D5-rmu" secondAttribute="trailingMargin" id="mir-xO-T08"/>
@@ -539,6 +544,7 @@
     <resources>
         <image name="Back Arrow" width="354" height="692"/>
         <image name="Forward Arrow" width="354" height="692"/>
+        <image name="PlusSign" width="576" height="576"/>
         <image name="gear_without_hub.png" width="30" height="30"/>
     </resources>
 </document>

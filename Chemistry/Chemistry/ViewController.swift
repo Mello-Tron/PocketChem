@@ -33,28 +33,18 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
     }
     
     // MARK: - UICollectionViewDelegate protocol
-    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // handle tap events
         print("You selected cell #\(indexPath.item)!")
     }
     
     
-    
-    
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
     }
 
     @IBAction func openCameraIdentifyView(_ sender: AnyObject) {
@@ -76,6 +66,26 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
             self.present(imagePicker, animated: true, completion: nil)
         }
     }
+    
+    @IBAction func butonPressed(_ sender: RoundButton){
+        let button = RoundButton()
+        
+        //Animate rorate button on touch
+        UIView.animate(withDuration: 3.0) {
+            button.self.transform = CGAffineTransform(rotationAngle: (CGFloat(M_PI)))
+        }
+        
+        //Make button grow then go back to normal
+        UIView.animate(withDuration: 0.6, animations: {
+            button.self.transform = CGAffineTransform(scaleX: 0.6, y:0.6)
+        },
+                       completion:{_ in
+                        UIView.animate(withDuration: 0.6) {
+                            button.self.transform = CGAffineTransform.identity
+                        }
+        })
+    }
+    
     
 }
 
@@ -110,6 +120,7 @@ class ShadowLabel: UILabel {
 class ShadowNavBar: UINavigationBar {
     override func awakeFromNib() {
         //...
+
     }
 }
 
@@ -117,7 +128,11 @@ class RoundButton: UIButton {
     override func awakeFromNib() {
         //Make circular
         layer.cornerRadius = 0.5 * bounds.size.width
-        //setImage(UIImage(named: "plussign.png"), for: .normal)    //set plus sign image
+        
+        //scale image size
+        imageEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        
+        addTarget(self, action: #selector(buttonPressed), for: UIControlEvents.touchUpInside)
         
         //Give Shadow
         layer.shadowColor = UIColor.black.cgColor
@@ -126,5 +141,27 @@ class RoundButton: UIButton {
         layer.shadowRadius = 1.0
         layer.shadowOpacity = 0.1
     }
+    func buttonPressed(){
+        print("work?")
+        
+        //Animate rorate button on touch
+        UIView.animate(withDuration: 3.0) {
+            self.transform = CGAffineTransform(rotationAngle: (CGFloat(M_PI)))
+        }
+        
+        //Make button grow then go back to normal
+        UIView.animate(withDuration: 0.6, animations: {
+            self.transform = CGAffineTransform(scaleX: 0.6, y:0.6)
+        },
+                       completion:{_ in
+                        UIView.animate(withDuration: 0.6) {
+                            self.transform = CGAffineTransform.identity
+                        }
+        })
+        
+        
+    }
+    
+
 }
 
