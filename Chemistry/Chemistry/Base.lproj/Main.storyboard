@@ -40,19 +40,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vco-Bz-CBe" customClass="ShadowLabel" customModule="Chemistry" customModuleProvider="target">
-                                <rect key="frame" x="16" y="81" width="337" height="251"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vco-Bz-CBe" customClass="ShadowLabel" customModule="Chemistry" customModuleProvider="target">
+                                <rect key="frame" x="19" y="81" width="337" height="251"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="337" id="Ze7-Si-LsG"/>
+                                    <constraint firstAttribute="height" constant="251" id="jIr-vj-csv"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0J-D4-DxN" customClass="RoundButton" customModule="Chemistry" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0J-D4-DxN" customClass="RoundButton" customModule="Chemistry" customModuleProvider="target">
                                 <rect key="frame" x="299" y="587" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.9269263744354248" green="0.33858892321586609" blue="0.40648648142814636" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="7Po-Ag-1CO"/>
+                                    <constraint firstAttribute="width" constant="60" id="opj-Da-xQ0"/>
+                                </constraints>
                                 <state key="normal" image="PlusSign">
                                     <color key="titleColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -62,24 +68,37 @@
                                     <outletCollection property="gestureRecognizers" destination="yDA-qT-XI8" appends="YES" id="CgT-oD-UDO"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okK-O5-tPn" customClass="ShadowLabel" customModule="Chemistry" customModuleProvider="target">
-                                <rect key="frame" x="16" y="332" width="337" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okK-O5-tPn" customClass="ShadowLabel" customModule="Chemistry" customModuleProvider="target">
+                                <rect key="frame" x="19" y="332" width="337" height="53"/>
                                 <color key="backgroundColor" red="0.60233545303344727" green="0.69558030366897583" blue="0.22132423520088196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="CNS-cJ-cpc"/>
+                                    <constraint firstAttribute="width" constant="337" id="W8Y-lE-4Nk"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                 <color key="textColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ia1-Rh-aAp" customClass="KDCircularProgress" customModule="Chemistry" customModuleProvider="target">
-                                <rect key="frame" x="84" y="81" width="200" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ia1-Rh-aAp" customClass="KDCircularProgress" customModule="Chemistry" customModuleProvider="target">
+                                <rect key="frame" x="91" y="81" width="200" height="200"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MaleProfile" translatesAutoresizingMaskIntoConstraints="NO" id="HY5-04-Sqo">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MaleProfile" translatesAutoresizingMaskIntoConstraints="NO" id="HY5-04-Sqo">
                                         <rect key="frame" x="19" y="19" width="162" height="162"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="162" id="8db-qh-gjR"/>
+                                            <constraint firstAttribute="height" constant="162" id="RN3-yr-Ljk"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="7V3-uZ-yqk"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="HY5-04-Sqo" secondAttribute="bottom" constant="11" id="AuQ-wh-ObV"/>
+                                    <constraint firstAttribute="width" constant="200" id="JxV-4e-Ivo"/>
+                                    <constraint firstItem="HY5-04-Sqo" firstAttribute="leading" secondItem="Ia1-Rh-aAp" secondAttribute="leadingMargin" constant="11" id="U4k-Lq-SYG"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="HY5-04-Sqo" secondAttribute="trailing" constant="11" id="xsE-J1-aPW"/>
+                                    <constraint firstItem="HY5-04-Sqo" firstAttribute="top" secondItem="Ia1-Rh-aAp" secondAttribute="topMargin" constant="11" id="y8M-j2-ofZ"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
                                         <color key="value" cocoaTouchSystemColor="lightTextColor"/>
@@ -96,31 +115,43 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="22 HOURS" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dF3-de-iBh">
-                                <rect key="frame" x="147" y="293" width="74" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="22 HOURS" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dF3-de-iBh">
+                                <rect key="frame" x="154" y="293" width="74" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="Lrc-JL-92u"/>
+                                    <constraint firstAttribute="height" constant="17" id="RcT-Xt-Bhb"/>
+                                </constraints>
                                 <color key="textColor" red="0.95835691690444946" green="0.74157124757766724" blue="0.2321237325668335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="JASON TRADER" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RaH-mD-95m">
-                                <rect key="frame" x="16" y="268" width="337" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="JASON TRADER" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RaH-mD-95m">
+                                <rect key="frame" x="19" y="268" width="337" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="337" id="e7m-5p-7ek"/>
+                                    <constraint firstAttribute="height" constant="17" id="j5P-J5-bAI"/>
+                                </constraints>
                                 <color key="textColor" red="0.2130832765" green="0.58307471460000004" blue="0.60577372289999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="YOUR GOAL : 35 HOURS" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dGg-VV-Khe">
-                                <rect key="frame" x="29" y="350" width="324" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="   YOUR GOAL : 35 HOURS" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dGg-VV-Khe">
+                                <rect key="frame" x="19" y="350" width="334" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="0yA-MN-t98"/>
+                                    <constraint firstAttribute="width" constant="334" id="88M-CG-91C"/>
+                                </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usi-nh-r1q" userLabel="Draw Button" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
-                                <rect key="frame" x="16" y="433" width="337" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usi-nh-r1q" userLabel="Draw Button" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
+                                <rect key="frame" x="19" y="416" width="337" height="80"/>
                                 <color key="backgroundColor" red="0.92549019610000005" green="0.33725490200000002" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="WZz-1S-Pvo"/>
+                                    <constraint firstAttribute="width" constant="337" id="k7j-H2-DhS"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28.799999237060547"/>
                                 <state key="normal" title="TEMP -&gt; CARDS">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -131,8 +162,39 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.94107431173324585" green="0.94123536348342896" blue="0.94106405973434448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dF3-de-iBh" firstAttribute="top" secondItem="RaH-mD-95m" secondAttribute="bottom" constant="8" id="2zG-4e-dUH"/>
+                            <constraint firstItem="usi-nh-r1q" firstAttribute="top" secondItem="dGg-VV-Khe" secondAttribute="bottom" constant="49" id="8EB-gY-vaG"/>
+                            <constraint firstItem="Ia1-Rh-aAp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="75" id="8bA-60-FdK"/>
+                            <constraint firstItem="usi-nh-r1q" firstAttribute="top" secondItem="okK-O5-tPn" secondAttribute="bottom" constant="31" id="9Ra-ii-GfC"/>
+                            <constraint firstItem="Ia1-Rh-aAp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="E39-2v-3O6"/>
+                            <constraint firstItem="vco-Bz-CBe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="FeS-pH-iBt"/>
+                            <constraint firstItem="dGg-VV-Khe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="3" id="GFr-zp-ZdR"/>
+                            <constraint firstItem="okK-O5-tPn" firstAttribute="top" secondItem="vco-Bz-CBe" secondAttribute="bottom" id="IQY-dm-Dfp"/>
+                            <constraint firstItem="RaH-mD-95m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="3" id="Mml-LD-PWC"/>
+                            <constraint firstItem="dF3-de-iBh" firstAttribute="top" secondItem="Ia1-Rh-aAp" secondAttribute="bottom" constant="12" id="NPU-XV-e5I"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="usi-nh-r1q" secondAttribute="trailing" constant="3" id="O9g-mb-RbZ"/>
+                            <constraint firstItem="l0J-D4-DxN" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="QA0-vw-9my"/>
+                            <constraint firstItem="usi-nh-r1q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="3" id="Sc7-bK-ain"/>
+                            <constraint firstItem="RaH-mD-95m" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="204" id="YhM-4R-U0Q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ia1-Rh-aAp" secondAttribute="trailing" constant="68" id="Zxh-Xo-8VL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="l0J-D4-DxN" secondAttribute="bottom" constant="20" id="bcE-EE-d3k"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RaH-mD-95m" secondAttribute="trailing" constant="3" id="dW1-BI-toP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vco-Bz-CBe" secondAttribute="trailing" constant="3" id="do9-vX-b8j"/>
+                            <constraint firstItem="dF3-de-iBh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="138" id="fdz-2Q-itA"/>
+                            <constraint firstItem="l0J-D4-DxN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="283" id="fmc-at-3tQ"/>
+                            <constraint firstItem="vco-Bz-CBe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="3" id="hVv-uf-Lck"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dF3-de-iBh" secondAttribute="trailing" constant="131" id="jcd-xg-yMA"/>
+                            <constraint firstItem="l0J-D4-DxN" firstAttribute="top" secondItem="usi-nh-r1q" secondAttribute="bottom" constant="91" id="ltT-l8-3rG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dGg-VV-Khe" secondAttribute="trailing" constant="6" id="nUW-kb-Mfj"/>
+                            <constraint firstItem="dGg-VV-Khe" firstAttribute="top" secondItem="vco-Bz-CBe" secondAttribute="bottom" constant="18" id="oyQ-qx-pdw"/>
+                            <constraint firstItem="okK-O5-tPn" firstAttribute="top" secondItem="dF3-de-iBh" secondAttribute="bottom" constant="22" id="rkD-Af-V0C"/>
+                            <constraint firstItem="okK-O5-tPn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="3" id="wqI-Md-Rcq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="okK-O5-tPn" secondAttribute="trailing" constant="3" id="xbN-oe-7TQ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="POCKETCHEM" id="Elf-Ht-Lhm">
+                        <barButtonItem key="backBarButtonItem" title="HOME" id="NmD-vS-u7a"/>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="Nfb-06-Hgr">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="w79-9a-9Y0">
                                 <rect key="frame" x="339" y="12" width="20" height="20"/>
@@ -155,14 +217,14 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="04I-ZG-yz2" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xpK-vR-hyH" customClass="ShadowNavBar" customModule="Chemistry" customModuleProvider="target">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="xpK-vR-hyH" customClass="ShadowNavBar" customModule="Chemistry" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.82343930006027222" green="0.82358139753341675" blue="0.82343035936355591" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.94891661405563354" green="0.94907897710800171" blue="0.94890636205673218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.56072109937667847" green="0.56082075834274292" blue="0.56071484088897705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textColor" red="0.5607843137254902" green="0.5607843137254902" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
