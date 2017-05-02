@@ -15,12 +15,12 @@ let sharedInstance = DBManager()
 
 class DBManager: NSObject {
     
-    var database: FMDatabase? = nil // the first way of declaring the database. I think the nil is the problem, but if we take that off, it has the same error.
-    /*
+    //var database: FMDatabase? = nil // the first way of declaring the database. I think the nil is the problem, but if we take that off, it has the same error.
+   // /*
      static let shared: DBManager = DBManager() // the second way. both have the same error
      private let dbFileName = "mol.db"
      private var database:FMDatabase!
-     */
+    // */
     class func getInstance() -> DBManager // Here is the problem child. I read in a thread that "getInstance" is inadvisable and that sharedInstance should be a static property of the class...? Possibly a solution but unsure how to implement
     {
         if(sharedInstance.database == nil)
