@@ -102,7 +102,7 @@
 				TargetAttributes = {
 					6061D8E61E9D83870034E0CB = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = D764TTT65D;
+						DevelopmentTeam = 6C8PUPR5FG;
 						LastSwiftMigration = 0820;
 					};
 				};
@@ -266,10 +266,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D764TTT65D;
+				DEVELOPMENT_TEAM = 6C8PUPR5FG;
 				INFOPLIST_FILE = Chemistry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kat.game.Chemistry;
+				PRODUCT_BUNDLE_IDENTIFIER = pat.game.chemistry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -279,10 +279,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D764TTT65D;
+				DEVELOPMENT_TEAM = 6C8PUPR5FG;
 				INFOPLIST_FILE = Chemistry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kat.game.Chemistry;
+				PRODUCT_BUNDLE_IDENTIFIER = pat.game.chemistry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
