@@ -42,21 +42,23 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
         }
     }
     
-    @IBAction func butonPressed(_ sender: RoundButton){
-        let button = RoundButton()
+    @IBOutlet var plusButton: RoundButton!
+    
+    @IBAction func plusButtonPress(_ sender: AnyObject) {
+        //let button = RoundButton()
         
         //Animate rorate button on touch
         UIView.animate(withDuration: 3.0) {
-            button.self.transform = CGAffineTransform(rotationAngle: (CGFloat(M_PI)))
+            self.plusButton.transform = CGAffineTransform(rotationAngle: (CGFloat(M_PI)))
         }
         
         //Make button grow then go back to normal
         UIView.animate(withDuration: 0.6, animations: {
-            button.self.transform = CGAffineTransform(scaleX: 0.6, y:0.6)
+            self.plusButton.transform = CGAffineTransform(scaleX: 0.6, y:0.6)
         },
                        completion:{_ in
                         UIView.animate(withDuration: 0.6) {
-                            button.self.transform = CGAffineTransform.identity
+                            self.plusButton.transform = CGAffineTransform.identity
                         }
         })
     }
