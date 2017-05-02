@@ -231,7 +231,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="04I-ZG-yz2" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="xpK-vR-hyH" customClass="ShadowNavBar" customModule="Chemistry" customModuleProvider="target">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xpK-vR-hyH" customClass="ShadowNavBar" customModule="Chemistry" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.82343930006027222" green="0.82358139753341675" blue="0.82343035936355591" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -373,37 +373,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBH-7P-Hfw">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBH-7P-Hfw">
                                 <rect key="frame" x="16" y="149" width="343" height="269"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="3js-R6-5ao"/>
+                                    <constraint firstAttribute="height" constant="269" id="6Hf-Lb-vIs"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="38"/>
                                 <state key="normal" title="S E R I N E">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="     AMINO ACIDS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ir-xh-Nil" userLabel="Molecule Label" customClass="ShadowLabel" customModule="Chemistry" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     AMINO ACIDS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ir-xh-Nil" userLabel="Molecule Label" customClass="ShadowLabel" customModule="Chemistry" customModuleProvider="target">
                                 <rect key="frame" x="16" y="84" width="343" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="LOY-lf-izK"/>
+                                    <constraint firstAttribute="width" constant="343" id="VuO-tG-pQQ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIL-zm-4ks">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIL-zm-4ks">
                                 <rect key="frame" x="324" y="425" width="35" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="8ia-9G-ez6"/>
+                                    <constraint firstAttribute="height" constant="45" id="thi-Il-y3Z"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="FlagUnselected"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1/21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCT-dz-316">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCT-dz-316">
                                 <rect key="frame" x="171" y="149" width="33.5" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="33.5" id="1uL-mP-VhK"/>
+                                    <constraint firstAttribute="height" constant="45" id="O7p-Fz-hDJ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CCT-dz-316" firstAttribute="top" secondItem="4Ir-xh-Nil" secondAttribute="bottom" constant="20" id="9Ml-If-vQ8"/>
+                            <constraint firstItem="vBH-7P-Hfw" firstAttribute="trailing" secondItem="RxJ-BY-Mc8" secondAttribute="trailingMargin" id="Diw-au-v51"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CCT-dz-316" secondAttribute="trailing" constant="154.5" id="PYw-LJ-Fa6"/>
+                            <constraint firstItem="4Ir-xh-Nil" firstAttribute="leading" secondItem="RxJ-BY-Mc8" secondAttribute="leadingMargin" id="Qa4-TK-cRn"/>
+                            <constraint firstItem="4Ir-xh-Nil" firstAttribute="trailing" secondItem="RxJ-BY-Mc8" secondAttribute="trailingMargin" id="QdF-Lb-6dW"/>
+                            <constraint firstItem="RIL-zm-4ks" firstAttribute="trailing" secondItem="RxJ-BY-Mc8" secondAttribute="trailingMargin" id="Th4-BQ-fV2"/>
+                            <constraint firstItem="RIL-zm-4ks" firstAttribute="leading" secondItem="RxJ-BY-Mc8" secondAttribute="leadingMargin" constant="308" id="VMq-2K-eyy"/>
+                            <constraint firstItem="4Ir-xh-Nil" firstAttribute="top" secondItem="mIN-Yj-c3A" secondAttribute="bottom" constant="20" id="XsH-EO-stD"/>
+                            <constraint firstItem="vBH-7P-Hfw" firstAttribute="leading" secondItem="RxJ-BY-Mc8" secondAttribute="leadingMargin" id="nOd-6x-XkS"/>
+                            <constraint firstItem="CCT-dz-316" firstAttribute="leading" secondItem="RxJ-BY-Mc8" secondAttribute="leadingMargin" constant="155" id="u80-DP-gp5"/>
+                            <constraint firstItem="RIL-zm-4ks" firstAttribute="top" secondItem="vBH-7P-Hfw" secondAttribute="bottom" constant="7" id="wu9-Z2-uMl"/>
+                            <constraint firstItem="vBH-7P-Hfw" firstAttribute="top" secondItem="4Ir-xh-Nil" secondAttribute="bottom" constant="20" id="y68-Pl-3bf"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="CARDS" id="UZq-gg-fJq" userLabel="Cards"/>
                 </viewController>
