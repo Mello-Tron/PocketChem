@@ -46,7 +46,7 @@
         <!--POCKETCHEM-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PocketChem" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="PocketChem" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -73,7 +73,7 @@
                                     <color key="titleColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="plusButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hy9-qd-3JY"/>
+                                    <action selector="plusButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8vU-pl-Y65"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcc-7I-rA4" customClass="CameraButton" customModule="PocketChem" customModuleProvider="target">
@@ -86,7 +86,7 @@
                                     <color key="titleColor" red="0.9959825873" green="0.99621325729999999" blue="0.99187678099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="openCameraHomeView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q15-cd-jfZ"/>
+                                    <action selector="openCameraHomeView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4aH-tE-dpf"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okK-O5-tPn" customClass="ShadowLabel" customModule="PocketChem" customModuleProvider="target">
@@ -334,8 +334,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="cameraButton" destination="xcc-7I-rA4" id="MUS-5o-rFm"/>
-                        <outlet property="plusButton" destination="l0J-D4-DxN" id="6rn-li-peN"/>
+                        <outlet property="cameraButton" destination="xcc-7I-rA4" id="rlN-Zs-x0o"/>
+                        <outlet property="plusButton" destination="l0J-D4-DxN" id="JEN-p0-GrO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -482,7 +482,7 @@
         <!--Notecard-->
         <scene sceneID="wTv-CK-f3f">
             <objects>
-                <viewController title="Notecard" id="lcQ-9U-nfj" customClass="ViewController" customModule="PocketChem" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Notecard" id="lcQ-9U-nfj" customClass="CardViewController" customModule="PocketChem" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mIN-Yj-c3A"/>
                         <viewControllerLayoutGuide type="bottom" id="Zei-Ai-z8R"/>
@@ -558,7 +558,7 @@
         <!--Quiz-->
         <scene sceneID="8q6-Pm-t1a">
             <objects>
-                <viewController title="Quiz" id="HZl-H1-suN" customClass="ViewController" customModule="PocketChem" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Quiz" id="HZl-H1-suN" customClass="QuizViewController" customModule="PocketChem" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hPj-jH-X0P"/>
                         <viewControllerLayoutGuide type="bottom" id="Edx-Uh-Exf"/>
@@ -656,7 +656,7 @@
         <!--Draw-->
         <scene sceneID="ubf-W8-hL1">
             <objects>
-                <viewController title="Draw" id="gBp-fb-7z8" customClass="ViewController" customModule="PocketChem" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Draw" id="gBp-fb-7z8" customClass="DrawViewController" customModule="PocketChem" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nAl-e1-IhM"/>
                         <viewControllerLayoutGuide type="bottom" id="OWp-SQ-wRY"/>
@@ -708,7 +708,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="openCameraDrawView:" destination="gBp-fb-7z8" eventType="touchUpInside" id="xfH-79-qmu"/>
+                                    <action selector="openCameraDrawView:" destination="gBp-fb-7z8" eventType="touchUpInside" id="ae7-r5-end"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2T-3B-jzj" userLabel="Cards Button" customClass="ShadowButton" customModule="PocketChem" customModuleProvider="target">

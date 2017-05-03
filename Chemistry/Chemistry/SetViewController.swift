@@ -5,6 +5,10 @@ class SetViewController: ViewController{
     @IBOutlet weak var swipeView: UIImageView!
     let swipeRec = UISwipeGestureRecognizer()
     
+    var setImageList:[String] = ["IUPAC1@0.5x", "IUPAC2@0.5x"]
+    let setMaxImages = 1
+    var setImageIndex: NSInteger = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2B2AB2FD1EBA523600DB06DD /* SetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2AB2FC1EBA523600DB06DD /* SetViewController.swift */; };
+		2B2AB3001EBA54B900DB06DD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2AB2FF1EBA54B900DB06DD /* HomeViewController.swift */; };
+		2B2AB3021EBA54E100DB06DD /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2AB3011EBA54E100DB06DD /* CardViewController.swift */; };
+		2B2AB3041EBA54F400DB06DD /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2AB3031EBA54F400DB06DD /* DrawViewController.swift */; };
+		2B2AB3061EBA551500DB06DD /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2AB3051EBA551500DB06DD /* QuizViewController.swift */; };
 		6061D8EB1E9D83870034E0CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6061D8EA1E9D83870034E0CB /* AppDelegate.swift */; };
 		6061D8ED1E9D83870034E0CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6061D8EC1E9D83870034E0CB /* ViewController.swift */; };
 		6061D8F01E9D83870034E0CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6061D8EE1E9D83870034E0CB /* Main.storyboard */; };
@@ -27,6 +31,10 @@
 
 /* Begin PBXFileReference section */
 		2B2AB2FC1EBA523600DB06DD /* SetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetViewController.swift; sourceTree = "<group>"; };
+		2B2AB2FF1EBA54B900DB06DD /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2B2AB3011EBA54E100DB06DD /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		2B2AB3031EBA54F400DB06DD /* DrawViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
+		2B2AB3051EBA551500DB06DD /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		6061D8E71E9D83870034E0CB /* PocketChem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketChem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6061D8EA1E9D83870034E0CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6061D8EC1E9D83870034E0CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +66,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B2AB2FE1EBA548100DB06DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6061D8EC1E9D83870034E0CB /* ViewController.swift */,
+				2B2AB2FC1EBA523600DB06DD /* SetViewController.swift */,
+				2B2AB2FF1EBA54B900DB06DD /* HomeViewController.swift */,
+				2B2AB3011EBA54E100DB06DD /* CardViewController.swift */,
+				2B2AB3031EBA54F400DB06DD /* DrawViewController.swift */,
+				2B2AB3051EBA551500DB06DD /* QuizViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		6061D8DE1E9D83870034E0CB = {
 			isa = PBXGroup;
 			children = (
@@ -78,9 +99,8 @@
 		6061D8E91E9D83870034E0CB /* Chemistry */ = {
 			isa = PBXGroup;
 			children = (
+				2B2AB2FE1EBA548100DB06DD /* Views */,
 				6061D8EA1E9D83870034E0CB /* AppDelegate.swift */,
-				6061D8EC1E9D83870034E0CB /* ViewController.swift */,
-				2B2AB2FC1EBA523600DB06DD /* SetViewController.swift */,
 				6061D8EE1E9D83870034E0CB /* Main.storyboard */,
 				6061D8F11E9D83870034E0CB /* Assets.xcassets */,
 				6061D8F31E9D83870034E0CB /* LaunchScreen.storyboard */,
@@ -193,11 +213,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B2AB3041EBA54F400DB06DD /* DrawViewController.swift in Sources */,
 				CDBEFDA51EA46CEB00697468 /* KDCircularProgress.swift in Sources */,
+				2B2AB3021EBA54E100DB06DD /* CardViewController.swift in Sources */,
 				2B2AB2FD1EBA523600DB06DD /* SetViewController.swift in Sources */,
 				6061D8ED1E9D83870034E0CB /* ViewController.swift in Sources */,
 				C8053D381EB0F431008A58E3 /* MyCollectionViewCell.swift in Sources */,
+				2B2AB3061EBA551500DB06DD /* QuizViewController.swift in Sources */,
 				6061D8EB1E9D83870034E0CB /* AppDelegate.swift in Sources */,
+				2B2AB3001EBA54B900DB06DD /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,73 +1,14 @@
 import UIKit
 
-////////////////////////////////////////
-//          Global Variables          //
-////////////////////////////////////////
-
-//SET VIEW - setImageView
-var setImageList:[String] = ["IUPAC1@0.5x", "IUPAC2@0.5x"]
-let setMaxImages = 1
-var setImageIndex: NSInteger = 0
-
-////////////////////////////////////////////////////////////
-//                     ViewController                     //
-////////////////////////////////////////////////////////////
 class ViewController: UIViewController, UIImagePickerControllerDelegate,
     UINavigationControllerDelegate {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
-    // DRAW VIEW ///////////////////////////////////////////////
-    
-    //open camera button
-    @IBAction func openCameraDrawView(_ sender: AnyObject) {
-        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
-            let imagePicker = UIImagePickerController()
-            imagePicker.delegate = self
-            imagePicker.sourceType = UIImagePickerControllerSourceType.camera;
-            imagePicker.allowsEditing = false
-            self.present(imagePicker, animated: true, completion: nil)
-        }
-    }
-    
-    // HOME VIEW ////////////////////////////////////////////////
-    
-    //plus button
-    @IBOutlet var plusButton: RoundButton!
-    
-    @IBAction func plusButtonPress(_ sender: AnyObject) {
-        if (self.plusButton.isPressed) {
-            self.plusButton.isPressed = false
-            rotateButton(angle: (0.0), duration: 0.1, button: self.plusButton)
-            fadeOutButton(duration: 0.1, button: self.cameraButton)
-        } else {
-            self.plusButton.isPressed = true
-            rotateButton(angle: (CGFloat(Double.pi/4.0)), duration: 0.1, button: self.plusButton)
-            fadeInButton(duration: 0.1, button: self.cameraButton)
-        }
-    }
-    
-    //camera button
-    @IBOutlet var cameraButton: CameraButton!
-
-    @IBAction func openCameraHomeView(_ sender: AnyObject) {
-        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
-            let imagePicker = UIImagePickerController()
-            imagePicker.delegate = self
-            imagePicker.sourceType = UIImagePickerControllerSourceType.camera;
-            imagePicker.allowsEditing = false
-            self.present(imagePicker, animated: true, completion: nil)
-        }
-    }
-    
-    // SET VIEW //////////////////////////////////////////////////
 }
 
-////////////////////////////////////////
-//             Animations             //
-////////////////////////////////////////
+////////////////Animations////////////////////
 
 func rotateButton(angle: CGFloat, duration: Double, button: UIButton) {
     UIView.animate(withDuration: duration) {
@@ -100,9 +41,7 @@ func shrinkAndGrowButton(duration: Double, button: UIButton) {
      })
 }
 
-////////////////////////////////////////
-//             UI Classes             //
-////////////////////////////////////////
+////////////////UI Classes/////////////////////
 
 class ShadowButton: UIButton {
     override func awakeFromNib() {
