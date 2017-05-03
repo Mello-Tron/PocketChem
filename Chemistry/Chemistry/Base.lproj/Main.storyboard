@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="04I-ZG-yz2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="04I-ZG-yz2">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -347,7 +347,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="04I-ZG-yz2" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="xpK-vR-hyH" customClass="ShadowNavBar" customModule="PocketChem" customModuleProvider="target">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xpK-vR-hyH" customClass="ShadowNavBar" customModule="PocketChem" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -566,13 +566,92 @@
                     <view key="view" contentMode="scaleToFill" id="FKr-Dx-OSM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IUPAC1" translatesAutoresizingMaskIntoConstraints="NO" id="YDw-xz-FSd">
+                                <rect key="frame" x="16" y="199" width="343" height="269"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="269" id="3Ur-Dq-Ibf"/>
+                                    <constraint firstAttribute="width" constant="343" id="xPH-hj-7GJ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     AMINO ACIDS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRs-re-a0M" userLabel="Molecule Label" customClass="ShadowLabel" customModule="PocketChem" customModuleProvider="target">
+                                <rect key="frame" x="16" y="82" width="343" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="iCm-iQ-vXe"/>
+                                    <constraint firstAttribute="width" constant="343" id="j7L-kQ-raP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 RIGHT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Flz-Es-DsA">
+                                <rect key="frame" x="191" y="82" width="68" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="GZH-rv-aee"/>
+                                    <constraint firstAttribute="width" constant="68" id="pKk-Nx-7TV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 WRONG" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3N-DF-CU8">
+                                <rect key="frame" x="267" y="82" width="96" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="VMj-2g-O2H"/>
+                                    <constraint firstAttribute="height" constant="45" id="hc1-Gt-Ugl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ByO-4r-kUc">
+                                <rect key="frame" x="16" y="144" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="R8c-bU-Hcs"/>
+                                    <constraint firstAttribute="width" constant="343" id="dpZ-rj-SdI"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSe-Rw-Nmt">
+                                <rect key="frame" x="166" y="208" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="5yS-yf-65X"/>
+                                    <constraint firstAttribute="height" constant="21" id="c7s-1g-qXf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                                <color key="textColor" red="0.40784313725490196" green="0.40784313725490196" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="XSe-Rw-Nmt" secondAttribute="trailing" constant="151" id="5hd-1B-wKl"/>
+                            <constraint firstItem="ByO-4r-kUc" firstAttribute="top" secondItem="J3N-DF-CU8" secondAttribute="bottom" constant="17" id="9Dw-Ne-FDW"/>
+                            <constraint firstItem="ByO-4r-kUc" firstAttribute="trailing" secondItem="FKr-Dx-OSM" secondAttribute="trailingMargin" id="CpS-Px-2AC"/>
+                            <constraint firstItem="YDw-xz-FSd" firstAttribute="trailing" secondItem="FKr-Dx-OSM" secondAttribute="trailingMargin" id="GLF-9R-Pev"/>
+                            <constraint firstItem="sRs-re-a0M" firstAttribute="leading" secondItem="FKr-Dx-OSM" secondAttribute="leadingMargin" id="HU6-Ps-uaw"/>
+                            <constraint firstItem="Flz-Es-DsA" firstAttribute="top" secondItem="hPj-jH-X0P" secondAttribute="bottom" constant="18" id="IsS-Bv-fR1"/>
+                            <constraint firstItem="ByO-4r-kUc" firstAttribute="leading" secondItem="FKr-Dx-OSM" secondAttribute="leadingMargin" id="NvC-cE-AsO"/>
+                            <constraint firstItem="J3N-DF-CU8" firstAttribute="top" secondItem="hPj-jH-X0P" secondAttribute="bottom" constant="18" id="OGC-xT-Phv"/>
+                            <constraint firstItem="YDw-xz-FSd" firstAttribute="leading" secondItem="FKr-Dx-OSM" secondAttribute="leadingMargin" id="Wh4-gW-919"/>
+                            <constraint firstItem="YDw-xz-FSd" firstAttribute="top" secondItem="ByO-4r-kUc" secondAttribute="bottom" constant="25" id="gm3-yL-ueW"/>
+                            <constraint firstItem="sRs-re-a0M" firstAttribute="trailing" secondItem="FKr-Dx-OSM" secondAttribute="trailingMargin" id="h3Y-dZ-Ly5"/>
+                            <constraint firstAttribute="trailing" secondItem="J3N-DF-CU8" secondAttribute="trailing" constant="12" id="j2N-Hh-Xdb"/>
+                            <constraint firstItem="sRs-re-a0M" firstAttribute="top" secondItem="hPj-jH-X0P" secondAttribute="bottom" constant="18" id="niA-b9-zry"/>
+                            <constraint firstItem="XSe-Rw-Nmt" firstAttribute="top" secondItem="ByO-4r-kUc" secondAttribute="bottom" constant="34" id="ouu-74-Bzt"/>
+                            <constraint firstItem="XSe-Rw-Nmt" firstAttribute="leading" secondItem="FKr-Dx-OSM" secondAttribute="leadingMargin" constant="150" id="xzE-Fx-QDH"/>
+                            <constraint firstItem="Flz-Es-DsA" firstAttribute="leading" secondItem="FKr-Dx-OSM" secondAttribute="leadingMargin" constant="175" id="yTp-Aj-TOa"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="QUIZ" id="O6B-rR-Voy" userLabel="Quiz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ckv-xO-IaY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1617" y="1764"/>
+            <point key="canvasLocation" x="1616.8" y="1763.568215892054"/>
         </scene>
         <!--Draw-->
         <scene sceneID="ubf-W8-hL1">
