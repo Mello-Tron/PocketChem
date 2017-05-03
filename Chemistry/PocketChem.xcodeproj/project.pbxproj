@@ -85,15 +85,6 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
-		2B2AB3071EBA56D800DB06DD /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				6061D8EE1E9D83870034E0CB /* Main.storyboard */,
-				6061D8F31E9D83870034E0CB /* LaunchScreen.storyboard */,
-			);
-			name = Storyboards;
-			sourceTree = "<group>";
-		};
 		2B2AB3081EBA571300DB06DD /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,7 +121,8 @@
 				CDF1ED901EB937FA00FF9137 /* Fonts */,
 				6061D8F61E9D83870034E0CB /* Info.plist */,
 				C8053D371EB0F431008A58E3 /* MyCollectionViewCell.swift */,
-				2B2AB3071EBA56D800DB06DD /* Storyboards */,
+				6061D8EE1E9D83870034E0CB /* Main.storyboard */,
+				6061D8F31E9D83870034E0CB /* LaunchScreen.storyboard */,
 				2B2AB3081EBA571300DB06DD /* UI */,
 				2B2AB2FE1EBA548100DB06DD /* Views */,
 			);
