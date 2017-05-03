@@ -44,7 +44,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
             fadeOutButton(duration: 0.1, button: self.cameraButton)
         } else {
             self.plusButton.isPressed = true
-            rotateButton(angle: (Double.pi/4.0), duration: 0.1, button: self.plusButton)
+            rotateButton(angle: (CGFloat(Double.pi/4.0)), duration: 0.1, button: self.plusButton)
             fadeInButton(duration: 0.1, button: self.cameraButton)
         }
     }
