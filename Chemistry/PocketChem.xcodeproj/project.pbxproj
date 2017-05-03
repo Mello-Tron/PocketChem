@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B2AB2FD1EBA523600DB06DD /* SetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2AB2FC1EBA523600DB06DD /* SetViewController.swift */; };
 		6061D8EB1E9D83870034E0CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6061D8EA1E9D83870034E0CB /* AppDelegate.swift */; };
 		6061D8ED1E9D83870034E0CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6061D8EC1E9D83870034E0CB /* ViewController.swift */; };
 		6061D8F01E9D83870034E0CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6061D8EE1E9D83870034E0CB /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B2AB2FC1EBA523600DB06DD /* SetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetViewController.swift; sourceTree = "<group>"; };
 		6061D8E71E9D83870034E0CB /* PocketChem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketChem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6061D8EA1E9D83870034E0CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6061D8EC1E9D83870034E0CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			children = (
 				6061D8EA1E9D83870034E0CB /* AppDelegate.swift */,
 				6061D8EC1E9D83870034E0CB /* ViewController.swift */,
+				2B2AB2FC1EBA523600DB06DD /* SetViewController.swift */,
 				6061D8EE1E9D83870034E0CB /* Main.storyboard */,
 				6061D8F11E9D83870034E0CB /* Assets.xcassets */,
 				6061D8F31E9D83870034E0CB /* LaunchScreen.storyboard */,
@@ -136,7 +139,7 @@
 				TargetAttributes = {
 					6061D8E61E9D83870034E0CB = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = D764TTT65D;
+						DevelopmentTeam = 6C8PUPR5FG;
 						LastSwiftMigration = 0820;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDBEFDA51EA46CEB00697468 /* KDCircularProgress.swift in Sources */,
+				2B2AB2FD1EBA523600DB06DD /* SetViewController.swift in Sources */,
 				6061D8ED1E9D83870034E0CB /* ViewController.swift in Sources */,
 				C8053D381EB0F431008A58E3 /* MyCollectionViewCell.swift in Sources */,
 				6061D8EB1E9D83870034E0CB /* AppDelegate.swift in Sources */,
@@ -313,10 +317,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = PocketChem.entitlements;
-				DEVELOPMENT_TEAM = D764TTT65D;
+				DEVELOPMENT_TEAM = 6C8PUPR5FG;
 				INFOPLIST_FILE = Chemistry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kkat.game.chemistry;
+				PRODUCT_BUNDLE_IDENTIFIER = pat.game.chemistry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -327,10 +331,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = PocketChem.entitlements;
-				DEVELOPMENT_TEAM = D764TTT65D;
+				DEVELOPMENT_TEAM = 6C8PUPR5FG;
 				INFOPLIST_FILE = Chemistry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kkat.game.chemistry;
+				PRODUCT_BUNDLE_IDENTIFIER = pat.game.chemistry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;

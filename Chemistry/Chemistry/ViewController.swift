@@ -14,10 +14,6 @@ var setImageIndex: NSInteger = 0
 ////////////////////////////////////////////////////////////
 class ViewController: UIViewController, UIImagePickerControllerDelegate,
     UINavigationControllerDelegate {
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -48,7 +44,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
             fadeOutButton(duration: 0.1, button: self.cameraButton)
         } else {
             self.plusButton.isPressed = true
-            rotateButton(angle: (CGFloat(M_PI)/4.0), duration: 0.1, button: self.plusButton)
+            rotateButton(angle: (Double.pi/4.0), duration: 0.1, button: self.plusButton)
             fadeInButton(duration: 0.1, button: self.cameraButton)
         }
     }
@@ -67,33 +63,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
     }
     
     // SET VIEW //////////////////////////////////////////////////
-    
-    //image array
-    @IBOutlet var setImageView: UIImageView!
-    
-    func swiped(gesture: UIGestureRecognizer) {
-        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
-            switch swipeGesture.direction {
-                
-            case UISwipeGestureRecognizerDirection.right :
-                setImageIndex -= 1
-                if setImageIndex < 0 {
-                    setImageIndex = setMaxImages
-                }
-                setImageView.image = UIImage(named: setImageList[setImageIndex])
-                
-            case UISwipeGestureRecognizerDirection.left:
-                setImageIndex += 1
-                if setImageIndex > setMaxImages {
-                    setImageIndex = 0
-                }
-                setImageView.image = UIImage(named: setImageList[setImageIndex])
-                
-            default:
-                break
-            }
-        }
-    }
 }
 
 ////////////////////////////////////////
