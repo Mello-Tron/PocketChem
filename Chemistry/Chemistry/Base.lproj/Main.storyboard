@@ -40,7 +40,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ubn-Hz-RNw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1617" y="42"/>
+            <point key="canvasLocation" x="1616.8" y="41.829085457271368"/>
         </scene>
         <!--POCKETCHEM-->
         <scene sceneID="tne-QT-ifu">
@@ -65,7 +65,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0J-D4-DxN" customClass="RoundButton" customModule="Chemistry" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0J-D4-DxN" customClass="RoundButton" customModule="Chemistry" customModuleProvider="target">
                                 <rect key="frame" x="299" y="587" width="60" height="60"/>
                                 <color key="backgroundColor" red="0.9269263744354248" green="0.33858892321586609" blue="0.40648648142814636" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
@@ -172,6 +172,17 @@
                                     <segue destination="9WZ-0P-9R4" kind="show" id="Oix-tv-RHt"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcc-7I-rA4" customClass="CameraButton" customModule="Chemistry" customModuleProvider="target">
+                                <rect key="frame" x="224" y="517" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <state key="normal" image="cameraBtn@0.25x">
+                                    <color key="titleColor" red="0.9959825873" green="0.99621325729999999" blue="0.99187678099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="openCameraHomeView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q15-cd-jfZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.94107431173324585" green="0.94123536348342896" blue="0.94106405973434448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -219,6 +230,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="cameraButton" destination="xcc-7I-rA4" id="MUS-5o-rFm"/>
                         <outlet property="plusButton" destination="l0J-D4-DxN" id="6rn-li-peN"/>
                     </connections>
                 </viewController>
@@ -234,11 +246,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="xpK-vR-hyH" customClass="ShadowNavBar" customModule="Chemistry" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.82343930006027222" green="0.82358139753341675" blue="0.82343035936355591" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" red="0.94891661405563354" green="0.94907897710800171" blue="0.94890636205673218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.5607843137254902" green="0.5607843137254902" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -609,6 +620,7 @@
         <image name="FlagUnselected" width="595" height="681"/>
         <image name="MaleProfile" width="375" height="375"/>
         <image name="PlusSign" width="576" height="576"/>
+        <image name="cameraBtn@0.25x" width="150" height="150"/>
         <image name="gear" width="512" height="512"/>
     </resources>
 </document>
