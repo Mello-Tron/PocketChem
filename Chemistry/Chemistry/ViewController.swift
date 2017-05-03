@@ -19,7 +19,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         // attempt to test DBManager
         
         let marrMolInfo : NSMutableArray = DBManager().getAllData()
-        print(marrMolInfo)
+
+        //print(marrMolInfo)
+
     }
 
     override func didReceiveMemoryWarning() {

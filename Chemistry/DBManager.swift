@@ -20,7 +20,7 @@ class DBManager: NSObject {
      static let shared: DBManager = DBManager() // the second way. both have the same error
      private let dbFileName = "mol.db"
      //private var database:FMDatabase!
-    var database = FMDatabase(path: "path")
+    var database = FMDatabase(path: "/Users/kshaw17/Documents/database/mol.db")
     // */
     class func getInstance() -> DBManager // Here is the problem child. I read in a thread that "getInstance" is inadvisable and that sharedInstance should be a static property of the class...? Possibly a solution but unsure how to implement
     {
@@ -37,7 +37,7 @@ class DBManager: NSObject {
     func getAllData() -> NSMutableArray // The important method that should retrieve data into array
     {
         sharedInstance.database!.open() // Here is where the run fails, but the problem is, I believe, with sharedInstance
-        let resultSet: FMResultSet! = sharedInstance.database!.executeQuery("SELECT * FROM student_info", withArgumentsIn: nil)
+        let resultSet: FMResultSet! = sharedInstance.database!.executeQuery("SELECT * FROM mol", withArgumentsIn: nil)
         let marrStudentInfo : NSMutableArray = NSMutableArray()
         if (resultSet != nil)
         {
@@ -48,31 +48,17 @@ class DBManager: NSObject {
                 moleculeInfo.name = resultSet.string(forColumn: "name")
                 moleculeInfo.IUPAC = resultSet.string(forColumn: "IUPAC")
                 marrStudentInfo.add(moleculeInfo)
+                print("Here is the info",  moleculeInfo.name, ", ", moleculeInfo.cid, ", ", moleculeInfo.IUPAC, "\n")
             }
         }
         
-        print(marrStudentInfo) // for testing
+        for i in 0 ..< 10
+        {
+          //  print(marrStudentInfo.value(forKey: name))
+        }// for testing
         
         sharedInstance.database!.close()
         return marrStudentInfo
     }
-    
-    
-    /*
-     func openDatabase() -> Bool
-     {
-     if database == nil{
-     
-     }
-     }
-     
-     
-     
-     override init()
-     {
-     openDatabase()
-     }
-     
-     
-     */
+
 }
