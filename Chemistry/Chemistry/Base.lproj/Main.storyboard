@@ -28,7 +28,7 @@
         <!--SETTINGS-->
         <scene sceneID="hWn-oS-1Ib">
             <objects>
-                <viewController title="SETTINGS" id="vDT-tS-OhI" customClass="ViewController" customModule="Chemistry" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SETTINGS" id="vDT-tS-OhI" customClass="ViewController" customModule="PocketChem" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PiN-vi-2Gt"/>
                         <viewControllerLayoutGuide type="bottom" id="ImH-f9-Fv6"/>
@@ -46,7 +46,7 @@
         <!--POCKETCHEM-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Chemistry" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PocketChem" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -55,14 +55,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vco-Bz-CBe" customClass="ShadowLabel" customModule="Chemistry" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vco-Bz-CBe" customClass="ShadowLabel" customModule="PocketChem" customModuleProvider="target">
                                 <rect key="frame" x="19" y="81" width="337" height="251"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0J-D4-DxN" customClass="RoundButton" customModule="Chemistry" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0J-D4-DxN" customClass="RoundButton" customModule="PocketChem" customModuleProvider="target">
                                 <rect key="frame" x="299" y="587" width="60" height="60"/>
                                 <color key="backgroundColor" red="0.9269263744354248" green="0.33858892321586609" blue="0.40648648142814636" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
@@ -76,7 +76,7 @@
                                     <action selector="plusButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hy9-qd-3JY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcc-7I-rA4" customClass="CameraButton" customModule="Chemistry" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcc-7I-rA4" customClass="CameraButton" customModule="PocketChem" customModuleProvider="target">
                                 <rect key="frame" x="224" y="517" width="90" height="90"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -89,14 +89,14 @@
                                     <action selector="openCameraHomeView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q15-cd-jfZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okK-O5-tPn" customClass="ShadowLabel" customModule="Chemistry" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okK-O5-tPn" customClass="ShadowLabel" customModule="PocketChem" customModuleProvider="target">
                                 <rect key="frame" x="19" y="332" width="337" height="53"/>
                                 <color key="backgroundColor" red="0.60233545303344727" green="0.69558030366897583" blue="0.22132423520088196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                 <color key="textColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ia1-Rh-aAp" customClass="KDCircularProgress" customModule="Chemistry" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ia1-Rh-aAp" customClass="KDCircularProgress" customModule="PocketChem" customModuleProvider="target">
                                 <rect key="frame" x="91" y="81" width="200" height="200"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MaleProfile" translatesAutoresizingMaskIntoConstraints="NO" id="HY5-04-Sqo">
@@ -158,7 +158,7 @@
                                 <fontDescription key="fontDescription" name="Ubuntu-Light" family="Ubuntu" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usi-nh-r1q" userLabel="Draw Button" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usi-nh-r1q" userLabel="Draw Button" customClass="ShadowButton" customModule="PocketChem" customModuleProvider="target">
                                 <rect key="frame" x="19" y="403" width="106" height="106"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" image="IUPAC1@0.5x">
@@ -168,14 +168,14 @@
                                     <segue destination="9WZ-0P-9R4" kind="show" id="Oix-tv-RHt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qe-mQ-IWy" userLabel="Draw Button" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qe-mQ-IWy" userLabel="Draw Button" customClass="ShadowButton" customModule="PocketChem" customModuleProvider="target">
                                 <rect key="frame" x="134" y="403" width="106" height="106"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" image="IUPAC2@0.5x">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2E5-O6-7GB" userLabel="Draw Button" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2E5-O6-7GB" userLabel="Draw Button" customClass="ShadowButton" customModule="PocketChem" customModuleProvider="target">
                                 <rect key="frame" x="250" y="403" width="106" height="106"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" image="IUPAC1@0.5x">
@@ -224,7 +224,7 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00j-Uk-oZu" userLabel="Draw Button" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00j-Uk-oZu" userLabel="Draw Button" customClass="ShadowButton" customModule="PocketChem" customModuleProvider="target">
                                 <rect key="frame" x="19" y="527" width="106" height="106"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" image="IUPAC2@0.5x">
@@ -347,7 +347,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="04I-ZG-yz2" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="xpK-vR-hyH" customClass="ShadowNavBar" customModule="Chemistry" customModuleProvider="target">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="xpK-vR-hyH" customClass="ShadowNavBar" customModule="PocketChem" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -368,7 +368,7 @@
         <!--SET-->
         <scene sceneID="8G3-v2-I9T">
             <objects>
-                <viewController title="SET" id="9WZ-0P-9R4" customClass="ViewController" customModule="Chemistry" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SET" id="9WZ-0P-9R4" customClass="ViewController" customModule="PocketChem" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uOu-n2-zZo"/>
                         <viewControllerLayoutGuide type="bottom" id="P0U-Zl-24G"/>
@@ -377,7 +377,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oC5-fq-8MD" userLabel="Cards Button" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oC5-fq-8MD" userLabel="Cards Button" customClass="ShadowButton" customModule="PocketChem" customModuleProvider="target">
                                 <rect key="frame" x="19" y="82" width="337" height="80"/>
                                 <color key="backgroundColor" red="0.97254901959999995" green="0.75294117650000003" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -391,7 +391,7 @@
                                     <segue destination="lcQ-9U-nfj" kind="show" id="iBk-r5-Yxf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T83-Nb-SfM" userLabel="Draw Button" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T83-Nb-SfM" userLabel="Draw Button" customClass="ShadowButton" customModule="PocketChem" customModuleProvider="target">
                                 <rect key="frame" x="19" y="180" width="337" height="80"/>
                                 <color key="backgroundColor" red="0.92549019610000005" green="0.33725490200000002" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -405,7 +405,7 @@
                                     <segue destination="gBp-fb-7z8" kind="show" id="1Dq-oU-gdR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGe-mE-c49" userLabel="Quiz Button" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGe-mE-c49" userLabel="Quiz Button" customClass="ShadowButton" customModule="PocketChem" customModuleProvider="target">
                                 <rect key="frame" x="19" y="278" width="337" height="80"/>
                                 <color key="backgroundColor" red="0.61176470589999998" green="0.69803921570000005" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -422,8 +422,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IUPAC1" translatesAutoresizingMaskIntoConstraints="NO" id="9aA-kv-mGg">
                                 <rect key="frame" x="19" y="439" width="337" height="208"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     SERINE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZQ-v3-vyl" userLabel="Molecule Label" customClass="ShadowLabel" customModule="Chemistry" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     SERINE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZQ-v3-vyl" userLabel="Molecule Label" customClass="ShadowLabel" customModule="PocketChem" customModuleProvider="target">
                                 <rect key="frame" x="19" y="376" width="337" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -470,6 +471,9 @@
                     <navigationItem key="navigationItem" title="ALKANES" id="3Ye-Ac-aKO">
                         <barButtonItem key="backBarButtonItem" title="SET" id="usH-w8-GKh"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="setImageView" destination="9aA-kv-mGg" id="5yb-tk-iEn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5WL-MA-E4a" sceneMemberID="firstResponder"/>
             </objects>
@@ -478,7 +482,7 @@
         <!--Notecard-->
         <scene sceneID="wTv-CK-f3f">
             <objects>
-                <viewController title="Notecard" id="lcQ-9U-nfj" customClass="ViewController" customModule="Chemistry" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Notecard" id="lcQ-9U-nfj" customClass="ViewController" customModule="PocketChem" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mIN-Yj-c3A"/>
                         <viewControllerLayoutGuide type="bottom" id="Zei-Ai-z8R"/>
@@ -499,7 +503,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     AMINO ACIDS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ir-xh-Nil" userLabel="Molecule Label" customClass="ShadowLabel" customModule="Chemistry" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     AMINO ACIDS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ir-xh-Nil" userLabel="Molecule Label" customClass="ShadowLabel" customModule="PocketChem" customModuleProvider="target">
                                 <rect key="frame" x="16" y="84" width="343" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -554,7 +558,7 @@
         <!--Quiz-->
         <scene sceneID="8q6-Pm-t1a">
             <objects>
-                <viewController title="Quiz" id="HZl-H1-suN" customClass="ViewController" customModule="Chemistry" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Quiz" id="HZl-H1-suN" customClass="ViewController" customModule="PocketChem" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hPj-jH-X0P"/>
                         <viewControllerLayoutGuide type="bottom" id="Edx-Uh-Exf"/>
@@ -573,7 +577,7 @@
         <!--Draw-->
         <scene sceneID="ubf-W8-hL1">
             <objects>
-                <viewController title="Draw" id="gBp-fb-7z8" customClass="ViewController" customModule="Chemistry" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Draw" id="gBp-fb-7z8" customClass="ViewController" customModule="PocketChem" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nAl-e1-IhM"/>
                         <viewControllerLayoutGuide type="bottom" id="OWp-SQ-wRY"/>
@@ -582,7 +586,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mV9-b1-8g3" customClass="ShadowLabel" customModule="Chemistry" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mV9-b1-8g3" customClass="ShadowLabel" customModule="PocketChem" customModuleProvider="target">
                                 <rect key="frame" x="16" y="145" width="343" height="269"/>
                                 <color key="backgroundColor" red="0.9999127984046936" green="1" blue="0.99988144636154175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -613,7 +617,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qal-1h-cZs" userLabel="Cards Button" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qal-1h-cZs" userLabel="Cards Button" customClass="ShadowButton" customModule="PocketChem" customModuleProvider="target">
                                 <rect key="frame" x="16" y="451" width="343" height="80"/>
                                 <color key="backgroundColor" red="0.92549019610000005" green="0.33725490200000002" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -628,7 +632,7 @@
                                     <action selector="openCameraDrawView:" destination="gBp-fb-7z8" eventType="touchUpInside" id="xfH-79-qmu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2T-3B-jzj" userLabel="Cards Button" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2T-3B-jzj" userLabel="Cards Button" customClass="ShadowButton" customModule="PocketChem" customModuleProvider="target">
                                 <rect key="frame" x="16" y="549" width="343" height="80"/>
                                 <color key="backgroundColor" red="0.97254901959999995" green="0.75294117650000003" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -650,7 +654,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     AMINO ACIDS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YA-Le-DVC" userLabel="Molecule Label" customClass="ShadowLabel" customModule="Chemistry" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     AMINO ACIDS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YA-Le-DVC" userLabel="Molecule Label" customClass="ShadowLabel" customModule="PocketChem" customModuleProvider="target">
                                 <rect key="frame" x="16" y="82" width="343" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>

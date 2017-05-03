@@ -1,13 +1,17 @@
 import UIKit
 
 ////////////////////////////////////////
-//           ViewController           //
-////////////////////////////////////////
-// Make sure this is the class for every
-// view in our project (option can be
-// found in the storyboard).
+//          Global Variables          //
 ////////////////////////////////////////
 
+//SET VIEW - setImageView
+var setImageList:[String] = ["IUPAC1@0.5x", "IUPAC2@0.5x"]
+let setMaxImages = 1
+var setImageIndex: NSInteger = 0
+
+////////////////////////////////////////////////////////////
+//                     ViewController                     //
+////////////////////////////////////////////////////////////
 class ViewController: UIViewController, UIImagePickerControllerDelegate,
     UINavigationControllerDelegate {
     
@@ -18,7 +22,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
 
     // DRAW VIEW ///////////////////////////////////////////////
     
@@ -63,6 +66,34 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
         }
     }
     
+    // SET VIEW //////////////////////////////////////////////////
+    
+    //image array
+    @IBOutlet var setImageView: UIImageView!
+    
+    func swiped(gesture: UIGestureRecognizer) {
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+            switch swipeGesture.direction {
+                
+            case UISwipeGestureRecognizerDirection.right :
+                setImageIndex -= 1
+                if setImageIndex < 0 {
+                    setImageIndex = setMaxImages
+                }
+                setImageView.image = UIImage(named: setImageList[setImageIndex])
+                
+            case UISwipeGestureRecognizerDirection.left:
+                setImageIndex += 1
+                if setImageIndex > setMaxImages {
+                    setImageIndex = 0
+                }
+                setImageView.image = UIImage(named: setImageList[setImageIndex])
+                
+            default:
+                break
+            }
+        }
+    }
 }
 
 ////////////////////////////////////////
