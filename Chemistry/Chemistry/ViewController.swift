@@ -149,7 +149,7 @@ class ShadowNavBar: UINavigationBar {
 }
 
 class RoundButton: UIButton {
-    var isPressed = true
+    var isPressed = false
     
     override func awakeFromNib() {
         //Make circular
