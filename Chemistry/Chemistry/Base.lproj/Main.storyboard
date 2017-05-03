@@ -171,7 +171,7 @@
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qe-mQ-IWy" userLabel="Draw Button" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
                                 <rect key="frame" x="134" y="403" width="106" height="106"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" image="IUPAC1@0.5x">
+                                <state key="normal" image="IUPAC2@0.5x">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -227,7 +227,7 @@
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00j-Uk-oZu" userLabel="Draw Button" customClass="ShadowButton" customModule="Chemistry" customModuleProvider="target">
                                 <rect key="frame" x="19" y="527" width="106" height="106"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" image="IUPAC1@0.5x">
+                                <state key="normal" image="IUPAC2@0.5x">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -323,7 +323,7 @@
                     <navigationItem key="navigationItem" title="POCKETCHEM" id="Elf-Ht-Lhm">
                         <barButtonItem key="backBarButtonItem" title="HOME" id="NmD-vS-u7a"/>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="Nfb-06-Hgr">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="w79-9a-9Y0">
+                            <button key="customView" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="w79-9a-9Y0">
                                 <rect key="frame" x="339" y="12" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="gear"/>
@@ -381,7 +381,7 @@
                                 <rect key="frame" x="19" y="82" width="337" height="80"/>
                                 <color key="backgroundColor" red="0.97254901959999995" green="0.75294117650000003" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="Krj-pv-riy"/>
+                                    <constraint firstAttribute="height" constant="80" id="KCn-Iu-MIB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="28"/>
                                 <state key="normal" title="CARDS">
@@ -395,7 +395,7 @@
                                 <rect key="frame" x="19" y="180" width="337" height="80"/>
                                 <color key="backgroundColor" red="0.92549019610000005" green="0.33725490200000002" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="g5y-mh-DZk"/>
+                                    <constraint firstAttribute="height" constant="80" id="Vuu-00-kuw"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="28"/>
                                 <state key="normal" title="DRAW">
@@ -409,7 +409,7 @@
                                 <rect key="frame" x="19" y="278" width="337" height="80"/>
                                 <color key="backgroundColor" red="0.61176470589999998" green="0.69803921570000005" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="C9Z-uQ-oBb"/>
+                                    <constraint firstAttribute="height" constant="80" id="UuW-5f-xS7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="28"/>
                                 <state key="normal" title="QUIZ">
@@ -419,18 +419,15 @@
                                     <segue destination="HZl-H1-suN" kind="show" id="SpX-CL-s3M"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9aA-kv-mGg">
-                                <rect key="frame" x="19" y="439" width="337" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="qiN-Bo-qOD"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IUPAC1" translatesAutoresizingMaskIntoConstraints="NO" id="9aA-kv-mGg">
+                                <rect key="frame" x="19" y="439" width="337" height="208"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     SERINE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZQ-v3-vyl" userLabel="Molecule Label" customClass="ShadowLabel" customModule="Chemistry" customModuleProvider="target">
                                 <rect key="frame" x="19" y="376" width="337" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="337" id="6Gg-HY-fmP"/>
-                                    <constraint firstAttribute="height" constant="45" id="lVx-DP-3Rr"/>
+                                    <constraint firstAttribute="height" constant="45" id="I1p-LK-vvk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
                                 <nil key="textColor"/>
@@ -440,8 +437,7 @@
                                 <rect key="frame" x="280" y="376" width="76" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="R2Q-hT-GXJ"/>
-                                    <constraint firstAttribute="width" constant="76" id="qkP-Sl-Ibt"/>
+                                    <constraint firstAttribute="width" constant="76" id="J5X-tv-l1A"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
                                 <nil key="textColor"/>
@@ -450,24 +446,25 @@
                         </subviews>
                         <color key="backgroundColor" red="0.94107431173324585" green="0.94123536348342896" blue="0.94106405973434448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="eZQ-v3-vyl" firstAttribute="leading" secondItem="juQ-GD-hDM" secondAttribute="leadingMargin" constant="3" id="3Sw-f3-oSD"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="oC5-fq-8MD" secondAttribute="trailing" constant="3" id="56M-Y2-qZs"/>
-                            <constraint firstItem="9aA-kv-mGg" firstAttribute="leading" secondItem="juQ-GD-hDM" secondAttribute="leadingMargin" constant="3" id="8M1-pl-Q7a"/>
-                            <constraint firstItem="T83-Nb-SfM" firstAttribute="top" secondItem="oC5-fq-8MD" secondAttribute="bottom" constant="18" id="CPj-Jz-SMp"/>
-                            <constraint firstItem="T83-Nb-SfM" firstAttribute="leading" secondItem="juQ-GD-hDM" secondAttribute="leadingMargin" constant="3" id="DbK-Ub-mS3"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="eZQ-v3-vyl" secondAttribute="trailing" constant="3" id="DiL-xs-oAC"/>
-                            <constraint firstItem="eZQ-v3-vyl" firstAttribute="top" secondItem="RGe-mE-c49" secondAttribute="bottom" constant="18" id="EBE-9c-HK7"/>
-                            <constraint firstItem="URS-Ls-bXM" firstAttribute="top" secondItem="RGe-mE-c49" secondAttribute="bottom" constant="18" id="FXg-ar-tHW"/>
-                            <constraint firstItem="RGe-mE-c49" firstAttribute="leading" secondItem="juQ-GD-hDM" secondAttribute="leadingMargin" constant="3" id="SMy-cz-dFE"/>
-                            <constraint firstItem="9aA-kv-mGg" firstAttribute="centerX" secondItem="juQ-GD-hDM" secondAttribute="centerX" id="WX7-mE-xzX"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="T83-Nb-SfM" secondAttribute="trailing" constant="3" id="gkm-BJ-j7K"/>
-                            <constraint firstItem="oC5-fq-8MD" firstAttribute="leading" secondItem="juQ-GD-hDM" secondAttribute="leadingMargin" constant="3" id="kmV-Dw-1e4"/>
-                            <constraint firstItem="RGe-mE-c49" firstAttribute="top" secondItem="T83-Nb-SfM" secondAttribute="bottom" constant="18" id="l4U-hx-KIa"/>
-                            <constraint firstItem="9aA-kv-mGg" firstAttribute="top" secondItem="URS-Ls-bXM" secondAttribute="bottom" constant="18" id="mvT-Cf-1Xx"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="URS-Ls-bXM" secondAttribute="trailing" constant="3" id="nXN-Cq-mQB"/>
-                            <constraint firstItem="oC5-fq-8MD" firstAttribute="top" secondItem="uOu-n2-zZo" secondAttribute="bottom" constant="18" id="qmO-CJ-QHI"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="9aA-kv-mGg" secondAttribute="trailing" constant="3" id="qxG-md-WPH"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="RGe-mE-c49" secondAttribute="trailing" constant="3" id="yUh-xB-YsC"/>
+                            <constraint firstItem="URS-Ls-bXM" firstAttribute="trailing" secondItem="eZQ-v3-vyl" secondAttribute="trailing" id="1mF-6H-E6Z"/>
+                            <constraint firstItem="eZQ-v3-vyl" firstAttribute="leading" secondItem="9aA-kv-mGg" secondAttribute="leading" id="32Z-Mf-BHE"/>
+                            <constraint firstItem="eZQ-v3-vyl" firstAttribute="firstBaseline" secondItem="URS-Ls-bXM" secondAttribute="firstBaseline" id="6pi-KH-dSv"/>
+                            <constraint firstItem="oC5-fq-8MD" firstAttribute="top" secondItem="uOu-n2-zZo" secondAttribute="bottom" constant="18" id="8ys-hz-qFt"/>
+                            <constraint firstItem="oC5-fq-8MD" firstAttribute="leading" secondItem="juQ-GD-hDM" secondAttribute="leadingMargin" constant="3" id="AJs-u1-CUz"/>
+                            <constraint firstItem="URS-Ls-bXM" firstAttribute="trailing" secondItem="9aA-kv-mGg" secondAttribute="trailing" id="GGJ-gJ-nmO"/>
+                            <constraint firstItem="RGe-mE-c49" firstAttribute="top" secondItem="T83-Nb-SfM" secondAttribute="bottom" constant="18" id="Hj0-ee-FVR"/>
+                            <constraint firstItem="eZQ-v3-vyl" firstAttribute="baseline" secondItem="URS-Ls-bXM" secondAttribute="baseline" id="Jrh-1N-iGW"/>
+                            <constraint firstItem="eZQ-v3-vyl" firstAttribute="top" secondItem="RGe-mE-c49" secondAttribute="bottom" constant="18" id="TOS-09-dLw"/>
+                            <constraint firstAttribute="bottom" secondItem="9aA-kv-mGg" secondAttribute="bottom" constant="20" symbolic="YES" id="UrQ-ba-qIT"/>
+                            <constraint firstItem="T83-Nb-SfM" firstAttribute="trailing" secondItem="RGe-mE-c49" secondAttribute="trailing" id="X3P-79-9r8"/>
+                            <constraint firstItem="RGe-mE-c49" firstAttribute="trailing" secondItem="eZQ-v3-vyl" secondAttribute="trailing" id="ZpG-UP-vgt"/>
+                            <constraint firstItem="T83-Nb-SfM" firstAttribute="top" secondItem="oC5-fq-8MD" secondAttribute="bottom" constant="18" id="d11-hD-XCn"/>
+                            <constraint firstItem="T83-Nb-SfM" firstAttribute="leading" secondItem="RGe-mE-c49" secondAttribute="leading" id="f5p-hv-b37"/>
+                            <constraint firstItem="oC5-fq-8MD" firstAttribute="centerX" secondItem="juQ-GD-hDM" secondAttribute="centerX" id="hd8-Pr-AbD"/>
+                            <constraint firstItem="oC5-fq-8MD" firstAttribute="leading" secondItem="T83-Nb-SfM" secondAttribute="leading" id="jdp-aS-5Xa"/>
+                            <constraint firstItem="9aA-kv-mGg" firstAttribute="top" secondItem="eZQ-v3-vyl" secondAttribute="bottom" constant="18" id="oYp-ur-hfq"/>
+                            <constraint firstItem="RGe-mE-c49" firstAttribute="leading" secondItem="eZQ-v3-vyl" secondAttribute="leading" id="tOe-fy-rFM"/>
+                            <constraint firstItem="oC5-fq-8MD" firstAttribute="trailing" secondItem="T83-Nb-SfM" secondAttribute="trailing" id="v6y-1J-Hvs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ALKANES" id="3Ye-Ac-aKO">
@@ -476,7 +473,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5WL-MA-E4a" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="849" y="911"/>
+            <point key="canvasLocation" x="848.79999999999995" y="909.89505247376314"/>
         </scene>
         <!--Notecard-->
         <scene sceneID="wTv-CK-f3f">
@@ -724,7 +721,9 @@
     </scenes>
     <resources>
         <image name="FlagUnselected" width="595" height="681"/>
+        <image name="IUPAC1" width="500" height="500"/>
         <image name="IUPAC1@0.5x" width="251" height="251"/>
+        <image name="IUPAC2@0.5x" width="251" height="251"/>
         <image name="MaleProfile" width="375" height="375"/>
         <image name="PlusSign" width="576" height="576"/>
         <image name="cameraBtn@0.25x" width="150" height="150"/>
