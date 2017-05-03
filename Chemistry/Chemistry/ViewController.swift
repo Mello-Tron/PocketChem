@@ -1,7 +1,3 @@
-//
-//  ViewController.swift
-//
-
 import UIKit
 
 ////////////////////////////////////////
@@ -10,6 +6,7 @@ import UIKit
 // Make sure this is the class for every
 // view in our project (option can be
 // found in the storyboard).
+////////////////////////////////////////
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate,
     UINavigationControllerDelegate {
@@ -22,6 +19,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
         super.didReceiveMemoryWarning()
     }
     
+
+    // DRAW VIEW ///////////////////////////////////////////////
+    
+    //open camera button
     @IBAction func openCameraDrawView(_ sender: AnyObject) {
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
             let imagePicker = UIImagePickerController()
@@ -32,6 +33,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
         }
     }
     
+    // HOME VIEW ////////////////////////////////////////////////
+    
+    //plus button
     @IBOutlet var plusButton: RoundButton!
     
     @IBAction func plusButtonPress(_ sender: AnyObject) {
@@ -46,6 +50,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
         }
     }
     
+    //camera button
     @IBOutlet var cameraButton: CameraButton!
 
     @IBAction func openCameraHomeView(_ sender: AnyObject) {
