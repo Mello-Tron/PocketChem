@@ -12,6 +12,9 @@
 		2B2AB3021EBA54E100DB06DD /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2AB3011EBA54E100DB06DD /* CardViewController.swift */; };
 		2B2AB3041EBA54F400DB06DD /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2AB3031EBA54F400DB06DD /* DrawViewController.swift */; };
 		2B2AB3061EBA551500DB06DD /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2AB3051EBA551500DB06DD /* QuizViewController.swift */; };
+		2B2AB30A1EBA574D00DB06DD /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2AB3091EBA574D00DB06DD /* Buttons.swift */; };
+		2B2AB30C1EBA57C700DB06DD /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2AB30B1EBA57C700DB06DD /* Labels.swift */; };
+		2B2AB30E1EBA57F500DB06DD /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2AB30D1EBA57F500DB06DD /* NavBar.swift */; };
 		6061D8EB1E9D83870034E0CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6061D8EA1E9D83870034E0CB /* AppDelegate.swift */; };
 		6061D8ED1E9D83870034E0CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6061D8EC1E9D83870034E0CB /* ViewController.swift */; };
 		6061D8F01E9D83870034E0CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6061D8EE1E9D83870034E0CB /* Main.storyboard */; };
@@ -35,6 +38,9 @@
 		2B2AB3011EBA54E100DB06DD /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		2B2AB3031EBA54F400DB06DD /* DrawViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
 		2B2AB3051EBA551500DB06DD /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		2B2AB3091EBA574D00DB06DD /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		2B2AB30B1EBA57C700DB06DD /* Labels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
+		2B2AB30D1EBA57F500DB06DD /* NavBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
 		6061D8E71E9D83870034E0CB /* PocketChem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketChem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6061D8EA1E9D83870034E0CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6061D8EC1E9D83870034E0CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +85,26 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		2B2AB3071EBA56D800DB06DD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6061D8EE1E9D83870034E0CB /* Main.storyboard */,
+				6061D8F31E9D83870034E0CB /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		2B2AB3081EBA571300DB06DD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CDBEFDA41EA46CEB00697468 /* KDCircularProgress.swift */,
+				2B2AB3091EBA574D00DB06DD /* Buttons.swift */,
+				2B2AB30B1EBA57C700DB06DD /* Labels.swift */,
+				2B2AB30D1EBA57F500DB06DD /* NavBar.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		6061D8DE1E9D83870034E0CB = {
 			isa = PBXGroup;
 			children = (
@@ -99,15 +125,14 @@
 		6061D8E91E9D83870034E0CB /* Chemistry */ = {
 			isa = PBXGroup;
 			children = (
-				2B2AB2FE1EBA548100DB06DD /* Views */,
 				6061D8EA1E9D83870034E0CB /* AppDelegate.swift */,
-				6061D8EE1E9D83870034E0CB /* Main.storyboard */,
 				6061D8F11E9D83870034E0CB /* Assets.xcassets */,
-				6061D8F31E9D83870034E0CB /* LaunchScreen.storyboard */,
-				6061D8F61E9D83870034E0CB /* Info.plist */,
-				CDBEFDA41EA46CEB00697468 /* KDCircularProgress.swift */,
-				C8053D371EB0F431008A58E3 /* MyCollectionViewCell.swift */,
 				CDF1ED901EB937FA00FF9137 /* Fonts */,
+				6061D8F61E9D83870034E0CB /* Info.plist */,
+				C8053D371EB0F431008A58E3 /* MyCollectionViewCell.swift */,
+				2B2AB3071EBA56D800DB06DD /* Storyboards */,
+				2B2AB3081EBA571300DB06DD /* UI */,
+				2B2AB2FE1EBA548100DB06DD /* Views */,
 			);
 			path = Chemistry;
 			sourceTree = "<group>";
@@ -218,10 +243,13 @@
 				2B2AB3021EBA54E100DB06DD /* CardViewController.swift in Sources */,
 				2B2AB2FD1EBA523600DB06DD /* SetViewController.swift in Sources */,
 				6061D8ED1E9D83870034E0CB /* ViewController.swift in Sources */,
+				2B2AB30E1EBA57F500DB06DD /* NavBar.swift in Sources */,
+				2B2AB30A1EBA574D00DB06DD /* Buttons.swift in Sources */,
 				C8053D381EB0F431008A58E3 /* MyCollectionViewCell.swift in Sources */,
 				2B2AB3061EBA551500DB06DD /* QuizViewController.swift in Sources */,
 				6061D8EB1E9D83870034E0CB /* AppDelegate.swift in Sources */,
 				2B2AB3001EBA54B900DB06DD /* HomeViewController.swift in Sources */,
+				2B2AB30C1EBA57C700DB06DD /* Labels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
