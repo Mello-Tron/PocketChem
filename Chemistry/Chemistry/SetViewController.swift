@@ -7,7 +7,7 @@ class SetViewController: ViewController{
     let swipeLeft = UISwipeGestureRecognizer()
     
     var setImageList:[String] = ["IUPAC1@0.5x", "IUPAC2@0.5x"]
-    let setMaxImages = 1
+    //let setMaxImages = 1
     var setImageIndex: NSInteger = 0
     
     override func viewDidLoad() {
@@ -28,13 +28,22 @@ class SetViewController: ViewController{
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.right:
-                let tapAlert = UIAlertController(title: "Swiped", message: "You just swiped the view right", preferredStyle: UIAlertControllerStyle.alert)
-                tapAlert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: nil))
-                self.present(tapAlert, animated: true, completion: nil)
+                //let tapAlert = UIAlertController(title: "Swiped", message: "You just swiped the view right", preferredStyle: UIAlertControllerStyle.alert)
+                //tapAlert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: nil))
+                //self.present(tapAlert, animated: true, completion: nil)
+                if (setImageIndex > 0) {
+                    setImageIndex -= 1;
+                    swipeView.image = UIImage(named: setImageList[setImageIndex])
+                }
+                
             case UISwipeGestureRecognizerDirection.left:
-                let tapAlert = UIAlertController(title: "Swiped", message: "You just swiped the view left", preferredStyle: UIAlertControllerStyle.alert)
-                tapAlert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: nil))
-                self.present(tapAlert, animated: true, completion: nil)
+                //let tapAlert = UIAlertController(title: "Swiped", message: "You just swiped the view left", preferredStyle: UIAlertControllerStyle.alert)
+                //tapAlert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: nil))
+                //self.present(tapAlert, animated: true, completion: nil)
+                if (setImageIndex < setImageList.count - 1) {
+                    setImageIndex += 1;
+                    swipeView.image = UIImage(named: setImageList[setImageIndex])
+                }
             default:
                 break
             }
