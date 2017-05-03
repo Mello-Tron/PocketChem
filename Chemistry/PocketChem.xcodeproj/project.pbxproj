@@ -15,6 +15,7 @@
 		2B2AB30A1EBA574D00DB06DD /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2AB3091EBA574D00DB06DD /* Buttons.swift */; };
 		2B2AB30C1EBA57C700DB06DD /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2AB30B1EBA57C700DB06DD /* Labels.swift */; };
 		2B2AB30E1EBA57F500DB06DD /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2AB30D1EBA57F500DB06DD /* NavBar.swift */; };
+		2BF6C7D01EBA7B1000270C8C /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6C7CF1EBA7B1000270C8C /* ImageView.swift */; };
 		6061D8EB1E9D83870034E0CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6061D8EA1E9D83870034E0CB /* AppDelegate.swift */; };
 		6061D8ED1E9D83870034E0CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6061D8EC1E9D83870034E0CB /* ViewController.swift */; };
 		6061D8F01E9D83870034E0CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6061D8EE1E9D83870034E0CB /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 		2B2AB3091EBA574D00DB06DD /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		2B2AB30B1EBA57C700DB06DD /* Labels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
 		2B2AB30D1EBA57F500DB06DD /* NavBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
+		2BF6C7CF1EBA7B1000270C8C /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		6061D8E71E9D83870034E0CB /* PocketChem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketChem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6061D8EA1E9D83870034E0CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6061D8EC1E9D83870034E0CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				2B2AB3091EBA574D00DB06DD /* Buttons.swift */,
 				2B2AB30B1EBA57C700DB06DD /* Labels.swift */,
 				2B2AB30D1EBA57F500DB06DD /* NavBar.swift */,
+				2BF6C7CF1EBA7B1000270C8C /* ImageView.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				CDBEFDA51EA46CEB00697468 /* KDCircularProgress.swift in Sources */,
 				2B2AB3021EBA54E100DB06DD /* CardViewController.swift in Sources */,
 				2B2AB2FD1EBA523600DB06DD /* SetViewController.swift in Sources */,
+				2BF6C7D01EBA7B1000270C8C /* ImageView.swift in Sources */,
 				6061D8ED1E9D83870034E0CB /* ViewController.swift in Sources */,
 				2B2AB30E1EBA57F500DB06DD /* NavBar.swift in Sources */,
 				2B2AB30A1EBA574D00DB06DD /* Buttons.swift in Sources */,
