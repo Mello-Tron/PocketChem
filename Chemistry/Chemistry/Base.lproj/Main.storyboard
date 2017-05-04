@@ -704,7 +704,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5n-ea-YQO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5n-ea-YQO">
                                 <rect key="frame" x="16" y="146" width="343" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="eQL-s9-NgB"/>
@@ -821,6 +821,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="DRAW" id="IJ2-Lt-Pgd"/>
+                    <connections>
+                        <outlet property="moleculeName" destination="5LN-Fn-ZjX" id="lQe-TZ-LGq"/>
+                        <outlet property="moleculeNumber" destination="F5n-ea-YQO" id="aG3-Gq-6GP"/>
+                        <outlet property="swipeLabel" destination="mV9-b1-8g3" id="Ccz-NT-7b7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HCB-Yr-cum" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
