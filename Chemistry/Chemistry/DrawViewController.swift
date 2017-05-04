@@ -36,6 +36,13 @@ class DrawViewController: ViewController {
         }
     }
     
+    @IBAction func openCameraRoll(_ sender: AnyObject) {
+        let tapAlert = UIAlertController(title: "Correct", message: "Nice Job!", preferredStyle: UIAlertControllerStyle.alert)
+        tapAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(tapAlert, animated: true, completion: nil)
+    }
+    
+    
     func swipedView(gesture: UIGestureRecognizer) {
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             switch swipeGesture.direction {

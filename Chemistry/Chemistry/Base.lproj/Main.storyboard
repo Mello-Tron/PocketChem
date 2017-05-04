@@ -745,9 +745,12 @@
                                     <constraint firstAttribute="height" constant="80" id="ueS-S3-ute"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="28"/>
-                                <state key="normal" title="LIBRARY">
+                                <state key="normal" title="CAMERA ROLL">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="openCameraRoll:" destination="gBp-fb-7z8" eventType="touchUpInside" id="kiP-8a-m8P"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="s e r i n e" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5LN-Fn-ZjX">
                                 <rect key="frame" x="16" y="285" width="343" height="45"/>
