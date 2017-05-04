@@ -457,7 +457,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6/21     " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URS-Ls-bXM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URS-Ls-bXM">
                                 <rect key="frame" x="280" y="376" width="76" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -499,6 +499,8 @@
                         <barButtonItem key="backBarButtonItem" title="SET" id="usH-w8-GKh"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="moleculeName" destination="eZQ-v3-vyl" id="fzl-KO-t2k"/>
+                        <outlet property="moleculeNumber" destination="URS-Ls-bXM" id="52y-xS-ud5"/>
                         <outlet property="swipeView" destination="9aA-kv-mGg" id="YHI-Lu-jI2"/>
                     </connections>
                 </viewController>

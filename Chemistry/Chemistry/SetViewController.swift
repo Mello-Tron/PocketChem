@@ -1,13 +1,14 @@
 import UIKit
 
 class SetViewController: ViewController{
-    //SET VIEW - swipable UIImageView
-    @IBOutlet weak var swipeView: UIImageView!
+
+    @IBOutlet var swipeView: UIImageView!
+    @IBOutlet var moleculeName: ShadowLabel!
+    @IBOutlet var moleculeNumber: UILabel!
+    
     let swipeRight = UISwipeGestureRecognizer()
     let swipeLeft = UISwipeGestureRecognizer()
-    
     var setImageList:[String] = ["IUPAC1@0.5x", "IUPAC2@0.5x"]
-    //let setMaxImages = 1
     var setImageIndex: NSInteger = 0
     
     override func viewDidLoad() {
@@ -34,6 +35,10 @@ class SetViewController: ViewController{
                 if (setImageIndex > 0) {
                     setImageIndex -= 1;
                     swipeView.image = UIImage(named: setImageList[setImageIndex])
+                    
+                    //Jimmy-rigged code
+                    self.moleculeName.text = "     SERINE"
+                    self.moleculeNumber.text = "1/2"
                 }
                 
             case UISwipeGestureRecognizerDirection.left:
@@ -43,6 +48,10 @@ class SetViewController: ViewController{
                 if (setImageIndex < setImageList.count - 1) {
                     setImageIndex += 1;
                     swipeView.image = UIImage(named: setImageList[setImageIndex])
+                    
+                    //Jimmy-rigged code
+                    self.moleculeName.text = "     BENZENE"
+                    self.moleculeNumber.text = "2/2"
                 }
             default:
                 break
