@@ -350,83 +350,6 @@
             </objects>
             <point key="canvasLocation" x="-9" y="83"/>
         </scene>
-        <!--OLD SET-->
-        <scene sceneID="8G3-v2-I9T">
-            <objects>
-                <viewController title="OLD SET" id="9WZ-0P-9R4" customClass="SetViewController" customModule="PocketChem" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uOu-n2-zZo"/>
-                        <viewControllerLayoutGuide type="bottom" id="P0U-Zl-24G"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="juQ-GD-hDM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.94107431173324585" green="0.94123536348342896" blue="0.94106405973434448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="ALKANES" id="3Ye-Ac-aKO">
-                        <barButtonItem key="backBarButtonItem" title="SET" id="usH-w8-GKh"/>
-                    </navigationItem>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="667"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5WL-MA-E4a" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1569" y="833"/>
-        </scene>
-        <!--Notecard-->
-        <scene sceneID="wTv-CK-f3f">
-            <objects>
-                <viewController title="Notecard" id="lcQ-9U-nfj" customClass="CardViewController" customModule="PocketChem" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="mIN-Yj-c3A"/>
-                        <viewControllerLayoutGuide type="bottom" id="Zei-Ai-z8R"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="RxJ-BY-Mc8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     AMINO ACIDS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ir-xh-Nil" userLabel="Molecule Label" customClass="ShadowLabel" customModule="PocketChem" customModuleProvider="target">
-                                <rect key="frame" x="16" y="40" width="343" height="45"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="LOY-lf-izK"/>
-                                    <constraint firstAttribute="width" constant="343" id="VuO-tG-pQQ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCT-dz-316">
-                                <rect key="frame" x="315" y="40" width="34" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="33.5" id="1uL-mP-VhK"/>
-                                    <constraint firstAttribute="height" constant="45" id="O7p-Fz-hDJ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="CCT-dz-316" firstAttribute="top" secondItem="mIN-Yj-c3A" secondAttribute="bottom" constant="20" id="3bf-V3-16L"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="CCT-dz-316" secondAttribute="trailing" constant="10.5" id="5NJ-0m-i5K"/>
-                            <constraint firstItem="4Ir-xh-Nil" firstAttribute="leading" secondItem="RxJ-BY-Mc8" secondAttribute="leadingMargin" id="Qa4-TK-cRn"/>
-                            <constraint firstItem="4Ir-xh-Nil" firstAttribute="trailing" secondItem="RxJ-BY-Mc8" secondAttribute="trailingMargin" id="QdF-Lb-6dW"/>
-                            <constraint firstItem="4Ir-xh-Nil" firstAttribute="top" secondItem="mIN-Yj-c3A" secondAttribute="bottom" constant="20" id="XsH-EO-stD"/>
-                            <constraint firstItem="CCT-dz-316" firstAttribute="leading" secondItem="RxJ-BY-Mc8" secondAttribute="leadingMargin" constant="299" id="yDQ-ES-dGj"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="CARDS" id="UZq-gg-fJq" userLabel="Cards"/>
-                    <connections>
-                        <outlet property="moleculeName" destination="4Ir-xh-Nil" id="dcq-dz-reQ"/>
-                        <outlet property="moleculeNumber" destination="CCT-dz-316" id="pMW-fA-ncG"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Wic-xn-Iy1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2494" y="578"/>
-        </scene>
         <!--Quiz-->
         <scene sceneID="8q6-Pm-t1a">
             <objects>
@@ -692,7 +615,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xTN-us-fMq">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdV-XE-M2W">
+                                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdV-XE-M2W" userLabel="ContainerView">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oC5-fq-8MD" userLabel="Cards Button" customClass="ShadowButton" customModule="PocketChem" customModuleProvider="target">
@@ -705,6 +628,9 @@
                                                 <state key="normal" title="CARDS">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="JXs-Ih-UqG" kind="show" id="4uG-wY-qMf"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T83-Nb-SfM" userLabel="Draw Button" customClass="ShadowButton" customModule="PocketChem" customModuleProvider="target">
                                                 <rect key="frame" x="19" y="110" width="337" height="80"/>
@@ -813,6 +739,88 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EWA-mw-XrJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="849" y="900"/>
+        </scene>
+        <!--NOTECARD-->
+        <scene sceneID="etd-vh-YuH">
+            <objects>
+                <viewController title="NOTECARD" id="JXs-Ih-UqG" customClass="CardViewController" customModule="PocketChem" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mfv-ku-dod"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Vx-0O-Z9J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qqs-5P-NKq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pcW-MP-OHD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ps8-nX-lZF" userLabel="ContainerView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     SERINE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ozl-ht-RNd" userLabel="Molecule Label" customClass="ShadowLabel" customModule="PocketChem" customModuleProvider="target">
+                                                <rect key="frame" x="19" y="21" width="337" height="45"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="MsB-dL-3fa"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5td-eF-cEW">
+                                                <rect key="frame" x="280" y="21" width="76" height="45"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="Jm9-le-eV6"/>
+                                                    <constraint firstAttribute="width" constant="76" id="Moo-Cf-lP5"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="Ozl-ht-RNd" firstAttribute="top" secondItem="ps8-nX-lZF" secondAttribute="top" constant="21" id="NR2-DU-29K"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ozl-ht-RNd" secondAttribute="trailing" constant="19" id="T4X-lZ-KCI"/>
+                                            <constraint firstItem="5td-eF-cEW" firstAttribute="top" secondItem="ps8-nX-lZF" secondAttribute="top" constant="21" id="UQW-bY-bpB"/>
+                                            <constraint firstAttribute="height" constant="667" id="aI5-XW-WKj"/>
+                                            <constraint firstAttribute="trailing" secondItem="5td-eF-cEW" secondAttribute="trailing" constant="19" id="ffM-lH-du5"/>
+                                            <constraint firstItem="Ozl-ht-RNd" firstAttribute="leading" secondItem="ps8-nX-lZF" secondAttribute="leading" constant="19" id="hgs-0Z-SpH"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ps8-nX-lZF" secondAttribute="trailing" id="L9M-eX-Mqs"/>
+                                    <constraint firstItem="ps8-nX-lZF" firstAttribute="top" secondItem="pcW-MP-OHD" secondAttribute="top" id="LXk-Fv-H7F"/>
+                                    <constraint firstAttribute="bottom" secondItem="ps8-nX-lZF" secondAttribute="bottom" id="jhA-6h-shd"/>
+                                    <constraint firstItem="ps8-nX-lZF" firstAttribute="leading" secondItem="pcW-MP-OHD" secondAttribute="leading" id="wKW-Iu-Zie"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="pcW-MP-OHD" firstAttribute="leading" secondItem="Qqs-5P-NKq" secondAttribute="leading" id="HEx-dH-oSa"/>
+                            <constraint firstItem="pcW-MP-OHD" firstAttribute="bottom" secondItem="1Vx-0O-Z9J" secondAttribute="top" id="J4M-Ys-O8c"/>
+                            <constraint firstAttribute="trailing" secondItem="pcW-MP-OHD" secondAttribute="trailing" id="T3C-X2-nAa"/>
+                            <constraint firstItem="ps8-nX-lZF" firstAttribute="width" secondItem="Qqs-5P-NKq" secondAttribute="width" id="ZmP-Mc-XQA"/>
+                            <constraint firstItem="pcW-MP-OHD" firstAttribute="top" secondItem="Qqs-5P-NKq" secondAttribute="top" id="xd7-o0-18s"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ALKANES" id="4o3-Co-yRc"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="containerView" destination="ps8-nX-lZF" id="st0-fS-1yX"/>
+                        <outlet property="moleculeName" destination="Ozl-ht-RNd" id="9un-OX-iC8"/>
+                        <outlet property="moleculeNumber" destination="5td-eF-cEW" id="nvS-VT-gtD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6u6-0w-Jpk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10" y="1681"/>
         </scene>
     </scenes>
     <resources>

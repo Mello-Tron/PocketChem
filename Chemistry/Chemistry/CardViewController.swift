@@ -3,6 +3,7 @@ import UIKit
 class CardViewController: ViewController {
     @IBOutlet var moleculeName: ShadowLabel!
     @IBOutlet var moleculeNumber: UILabel!
+    @IBOutlet var containerView: UIView!
     
     
     var cardView: UIView!
@@ -49,7 +50,7 @@ class CardViewController: ViewController {
         cardView.isUserInteractionEnabled = true
         cardView.addSubview(moleculeView)
         
-        view.addSubview(cardView)
+        containerView.addSubview(cardView)
         
         //Setting flag up
         flagSelected = UIImageView(frame:CGRect(x: 0, y: 0, width: 30, height: 40))
@@ -67,7 +68,7 @@ class CardViewController: ViewController {
         flagView.isUserInteractionEnabled = true
         flagView.addSubview(flagSelected)
         
-        view.addSubview(flagView)
+        containerView.addSubview(flagView)
         
         swipeRight.direction = UISwipeGestureRecognizerDirection.right
         swipeRight.addTarget(self, action: #selector(self.swipedView))
