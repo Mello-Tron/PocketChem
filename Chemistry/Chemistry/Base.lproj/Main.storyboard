@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="04I-ZG-yz2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="04I-ZG-yz2">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,9 +33,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ImH-f9-Fv6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="sGu-OJ-SWf">
-
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
-
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rM6-pS-scb">
@@ -891,7 +889,7 @@
         <!--SETTINGS-->
         <scene sceneID="kgn-JL-WEV">
             <objects>
-                <viewController title="SETTINGS" id="cW9-hM-Ppq" customClass="QuizViewController" customModule="PocketChem" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SETTINGS" id="cW9-hM-Ppq" customClass="SettingsViewController" customModule="PocketChem" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mCF-7I-3lV"/>
                         <viewControllerLayoutGuide type="bottom" id="prt-2X-X1b"/>
@@ -905,9 +903,20 @@
                                 <subviews>
                                     <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yoq-EN-kdw" userLabel="ContainerView">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0MC-o2-Nj2">
+                                                <rect key="frame" x="67" y="211" width="240" height="128"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="0pN-k9-zie"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
                                         <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstItem="0MC-o2-Nj2" firstAttribute="leading" secondItem="Yoq-EN-kdw" secondAttribute="leading" constant="67" id="8K2-uR-gaS"/>
                                             <constraint firstAttribute="height" constant="667" id="Psi-0y-YhP"/>
+                                            <constraint firstItem="0MC-o2-Nj2" firstAttribute="top" secondItem="Yoq-EN-kdw" secondAttribute="top" constant="211" id="ctW-18-37i"/>
+                                            <constraint firstAttribute="trailing" secondItem="0MC-o2-Nj2" secondAttribute="trailing" constant="68" id="sRO-Zy-HGI"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -932,6 +941,9 @@
                     <navigationItem key="navigationItem" title="SETTINGS" id="ryF-g0-aUZ"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="imageView" destination="0MC-o2-Nj2" id="Mug-Kh-03x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0rK-nA-LLs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
