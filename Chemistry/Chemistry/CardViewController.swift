@@ -1,6 +1,10 @@
 import UIKit
 
 class CardViewController: ViewController {
+    @IBOutlet var moleculeName: ShadowLabel!
+    @IBOutlet var moleculeNumber: UILabel!
+    
+    
     var cardView: UIView!
     var nameView: UIImageView!
     var moleculeView: UIImageView!
@@ -13,6 +17,12 @@ class CardViewController: ViewController {
     
     var showingMolecule = true
     var flagged = true
+    
+    let swipeRight = UISwipeGestureRecognizer()
+    let swipeLeft = UISwipeGestureRecognizer()
+    var setImageList:[String] = ["IUPAC1@0.5x", "IUPAC2@0.5x"]
+    var setImageIndex: NSInteger = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -59,6 +69,16 @@ class CardViewController: ViewController {
         
         view.addSubview(flagView)
         
+        swipeRight.direction = UISwipeGestureRecognizerDirection.right
+        swipeRight.addTarget(self, action: #selector(self.swipedView))
+        cardView.addGestureRecognizer(swipeRight)
+        
+        swipeLeft.direction = UISwipeGestureRecognizerDirection.left
+        swipeLeft.addTarget(self, action: #selector(self.swipedView))
+        cardView.addGestureRecognizer(swipeLeft)
+        
+        cardView.isUserInteractionEnabled = true
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -77,6 +97,7 @@ class CardViewController: ViewController {
             showingMolecule = true
         }
     }
+    
     func grow(){
         print("flag tapped")
         if(flagged){
@@ -90,6 +111,42 @@ class CardViewController: ViewController {
             
         }
         
+    }
+    
+    func swipedView(gesture: UIGestureRecognizer) {
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+            switch swipeGesture.direction {
+            case UISwipeGestureRecognizerDirection.right:
+                //let tapAlert = UIAlertController(title: "Swiped", message: "You just swiped the view right", preferredStyle: UIAlertControllerStyle.alert)
+                //tapAlert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: nil))
+                //self.present(tapAlert, animated: true, completion: nil)
+                if (setImageIndex > 0) {
+                    setImageIndex -= 1;
+                    moleculeView.image = UIImage(named: setImageList[setImageIndex])
+                    
+                    //Jimmy-rigged code
+                    self.moleculeName.text = "     SERINE"
+                    nameLabel.text = "Serine"
+                    self.moleculeNumber.text = "1/2"
+                }
+                
+            case UISwipeGestureRecognizerDirection.left:
+                //let tapAlert = UIAlertController(title: "Swiped", message: "You just swiped the view left", preferredStyle: UIAlertControllerStyle.alert)
+                //tapAlert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: nil))
+                //self.present(tapAlert, animated: true, completion: nil)
+                if (setImageIndex < setImageList.count - 1) {
+                    setImageIndex += 1;
+                    moleculeView.image = UIImage(named: setImageList[setImageIndex])
+                    
+                    //Jimmy-rigged code
+                    self.moleculeName.text = "     BENZENE"
+                    nameLabel.text = "Benzene"
+                    self.moleculeNumber.text = "2/2"
+                }
+            default:
+                break
+            }
+        }
     }
 
 }

@@ -5,7 +5,6 @@ class DrawViewController: ViewController {
     @IBOutlet var moleculeName: UILabel!
     @IBOutlet var swipeLabel: ShadowLabel!
     
-    
     let swipeRight = UISwipeGestureRecognizer()
     let swipeLeft = UISwipeGestureRecognizer()
     var setImageList:[String] = ["IUPAC1@0.5x", "IUPAC2@0.5x"]
@@ -41,7 +40,6 @@ class DrawViewController: ViewController {
         tapAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         self.present(tapAlert, animated: true, completion: nil)
     }
-    
     
     func swipedView(gesture: UIGestureRecognizer) {
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
