@@ -16,6 +16,7 @@
 		0457534B1EBAFB0200CAC781 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457534A1EBAFB0200CAC781 /* Utility.swift */; };
 		0457534D1EBAFB3C00CAC781 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457534C1EBAFB3C00CAC781 /* DBManager.swift */; };
 		0457534F1EBAFB7300CAC781 /* MoleculeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457534E1EBAFB7300CAC781 /* MoleculeInfo.swift */; };
+		045753531EBB099900CAC781 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045753521EBB099900CAC781 /* SettingsViewController.swift */; };
 		2B2AB2FD1EBA523600DB06DD /* SetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2AB2FC1EBA523600DB06DD /* SetViewController.swift */; };
 		2B2AB3001EBA54B900DB06DD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2AB2FF1EBA54B900DB06DD /* HomeViewController.swift */; };
 		2B2AB3021EBA54E100DB06DD /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2AB3011EBA54E100DB06DD /* CardViewController.swift */; };
@@ -60,6 +61,7 @@
 		0457534A1EBAFB0200CAC781 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		0457534C1EBAFB3C00CAC781 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		0457534E1EBAFB7300CAC781 /* MoleculeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoleculeInfo.swift; sourceTree = "<group>"; };
+		045753521EBB099900CAC781 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		2B2AB2FC1EBA523600DB06DD /* SetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetViewController.swift; sourceTree = "<group>"; };
 		2B2AB2FF1EBA54B900DB06DD /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2B2AB3011EBA54E100DB06DD /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				2B2AB3011EBA54E100DB06DD /* CardViewController.swift */,
 				2B2AB3031EBA54F400DB06DD /* DrawViewController.swift */,
 				2B2AB3051EBA551500DB06DD /* QuizViewController.swift */,
+				045753521EBB099900CAC781 /* SettingsViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				2B2AB30E1EBA57F500DB06DD /* NavBar.swift in Sources */,
 				2B2AB30A1EBA574D00DB06DD /* Buttons.swift in Sources */,
 				C8053D381EB0F431008A58E3 /* MyCollectionViewCell.swift in Sources */,
+				045753531EBB099900CAC781 /* SettingsViewController.swift in Sources */,
 				2B2AB3061EBA551500DB06DD /* QuizViewController.swift in Sources */,
 				6061D8EB1E9D83870034E0CB /* AppDelegate.swift in Sources */,
 				2B2AB3001EBA54B900DB06DD /* HomeViewController.swift in Sources */,
