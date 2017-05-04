@@ -5,6 +5,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // TESTING BY PRINTING DATABASE
+        
+        let marrMolInfo : NSMutableArray = DBManager().getAllData()
+        let moleculeInfo : MoleculeInfo = marrMolInfo.object(at: 0) as! MoleculeInfo
+        print ("Num: ", moleculeInfo.getImageNum(), "; Name: ", moleculeInfo.getMolName(), "; IUPAC: ", moleculeInfo.getMolIUPAC())
+        
+        //print(marrMolInfo)
     }
     
     override func didReceiveMemoryWarning() {
