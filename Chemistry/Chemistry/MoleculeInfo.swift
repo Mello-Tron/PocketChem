@@ -14,4 +14,19 @@ class MoleculeInfo: NSObject {
     var name: String = String()
     var IUPAC: String = String()
     
+    func getImageNum() -> Int
+    {
+        return cid
+    }
+    
+    func getMolName() -> String
+    {
+        return name
+    }
+    
+    func getMolIUPAC() -> String
+    {
+        return IUPAC
+    }
+    
 }

@@ -7,6 +7,7 @@
 //
 
 // Here is the tutorial that I referenced for most of the coding I've done: http://www.theappguruz.com/blog/use-sqlite-database-swift
+// Another source referenced: http://www.appcoda.com/fmdb-sqlite-database/
 
 import UIKit
 import Foundation
@@ -48,14 +49,9 @@ class DBManager: NSObject {
                 moleculeInfo.name = resultSet.string(forColumn: "name")
                 moleculeInfo.IUPAC = resultSet.string(forColumn: "IUPAC")
                 marrStudentInfo.add(moleculeInfo)
-                print("Here is the info",  moleculeInfo.name, ", ", moleculeInfo.cid, ", ", moleculeInfo.IUPAC, "\n")
+                // print("Here is the info",  moleculeInfo.name, ", ", moleculeInfo.cid, ", ", moleculeInfo.IUPAC, "\n")
             }
         }
-        
-        for i in 0 ..< 10
-        {
-            //  print(marrStudentInfo.value(forKey: name))
-        }// for testing
         
         sharedInstance.database!.close()
         return marrStudentInfo
