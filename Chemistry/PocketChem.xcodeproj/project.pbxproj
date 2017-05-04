@@ -13,6 +13,9 @@
 		045753451EBAF8D200CAC781 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0457533D1EBAF8D200CAC781 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		045753461EBAF8D200CAC781 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0457533F1EBAF8D200CAC781 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		045753471EBAF8D200CAC781 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 045753421EBAF8D200CAC781 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0457534B1EBAFB0200CAC781 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457534A1EBAFB0200CAC781 /* Utility.swift */; };
+		0457534D1EBAFB3C00CAC781 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457534C1EBAFB3C00CAC781 /* DBManager.swift */; };
+		0457534F1EBAFB7300CAC781 /* MoleculeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457534E1EBAFB7300CAC781 /* MoleculeInfo.swift */; };
 		2B2AB2FD1EBA523600DB06DD /* SetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2AB2FC1EBA523600DB06DD /* SetViewController.swift */; };
 		2B2AB3001EBA54B900DB06DD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2AB2FF1EBA54B900DB06DD /* HomeViewController.swift */; };
 		2B2AB3021EBA54E100DB06DD /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2AB3011EBA54E100DB06DD /* CardViewController.swift */; };
@@ -54,6 +57,9 @@
 		045753421EBAF8D200CAC781 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = FMDB/FMResultSet.m; sourceTree = "<group>"; };
 		045753481EBAF9A300CAC781 /* PocketChem-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PocketChem-Bridging-Header.h"; sourceTree = "<group>"; };
 		045753491EBAFA5500CAC781 /* mol.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = mol.db; path = database/mol.db; sourceTree = "<group>"; };
+		0457534A1EBAFB0200CAC781 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		0457534C1EBAFB3C00CAC781 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		0457534E1EBAFB7300CAC781 /* MoleculeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoleculeInfo.swift; sourceTree = "<group>"; };
 		2B2AB2FC1EBA523600DB06DD /* SetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetViewController.swift; sourceTree = "<group>"; };
 		2B2AB2FF1EBA54B900DB06DD /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2B2AB3011EBA54E100DB06DD /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +105,10 @@
 			isa = PBXGroup;
 			children = (
 				045753261EBAF84100CAC781 /* FMDB */,
+				0457534A1EBAFB0200CAC781 /* Utility.swift */,
+				0457534C1EBAFB3C00CAC781 /* DBManager.swift */,
+				0457534E1EBAFB7300CAC781 /* MoleculeInfo.swift */,
+				045753491EBAFA5500CAC781 /* mol.db */,
 			);
 			name = Database;
 			sourceTree = "<group>";
@@ -126,7 +136,6 @@
 				045753411EBAF8D200CAC781 /* FMResultSet.h */,
 				045753421EBAF8D200CAC781 /* FMResultSet.m */,
 				045753481EBAF9A300CAC781 /* PocketChem-Bridging-Header.h */,
-				045753491EBAFA5500CAC781 /* mol.db */,
 			);
 			name = FMDB;
 			sourceTree = "<group>";
@@ -298,14 +307,17 @@
 				045753431EBAF8D200CAC781 /* FMDatabase.m in Sources */,
 				2B2AB2FD1EBA523600DB06DD /* SetViewController.swift in Sources */,
 				2BF6C7D01EBA7B1000270C8C /* ImageView.swift in Sources */,
+				0457534B1EBAFB0200CAC781 /* Utility.swift in Sources */,
 				045753471EBAF8D200CAC781 /* FMResultSet.m in Sources */,
 				6061D8ED1E9D83870034E0CB /* ViewController.swift in Sources */,
+				0457534F1EBAFB7300CAC781 /* MoleculeInfo.swift in Sources */,
 				2B2AB30E1EBA57F500DB06DD /* NavBar.swift in Sources */,
 				2B2AB30A1EBA574D00DB06DD /* Buttons.swift in Sources */,
 				C8053D381EB0F431008A58E3 /* MyCollectionViewCell.swift in Sources */,
 				2B2AB3061EBA551500DB06DD /* QuizViewController.swift in Sources */,
 				6061D8EB1E9D83870034E0CB /* AppDelegate.swift in Sources */,
 				2B2AB3001EBA54B900DB06DD /* HomeViewController.swift in Sources */,
+				0457534D1EBAFB3C00CAC781 /* DBManager.swift in Sources */,
 				045753451EBAF8D200CAC781 /* FMDatabasePool.m in Sources */,
 				045753461EBAF8D200CAC781 /* FMDatabaseQueue.m in Sources */,
 				2B2AB30C1EBA57C700DB06DD /* Labels.swift in Sources */,
