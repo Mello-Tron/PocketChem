@@ -696,8 +696,7 @@
                                 <rect key="frame" x="16" y="145" width="343" height="269"/>
                                 <color key="backgroundColor" red="0.9999127984046936" green="1" blue="0.99988144636154175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="343" id="LhR-zf-XpW"/>
-                                    <constraint firstAttribute="height" constant="269" id="v1M-rO-JIe"/>
+                                    <constraint firstAttribute="height" constant="269" id="gIX-SM-gyE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -706,8 +705,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5n-ea-YQO">
                                 <rect key="frame" x="16" y="146" width="343" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="FMS-aB-KxA"/>
-                                    <constraint firstAttribute="width" constant="343" id="ppX-qd-yxC"/>
+                                    <constraint firstAttribute="height" constant="45" id="eQL-s9-NgB"/>
+                                    <constraint firstAttribute="width" constant="343" id="lxW-dC-l02"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -716,8 +715,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D  R  A  W" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWe-e5-fyY">
                                 <rect key="frame" x="16" y="211" width="343" height="85"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="85" id="9PU-VH-wjK"/>
-                                    <constraint firstAttribute="width" constant="343" id="szd-DG-Qmm"/>
+                                    <constraint firstAttribute="width" constant="343" id="3Im-At-0Iq"/>
+                                    <constraint firstAttribute="height" constant="85" id="qMb-44-eZI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="38"/>
                                 <nil key="textColor"/>
@@ -727,8 +726,7 @@
                                 <rect key="frame" x="16" y="451" width="343" height="80"/>
                                 <color key="backgroundColor" red="0.92549019610000005" green="0.33725490200000002" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="343" id="dFX-wS-K0v"/>
-                                    <constraint firstAttribute="height" constant="80" id="xHi-yu-Wdw"/>
+                                    <constraint firstAttribute="height" constant="80" id="dId-6S-o8M"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="28"/>
                                 <state key="normal" title="PHOTO">
@@ -742,8 +740,7 @@
                                 <rect key="frame" x="16" y="549" width="343" height="80"/>
                                 <color key="backgroundColor" red="0.97254901959999995" green="0.75294117650000003" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="343" id="BgX-B7-WZ1"/>
-                                    <constraint firstAttribute="height" constant="80" id="wHy-zr-i3a"/>
+                                    <constraint firstAttribute="height" constant="80" id="ueS-S3-ute"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="28"/>
                                 <state key="normal" title="LIBRARY">
@@ -753,8 +750,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="s e r i n e" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5LN-Fn-ZjX">
                                 <rect key="frame" x="16" y="285" width="343" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="343" id="CIu-nJ-7nd"/>
-                                    <constraint firstAttribute="height" constant="45" id="xx7-Q2-uLQ"/>
+                                    <constraint firstAttribute="height" constant="45" id="7ip-Eq-MWK"/>
+                                    <constraint firstAttribute="width" constant="343" id="v10-5L-UFu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
                                 <nil key="textColor"/>
@@ -764,8 +761,7 @@
                                 <rect key="frame" x="16" y="82" width="343" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="343" id="185-PG-t51"/>
-                                    <constraint firstAttribute="height" constant="45" id="Kwd-W8-B5j"/>
+                                    <constraint firstAttribute="height" constant="45" id="OeX-M3-Tzi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
                                 <nil key="textColor"/>
@@ -774,8 +770,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 WRONG" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUy-jp-LKE">
                                 <rect key="frame" x="267" y="82" width="96" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="fOI-hQ-5KW"/>
-                                    <constraint firstAttribute="width" constant="96" id="uBu-aj-gNF"/>
+                                    <constraint firstAttribute="height" constant="45" id="csG-NC-VrA"/>
+                                    <constraint firstAttribute="width" constant="96" id="rDi-ic-DS7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -784,8 +780,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 RIGHT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ms9-vS-fk1">
                                 <rect key="frame" x="191" y="82" width="68" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="F3D-P3-Hn0"/>
-                                    <constraint firstAttribute="width" constant="68" id="n2U-DY-R3f"/>
+                                    <constraint firstAttribute="width" constant="68" id="Xu1-EB-RlT"/>
+                                    <constraint firstAttribute="height" constant="45" id="mLB-HL-wht"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -794,32 +790,32 @@
                         </subviews>
                         <color key="backgroundColor" red="0.94107431173324585" green="0.94123536348342896" blue="0.94106405973434448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="0YA-Le-DVC" firstAttribute="trailing" secondItem="okw-D5-rmu" secondAttribute="trailingMargin" id="3om-hd-FBq"/>
-                            <constraint firstItem="5LN-Fn-ZjX" firstAttribute="top" secondItem="F5n-ea-YQO" secondAttribute="bottom" constant="94" id="49B-Fw-nui"/>
-                            <constraint firstItem="F5n-ea-YQO" firstAttribute="trailing" secondItem="okw-D5-rmu" secondAttribute="trailingMargin" id="76q-G2-RoT"/>
-                            <constraint firstAttribute="trailing" secondItem="KUy-jp-LKE" secondAttribute="trailing" constant="12" id="B5a-nB-ttW"/>
-                            <constraint firstItem="Qal-1h-cZs" firstAttribute="top" secondItem="QWe-e5-fyY" secondAttribute="bottom" constant="155" id="B98-x7-iS8"/>
-                            <constraint firstItem="d2T-3B-jzj" firstAttribute="top" secondItem="Qal-1h-cZs" secondAttribute="bottom" constant="18" id="Gnh-qT-QQ0"/>
-                            <constraint firstItem="0YA-Le-DVC" firstAttribute="top" secondItem="nAl-e1-IhM" secondAttribute="bottom" constant="18" id="Ivr-yz-RPq"/>
-                            <constraint firstItem="5LN-Fn-ZjX" firstAttribute="leading" secondItem="okw-D5-rmu" secondAttribute="leadingMargin" id="J8I-R2-78x"/>
-                            <constraint firstItem="Qal-1h-cZs" firstAttribute="leading" secondItem="okw-D5-rmu" secondAttribute="leadingMargin" id="KdN-sy-ST8"/>
-                            <constraint firstItem="Qal-1h-cZs" firstAttribute="top" secondItem="mV9-b1-8g3" secondAttribute="bottom" constant="37" id="LM0-qv-4bd"/>
-                            <constraint firstItem="0YA-Le-DVC" firstAttribute="leading" secondItem="okw-D5-rmu" secondAttribute="leadingMargin" id="Nf7-n0-aj5"/>
-                            <constraint firstItem="Qal-1h-cZs" firstAttribute="top" secondItem="5LN-Fn-ZjX" secondAttribute="bottom" constant="121" id="RPu-MV-PkL"/>
-                            <constraint firstItem="F5n-ea-YQO" firstAttribute="leading" secondItem="okw-D5-rmu" secondAttribute="leadingMargin" id="TPX-8F-j1A"/>
-                            <constraint firstItem="mV9-b1-8g3" firstAttribute="trailing" secondItem="okw-D5-rmu" secondAttribute="trailingMargin" id="bVR-3m-aWX"/>
-                            <constraint firstItem="mV9-b1-8g3" firstAttribute="leading" secondItem="okw-D5-rmu" secondAttribute="leadingMargin" id="ccr-Ow-IWt"/>
-                            <constraint firstItem="OWp-SQ-wRY" firstAttribute="top" secondItem="d2T-3B-jzj" secondAttribute="bottom" constant="38" id="dyK-j1-tRr"/>
-                            <constraint firstItem="Ms9-vS-fk1" firstAttribute="top" secondItem="nAl-e1-IhM" secondAttribute="bottom" constant="18" id="et0-0p-h0y"/>
-                            <constraint firstItem="d2T-3B-jzj" firstAttribute="leading" secondItem="okw-D5-rmu" secondAttribute="leadingMargin" id="kfz-yz-C5T"/>
-                            <constraint firstItem="5LN-Fn-ZjX" firstAttribute="trailing" secondItem="okw-D5-rmu" secondAttribute="trailingMargin" id="lSD-Gn-Ob8"/>
-                            <constraint firstItem="d2T-3B-jzj" firstAttribute="trailing" secondItem="okw-D5-rmu" secondAttribute="trailingMargin" id="mir-xO-T08"/>
-                            <constraint firstItem="Qal-1h-cZs" firstAttribute="trailing" secondItem="okw-D5-rmu" secondAttribute="trailingMargin" id="mqB-jx-Om3"/>
-                            <constraint firstItem="QWe-e5-fyY" firstAttribute="top" secondItem="F5n-ea-YQO" secondAttribute="bottom" constant="20" id="nna-qa-DNS"/>
-                            <constraint firstItem="QWe-e5-fyY" firstAttribute="leading" secondItem="okw-D5-rmu" secondAttribute="leadingMargin" id="oVx-1I-tob"/>
-                            <constraint firstItem="KUy-jp-LKE" firstAttribute="leading" secondItem="Ms9-vS-fk1" secondAttribute="trailing" constant="8" id="oqf-h2-oei"/>
-                            <constraint firstItem="QWe-e5-fyY" firstAttribute="trailing" secondItem="okw-D5-rmu" secondAttribute="trailingMargin" id="tFz-6q-sMK"/>
-                            <constraint firstItem="KUy-jp-LKE" firstAttribute="top" secondItem="nAl-e1-IhM" secondAttribute="bottom" constant="18" id="tUT-DQ-f0x"/>
+                            <constraint firstItem="5LN-Fn-ZjX" firstAttribute="top" secondItem="F5n-ea-YQO" secondAttribute="bottom" constant="94" id="089-E4-Jlf"/>
+                            <constraint firstItem="QWe-e5-fyY" firstAttribute="centerX" secondItem="okw-D5-rmu" secondAttribute="centerX" id="12r-Cb-zky"/>
+                            <constraint firstItem="F5n-ea-YQO" firstAttribute="centerX" secondItem="okw-D5-rmu" secondAttribute="centerX" id="1oD-cq-ab4"/>
+                            <constraint firstItem="Qal-1h-cZs" firstAttribute="leading" secondItem="okw-D5-rmu" secondAttribute="leadingMargin" id="3Ja-kk-FVK"/>
+                            <constraint firstItem="Qal-1h-cZs" firstAttribute="centerX" secondItem="okw-D5-rmu" secondAttribute="centerX" id="6pk-Sp-ije"/>
+                            <constraint firstItem="5LN-Fn-ZjX" firstAttribute="centerX" secondItem="okw-D5-rmu" secondAttribute="centerX" id="7c6-HU-X0H"/>
+                            <constraint firstItem="d2T-3B-jzj" firstAttribute="top" secondItem="Qal-1h-cZs" secondAttribute="bottom" constant="18" id="L50-iV-Yk8"/>
+                            <constraint firstAttribute="trailing" secondItem="KUy-jp-LKE" secondAttribute="trailing" constant="12" id="Mq0-cE-fd2"/>
+                            <constraint firstItem="d2T-3B-jzj" firstAttribute="leading" secondItem="okw-D5-rmu" secondAttribute="leadingMargin" id="NwW-Q3-hnQ"/>
+                            <constraint firstItem="mV9-b1-8g3" firstAttribute="trailing" secondItem="okw-D5-rmu" secondAttribute="trailingMargin" id="QnT-5Z-3HM"/>
+                            <constraint firstItem="F5n-ea-YQO" firstAttribute="top" secondItem="okw-D5-rmu" secondAttribute="topMargin" constant="146" id="SJt-N6-bgX"/>
+                            <constraint firstItem="mV9-b1-8g3" firstAttribute="top" secondItem="okw-D5-rmu" secondAttribute="topMargin" constant="145" id="SxF-Es-k23"/>
+                            <constraint firstItem="d2T-3B-jzj" firstAttribute="trailing" secondItem="okw-D5-rmu" secondAttribute="trailingMargin" id="UWl-RK-nbR"/>
+                            <constraint firstItem="OWp-SQ-wRY" firstAttribute="top" secondItem="d2T-3B-jzj" secondAttribute="bottom" constant="38" id="X2g-dX-aa8"/>
+                            <constraint firstItem="mV9-b1-8g3" firstAttribute="centerX" secondItem="okw-D5-rmu" secondAttribute="centerX" id="Zfd-fO-xyh"/>
+                            <constraint firstItem="mV9-b1-8g3" firstAttribute="leading" secondItem="okw-D5-rmu" secondAttribute="leadingMargin" id="aAs-Mf-mB8"/>
+                            <constraint firstItem="Ms9-vS-fk1" firstAttribute="top" secondItem="nAl-e1-IhM" secondAttribute="bottom" constant="18" id="aqD-Bu-X9o"/>
+                            <constraint firstItem="0YA-Le-DVC" firstAttribute="top" secondItem="nAl-e1-IhM" secondAttribute="bottom" constant="18" id="dtD-9M-lX1"/>
+                            <constraint firstItem="0YA-Le-DVC" firstAttribute="centerX" secondItem="okw-D5-rmu" secondAttribute="centerX" id="e5K-iE-8LL"/>
+                            <constraint firstItem="KUy-jp-LKE" firstAttribute="leading" secondItem="Ms9-vS-fk1" secondAttribute="trailing" constant="8" id="nEn-8z-Cwa"/>
+                            <constraint firstItem="d2T-3B-jzj" firstAttribute="centerX" secondItem="okw-D5-rmu" secondAttribute="centerX" id="ox3-C8-2s3"/>
+                            <constraint firstItem="KUy-jp-LKE" firstAttribute="top" secondItem="nAl-e1-IhM" secondAttribute="bottom" constant="18" id="qze-yH-hDK"/>
+                            <constraint firstItem="Qal-1h-cZs" firstAttribute="trailing" secondItem="okw-D5-rmu" secondAttribute="trailingMargin" id="s8c-Gv-Qxo"/>
+                            <constraint firstItem="0YA-Le-DVC" firstAttribute="leading" secondItem="okw-D5-rmu" secondAttribute="leadingMargin" id="txa-9x-WCl"/>
+                            <constraint firstItem="0YA-Le-DVC" firstAttribute="trailing" secondItem="okw-D5-rmu" secondAttribute="trailingMargin" id="yE1-bL-J9g"/>
+                            <constraint firstItem="QWe-e5-fyY" firstAttribute="top" secondItem="okw-D5-rmu" secondAttribute="top" constant="211" id="yIc-6t-w7H"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="DRAW" id="IJ2-Lt-Pgd"/>
