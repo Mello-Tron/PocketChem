@@ -142,6 +142,9 @@
                                                 <state key="normal" image="IUPAC1@0.5x">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="mzH-pc-YNH" kind="show" id="zr1-Dw-Vz3"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0Z-3t-cmt" userLabel="Draw Button" customClass="ShadowButton" customModule="PocketChem" customModuleProvider="target">
                                                 <rect key="frame" x="190" y="313" width="182" height="182"/>
@@ -347,10 +350,10 @@
             </objects>
             <point key="canvasLocation" x="-9" y="83"/>
         </scene>
-        <!--SET-->
+        <!--OLD SET-->
         <scene sceneID="8G3-v2-I9T">
             <objects>
-                <viewController title="SET" id="9WZ-0P-9R4" customClass="SetViewController" customModule="PocketChem" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="OLD SET" id="9WZ-0P-9R4" customClass="SetViewController" customModule="PocketChem" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uOu-n2-zZo"/>
                         <viewControllerLayoutGuide type="bottom" id="P0U-Zl-24G"/>
@@ -358,117 +361,17 @@
                     <view key="view" contentMode="scaleToFill" id="juQ-GD-hDM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oC5-fq-8MD" userLabel="Cards Button" customClass="ShadowButton" customModule="PocketChem" customModuleProvider="target">
-                                <rect key="frame" x="19" y="38" width="337" height="80"/>
-                                <color key="backgroundColor" red="0.97254901959999995" green="0.75294117650000003" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="ey8-yb-wVK"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="28"/>
-                                <state key="normal" title="CARDS">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="lcQ-9U-nfj" kind="show" id="iBk-r5-Yxf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T83-Nb-SfM" userLabel="Draw Button" customClass="ShadowButton" customModule="PocketChem" customModuleProvider="target">
-                                <rect key="frame" x="19" y="136" width="337" height="80"/>
-                                <color key="backgroundColor" red="0.92549019610000005" green="0.33725490200000002" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="gnb-uc-Ke3"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="28"/>
-                                <state key="normal" title="DRAW">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="gBp-fb-7z8" kind="show" id="1Dq-oU-gdR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGe-mE-c49" userLabel="Quiz Button" customClass="ShadowButton" customModule="PocketChem" customModuleProvider="target">
-                                <rect key="frame" x="19" y="234" width="337" height="80"/>
-                                <color key="backgroundColor" red="0.61176470589999998" green="0.69803921570000005" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="ul9-4Y-Wfb"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="28"/>
-                                <state key="normal" title="QUIZ">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="HZl-H1-suN" kind="show" id="SpX-CL-s3M"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IUPAC1" translatesAutoresizingMaskIntoConstraints="NO" id="9aA-kv-mGg" customClass="ShadowUIImageView" customModule="PocketChem" customModuleProvider="target">
-                                <rect key="frame" x="19" y="439" width="337" height="208"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="208" id="zmb-pf-Jht"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     SERINE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZQ-v3-vyl" userLabel="Molecule Label" customClass="ShadowLabel" customModule="PocketChem" customModuleProvider="target">
-                                <rect key="frame" x="19" y="376" width="337" height="45"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="rMV-ZP-olc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URS-Ls-bXM">
-                                <rect key="frame" x="280" y="376" width="76" height="45"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="RuW-v1-Lgf"/>
-                                    <constraint firstAttribute="width" constant="76" id="vWi-zJ-lFx"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" red="0.94107431173324585" green="0.94123536348342896" blue="0.94106405973434448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="oC5-fq-8MD" firstAttribute="centerX" secondItem="juQ-GD-hDM" secondAttribute="centerX" id="13w-rD-YhS"/>
-                            <constraint firstItem="eZQ-v3-vyl" firstAttribute="leading" secondItem="juQ-GD-hDM" secondAttribute="leadingMargin" constant="3" id="2Fy-TX-0XX"/>
-                            <constraint firstItem="T83-Nb-SfM" firstAttribute="leading" secondItem="juQ-GD-hDM" secondAttribute="leadingMargin" constant="3" id="BMf-PF-gKM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="9aA-kv-mGg" secondAttribute="trailing" constant="3" id="E4y-I5-Zf3"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="T83-Nb-SfM" secondAttribute="trailing" constant="3" id="EOw-bC-cLi"/>
-                            <constraint firstItem="oC5-fq-8MD" firstAttribute="leading" secondItem="juQ-GD-hDM" secondAttribute="leadingMargin" constant="3" id="Ftk-2O-OZx"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="oC5-fq-8MD" secondAttribute="trailing" constant="3" id="ISN-AV-KGF"/>
-                            <constraint firstItem="RGe-mE-c49" firstAttribute="leading" secondItem="juQ-GD-hDM" secondAttribute="leadingMargin" constant="3" id="JbM-28-Xmf"/>
-                            <constraint firstItem="RGe-mE-c49" firstAttribute="centerX" secondItem="juQ-GD-hDM" secondAttribute="centerX" id="ORr-E0-goP"/>
-                            <constraint firstItem="T83-Nb-SfM" firstAttribute="top" secondItem="oC5-fq-8MD" secondAttribute="bottom" constant="18" id="Z3V-pY-0rU"/>
-                            <constraint firstItem="RGe-mE-c49" firstAttribute="top" secondItem="T83-Nb-SfM" secondAttribute="bottom" constant="18" id="amk-m9-aKf"/>
-                            <constraint firstItem="oC5-fq-8MD" firstAttribute="top" secondItem="uOu-n2-zZo" secondAttribute="bottom" constant="18" id="ay2-Th-tOF"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="RGe-mE-c49" secondAttribute="trailing" constant="3" id="fZP-e4-LHH"/>
-                            <constraint firstItem="eZQ-v3-vyl" firstAttribute="centerX" secondItem="juQ-GD-hDM" secondAttribute="centerX" id="gMF-Ie-w28"/>
-                            <constraint firstItem="P0U-Zl-24G" firstAttribute="top" secondItem="9aA-kv-mGg" secondAttribute="bottom" constant="20" id="hI1-Qj-FX8"/>
-                            <constraint firstItem="9aA-kv-mGg" firstAttribute="top" secondItem="eZQ-v3-vyl" secondAttribute="bottom" constant="18" id="hN2-MF-qQF"/>
-                            <constraint firstItem="T83-Nb-SfM" firstAttribute="centerX" secondItem="juQ-GD-hDM" secondAttribute="centerX" id="iCc-7t-Dwk"/>
-                            <constraint firstItem="9aA-kv-mGg" firstAttribute="leading" secondItem="juQ-GD-hDM" secondAttribute="leadingMargin" constant="3" id="pUb-83-Z1w"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="URS-Ls-bXM" secondAttribute="trailing" constant="3" id="qP1-vB-YhC"/>
-                            <constraint firstItem="9aA-kv-mGg" firstAttribute="top" secondItem="URS-Ls-bXM" secondAttribute="bottom" constant="18" id="thd-ML-STQ"/>
-                            <constraint firstItem="9aA-kv-mGg" firstAttribute="centerX" secondItem="juQ-GD-hDM" secondAttribute="centerX" id="ubc-Dp-4RE"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="eZQ-v3-vyl" secondAttribute="trailing" constant="3" id="x3K-wp-zF8"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ALKANES" id="3Ye-Ac-aKO">
                         <barButtonItem key="backBarButtonItem" title="SET" id="usH-w8-GKh"/>
                     </navigationItem>
-                    <connections>
-                        <outlet property="moleculeName" destination="eZQ-v3-vyl" id="fzl-KO-t2k"/>
-                        <outlet property="moleculeNumber" destination="URS-Ls-bXM" id="52y-xS-ud5"/>
-                        <outlet property="swipeView" destination="9aA-kv-mGg" id="YHI-Lu-jI2"/>
-                    </connections>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5WL-MA-E4a" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="848.79999999999995" y="909.89505247376314"/>
+            <point key="canvasLocation" x="1569" y="833"/>
         </scene>
         <!--Notecard-->
         <scene sceneID="wTv-CK-f3f">
@@ -522,7 +425,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wic-xn-Iy1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="104.8" y="1763.568215892054"/>
+            <point key="canvasLocation" x="2494" y="578"/>
         </scene>
         <!--Quiz-->
         <scene sceneID="8q6-Pm-t1a">
@@ -620,7 +523,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ckv-xO-IaY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1616.8" y="1763.568215892054"/>
+            <point key="canvasLocation" x="4006" y="578"/>
         </scene>
         <!--Draw-->
         <scene sceneID="ubf-W8-hL1">
@@ -772,7 +675,144 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HCB-Yr-cum" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="849" y="1764"/>
+            <point key="canvasLocation" x="3238" y="578"/>
+        </scene>
+        <!--SET-->
+        <scene sceneID="20p-CY-0bn">
+            <objects>
+                <viewController title="SET" id="mzH-pc-YNH" customClass="SetViewController" customModule="PocketChem" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SUF-54-eTG"/>
+                        <viewControllerLayoutGuide type="bottom" id="JVW-Lh-gPH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dI5-b6-w1E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xTN-us-fMq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdV-XE-M2W">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oC5-fq-8MD" userLabel="Cards Button" customClass="ShadowButton" customModule="PocketChem" customModuleProvider="target">
+                                                <rect key="frame" x="19" y="21" width="337" height="80"/>
+                                                <color key="backgroundColor" red="0.97254901959999995" green="0.75294117650000003" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="5F6-BX-F3g"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="28"/>
+                                                <state key="normal" title="CARDS">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T83-Nb-SfM" userLabel="Draw Button" customClass="ShadowButton" customModule="PocketChem" customModuleProvider="target">
+                                                <rect key="frame" x="19" y="110" width="337" height="80"/>
+                                                <color key="backgroundColor" red="0.92549019610000005" green="0.33725490200000002" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="9il-5l-6VK"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="28"/>
+                                                <state key="normal" title="DRAW">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGe-mE-c49" userLabel="Quiz Button" customClass="ShadowButton" customModule="PocketChem" customModuleProvider="target">
+                                                <rect key="frame" x="19" y="198" width="337" height="80"/>
+                                                <color key="backgroundColor" red="0.61176470589999998" green="0.69803921570000005" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="Lgy-49-cRS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="28"/>
+                                                <state key="normal" title="QUIZ">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     SERINE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZQ-v3-vyl" userLabel="Molecule Label" customClass="ShadowLabel" customModule="PocketChem" customModuleProvider="target">
+                                                <rect key="frame" x="19" y="299" width="337" height="45"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="VSg-h5-01r"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URS-Ls-bXM">
+                                                <rect key="frame" x="280" y="299" width="76" height="45"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="NrM-sq-3MT"/>
+                                                    <constraint firstAttribute="width" constant="76" id="vup-hh-z11"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IUPAC1" translatesAutoresizingMaskIntoConstraints="NO" id="9aA-kv-mGg" customClass="ShadowUIImageView" customModule="PocketChem" customModuleProvider="target">
+                                                <rect key="frame" x="19" y="350" width="337" height="208"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="208" id="7dP-It-cot"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="RGe-mE-c49" secondAttribute="trailing" constant="19" id="5cV-HV-dom"/>
+                                            <constraint firstItem="URS-Ls-bXM" firstAttribute="top" secondItem="bdV-XE-M2W" secondAttribute="top" constant="299" id="6ec-6T-msH"/>
+                                            <constraint firstItem="eZQ-v3-vyl" firstAttribute="top" secondItem="bdV-XE-M2W" secondAttribute="top" constant="299" id="9LH-Qh-Spq"/>
+                                            <constraint firstAttribute="trailing" secondItem="URS-Ls-bXM" secondAttribute="trailing" constant="19" id="AYl-ax-1VO"/>
+                                            <constraint firstAttribute="trailing" secondItem="9aA-kv-mGg" secondAttribute="trailing" constant="19" id="CXh-eW-e0x"/>
+                                            <constraint firstAttribute="height" constant="667" id="D82-Qi-srH"/>
+                                            <constraint firstItem="RGe-mE-c49" firstAttribute="top" secondItem="bdV-XE-M2W" secondAttribute="top" constant="198" id="DD4-TP-GRP"/>
+                                            <constraint firstItem="T83-Nb-SfM" firstAttribute="leading" secondItem="bdV-XE-M2W" secondAttribute="leading" constant="19" id="HdB-oO-9eH"/>
+                                            <constraint firstItem="RGe-mE-c49" firstAttribute="leading" secondItem="bdV-XE-M2W" secondAttribute="leading" constant="19" id="IfD-hL-VH9"/>
+                                            <constraint firstItem="oC5-fq-8MD" firstAttribute="leading" secondItem="bdV-XE-M2W" secondAttribute="leading" constant="19" id="KL4-xc-wsg"/>
+                                            <constraint firstAttribute="trailing" secondItem="oC5-fq-8MD" secondAttribute="trailing" constant="19" id="OeG-zK-DBP"/>
+                                            <constraint firstAttribute="trailing" secondItem="T83-Nb-SfM" secondAttribute="trailing" constant="19" id="V1T-Ql-hmu"/>
+                                            <constraint firstAttribute="trailing" secondItem="eZQ-v3-vyl" secondAttribute="trailing" constant="19" id="Vh0-jH-IBv"/>
+                                            <constraint firstItem="9aA-kv-mGg" firstAttribute="top" secondItem="bdV-XE-M2W" secondAttribute="top" constant="350" id="Vpx-VL-ev3"/>
+                                            <constraint firstItem="T83-Nb-SfM" firstAttribute="top" secondItem="bdV-XE-M2W" secondAttribute="top" constant="110" id="cOt-Kx-o9M"/>
+                                            <constraint firstItem="oC5-fq-8MD" firstAttribute="top" secondItem="bdV-XE-M2W" secondAttribute="top" constant="21" id="kg3-in-8ji"/>
+                                            <constraint firstItem="9aA-kv-mGg" firstAttribute="leading" secondItem="bdV-XE-M2W" secondAttribute="leading" constant="19" id="koW-P7-Meq"/>
+                                            <constraint firstItem="eZQ-v3-vyl" firstAttribute="leading" secondItem="bdV-XE-M2W" secondAttribute="leading" constant="19" id="tjv-Xv-WfM"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="bdV-XE-M2W" secondAttribute="trailing" id="95L-9P-yZu"/>
+                                    <constraint firstAttribute="bottom" secondItem="bdV-XE-M2W" secondAttribute="bottom" id="FIf-20-Hpb"/>
+                                    <constraint firstItem="bdV-XE-M2W" firstAttribute="top" secondItem="xTN-us-fMq" secondAttribute="top" id="c5I-eF-fK1"/>
+                                    <constraint firstItem="bdV-XE-M2W" firstAttribute="leading" secondItem="xTN-us-fMq" secondAttribute="leading" id="dTk-c3-PyU"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xTN-us-fMq" firstAttribute="bottom" secondItem="JVW-Lh-gPH" secondAttribute="top" id="VIm-ym-Rop"/>
+                            <constraint firstItem="bdV-XE-M2W" firstAttribute="width" secondItem="dI5-b6-w1E" secondAttribute="width" id="VOc-Uy-GFq"/>
+                            <constraint firstItem="xTN-us-fMq" firstAttribute="top" secondItem="dI5-b6-w1E" secondAttribute="top" id="YsP-y2-MqW"/>
+                            <constraint firstAttribute="trailing" secondItem="xTN-us-fMq" secondAttribute="trailing" id="aMP-zV-W7M"/>
+                            <constraint firstItem="xTN-us-fMq" firstAttribute="leading" secondItem="dI5-b6-w1E" secondAttribute="leading" id="iuL-aO-cUq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ALKANES" id="dr0-Rz-dxg">
+                        <barButtonItem key="backBarButtonItem" title="SET" id="Vfr-do-sDB"/>
+                    </navigationItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="moleculeName" destination="eZQ-v3-vyl" id="c4s-rP-RGv"/>
+                        <outlet property="moleculeNumber" destination="URS-Ls-bXM" id="XXO-xK-cqm"/>
+                        <outlet property="swipeView" destination="9aA-kv-mGg" id="cy2-F7-XzX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EWA-mw-XrJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="849" y="900"/>
         </scene>
     </scenes>
     <resources>
