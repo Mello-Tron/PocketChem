@@ -21,7 +21,7 @@ class DBManager: NSObject {
     static let shared: DBManager = DBManager() // the second way. both have the same error
     private let dbFileName = "mol.db"
     //private var database:FMDatabase!
-    var database = FMDatabase(path: "/Users/kshaw17/Documents/ChemStudyApp/Chemistry/Chemistry/database/mol.db") // HARD CODED PATH
+    var database = FMDatabase(path: "/Users/kduarte17/ChemStudyApp/Chemistry/Chemistry/database/mol.db") // HARD CODED PATH
     //var database = FMDatabase(path: "/Users/Patrick/Documents/Github/ChemStudyApp/Chemistry/Chemistry/database/mol.db") // HARD CODED PATH
     
     class func getInstance() -> DBManager // Here is the problem child. I read in a thread that "getInstance" is inadvisable and that sharedInstance should be a static property of the class...? Possibly a solution but unsure how to implement

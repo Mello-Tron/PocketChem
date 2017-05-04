@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="04I-ZG-yz2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="04I-ZG-yz2">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -524,22 +524,11 @@
                                     <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ps8-nX-lZF" userLabel="ContainerView">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     SERINE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ozl-ht-RNd" userLabel="Molecule Label" customClass="ShadowLabel" customModule="PocketChem" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ozl-ht-RNd" userLabel="Molecule Label" customClass="ShadowLabel" customModule="PocketChem" customModuleProvider="target">
                                                 <rect key="frame" x="19" y="21" width="337" height="45"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="MsB-dL-3fa"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5td-eF-cEW">
-                                                <rect key="frame" x="280" y="21" width="76" height="45"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="45" id="Jm9-le-eV6"/>
-                                                    <constraint firstAttribute="width" constant="76" id="Moo-Cf-lP5"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
                                                 <nil key="textColor"/>
@@ -550,9 +539,7 @@
                                         <constraints>
                                             <constraint firstItem="Ozl-ht-RNd" firstAttribute="top" secondItem="ps8-nX-lZF" secondAttribute="top" constant="21" id="NR2-DU-29K"/>
                                             <constraint firstAttribute="trailing" secondItem="Ozl-ht-RNd" secondAttribute="trailing" constant="19" id="T4X-lZ-KCI"/>
-                                            <constraint firstItem="5td-eF-cEW" firstAttribute="top" secondItem="ps8-nX-lZF" secondAttribute="top" constant="21" id="UQW-bY-bpB"/>
                                             <constraint firstAttribute="height" constant="667" id="aI5-XW-WKj"/>
-                                            <constraint firstAttribute="trailing" secondItem="5td-eF-cEW" secondAttribute="trailing" constant="19" id="ffM-lH-du5"/>
                                             <constraint firstItem="Ozl-ht-RNd" firstAttribute="leading" secondItem="ps8-nX-lZF" secondAttribute="leading" constant="19" id="hgs-0Z-SpH"/>
                                         </constraints>
                                     </view>
@@ -581,7 +568,6 @@
                     <connections>
                         <outlet property="containerView" destination="ps8-nX-lZF" id="st0-fS-1yX"/>
                         <outlet property="moleculeName" destination="Ozl-ht-RNd" id="9un-OX-iC8"/>
-                        <outlet property="moleculeNumber" destination="5td-eF-cEW" id="nvS-VT-gtD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6u6-0w-Jpk" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -28,12 +28,12 @@ class CardViewController: ViewController {
         super.viewDidLoad()
         
         //Setting image up
-        moleculeView = UIImageView(frame:CGRect(x:0,y:0,width:375, height:270))
+        moleculeView = UIImageView(frame:CGRect(x:0,y:0,width:335, height:270))
         moleculeView.backgroundColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1)
         moleculeView.image = UIImage(named: "IUPAC1")
         
         //Setting label up
-        nameLabel = UILabel(frame:CGRect(x:0,y:0,width:375,height:270))
+        nameLabel = UILabel(frame:CGRect(x:0,y:0,width:335,height:270))
         nameLabel.textAlignment = NSTextAlignment.center
         nameLabel.backgroundColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1)
         nameLabel.font = UIFont(name: "Ubuntu", size: 20)
@@ -43,7 +43,7 @@ class CardViewController: ViewController {
         let singleTap = UITapGestureRecognizer(target:self, action:#selector(self.tapped))
         singleTap.numberOfTapsRequired = 1
         
-        let rect = CGRect(x:18, y:149, width:375, height:270)
+        let rect = CGRect(x:18, y:120, width:335, height:270)
         
         cardView = UIView(frame:rect)
         cardView.addGestureRecognizer(singleTap)
@@ -61,7 +61,7 @@ class CardViewController: ViewController {
         let singleGrow = UITapGestureRecognizer(target: self, action: #selector(self.grow))
         singleGrow.numberOfTapsRequired = 1
         
-        let flagArea = CGRect(x: 365, y: 450, width: 30, height:40)
+        let flagArea = CGRect(x: 325, y: 425, width: 30, height:40)
         
         flagView = UIView(frame:flagArea)
         flagView.addGestureRecognizer(singleGrow)
