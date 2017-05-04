@@ -11,21 +11,27 @@ class CardViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //se
+        moleculeView = UIImageView(frame:CGRect(x:0,y:0,width:343, height:269))
+        moleculeView.backgroundColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1)
+        moleculeView.image = UIImage(named: "IUPAC1")
         
-        moleculeView = UIImageView(image: UIImage(named: "IUPAC1"))
-        nameView = UIImageView(image: UIImage(named: "PocketProtector"))
-        nameLabel = UILabel()
-        
+        //Setting label up
+        nameLabel = UILabel(frame:CGRect(x:0,y:0,width:343,height:269))
+        nameLabel.textAlignment = NSTextAlignment.center
+        nameLabel.backgroundColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1)
+        nameLabel.font = UIFont(name: "Ubuntu", size: 20)
+        nameLabel.text = "Serine"       //TO-DO: Katie pull from database
         
         let singleTap = UITapGestureRecognizer(target:self, action:#selector(self.tapped))
         singleTap.numberOfTapsRequired = 1
         
-        let rect = CGRect(x:20, y:50, width:100, height:100)
+        let rect = CGRect(x:18, y:149, width:343, height:269)
         
         cardView = UIView(frame:rect)
         cardView.addGestureRecognizer(singleTap)
         cardView.isUserInteractionEnabled = true
-        cardView.addSubview(nameView)
+        cardView.addSubview(moleculeView)
         
         view.addSubview(cardView)
         
@@ -40,11 +46,11 @@ class CardViewController: ViewController {
     func tapped(){
         print("tapped")     //debugging
         if(showingMolecule){
-            UIView.transition(from: moleculeView, to: nameView, duration: 1, options: UIViewAnimationOptions.transitionFlipFromRight, completion: nil)
+            UIView.transition(from: moleculeView, to: nameLabel, duration: 1, options: UIViewAnimationOptions.transitionFlipFromRight, completion: nil)
             showingMolecule = false
         }
         else{
-            UIView.transition(from: nameView, to: moleculeView, duration: 1, options: UIViewAnimationOptions.transitionFlipFromLeft, completion: nil)
+            UIView.transition(from: nameLabel, to: moleculeView, duration: 1, options: UIViewAnimationOptions.transitionFlipFromLeft, completion: nil)
             showingMolecule = true
         }
     }
