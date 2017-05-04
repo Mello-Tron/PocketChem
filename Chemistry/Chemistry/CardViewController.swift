@@ -1,7 +1,6 @@
 import UIKit
 
 class CardViewController: ViewController {
-    @IBOutlet var moleculeName: ShadowLabel!
     @IBOutlet var moleculeNumber: UILabel!
     @IBOutlet var containerView: UIView!
     
@@ -126,7 +125,7 @@ class CardViewController: ViewController {
                     moleculeView.image = UIImage(named: setImageList[setImageIndex])
                     
                     //Jimmy-rigged code
-                    self.moleculeName.text = "     SERINE"
+                    //self.moleculeName.text = "     SERINE"
                     nameLabel.text = "Serine"
                     self.moleculeNumber.text = "1/2"
                 }
@@ -140,7 +139,7 @@ class CardViewController: ViewController {
                     moleculeView.image = UIImage(named: setImageList[setImageIndex])
                     
                     //Jimmy-rigged code
-                    self.moleculeName.text = "     BENZENE"
+                    //self.moleculeName.text = "     BENZENE"
                     nameLabel.text = "Benzene"
                     self.moleculeNumber.text = "2/2"
                 }
