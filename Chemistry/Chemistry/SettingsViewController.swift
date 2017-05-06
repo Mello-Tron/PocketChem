@@ -27,13 +27,18 @@ class SettingsViewController: UIViewController {
 
     func loadRandomImage()
     {
+        ////////////
+        // Here is just taking a random index of the array to display a random image. DO NOT USE right now, because not all molecules have an image to go with them anymore.
         let marrMolInfo : NSMutableArray = DBManager().getAllData()
         let randomIndex = Int(arc4random_uniform(UInt32(marrMolInfo.count)))
         
-        //numString = marrMolInfo[randomIndex].getName() as! String
-        
         // the random molecule from the array:
-        let moleculeInfo : MoleculeInfo = marrMolInfo.object(at: randomIndex) as! MoleculeInfo
+        // let moleculeInfo : MoleculeInfo = marrMolInfo.object(at: randomIndex) as! MoleculeInfo
+        
+        ///////////
+        // Here, instead of getting the object at a random index, let's get it from 2, which is the third item in the mol database, Propane, and does have an image stored:
+        let moleculeInfo : MoleculeInfo = marrMolInfo.object(at: 2) as! MoleculeInfo
+        print (moleculeInfo.cid, moleculeInfo.getMolIUPAC())
         
         // getting the molecule id number and converting it to a string to identify the name of the image
         let x : Int = moleculeInfo.getImageNum()

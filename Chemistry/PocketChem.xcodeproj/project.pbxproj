@@ -57,11 +57,11 @@
 		045753411EBAF8D200CAC781 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = FMDB/FMResultSet.h; sourceTree = "<group>"; };
 		045753421EBAF8D200CAC781 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = FMDB/FMResultSet.m; sourceTree = "<group>"; };
 		045753481EBAF9A300CAC781 /* PocketChem-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PocketChem-Bridging-Header.h"; sourceTree = "<group>"; };
-		045753491EBAFA5500CAC781 /* mol.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = mol.db; path = database/mol.db; sourceTree = "<group>"; };
 		0457534A1EBAFB0200CAC781 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		0457534C1EBAFB3C00CAC781 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		0457534E1EBAFB7300CAC781 /* MoleculeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoleculeInfo.swift; sourceTree = "<group>"; };
 		045753521EBB099900CAC781 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		049A2D681EBE87FF00F2A178 /* mol.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = mol.db; path = databaseInProject/mol.db; sourceTree = "<group>"; };
 		2B2AB2FC1EBA523600DB06DD /* SetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetViewController.swift; sourceTree = "<group>"; };
 		2B2AB2FF1EBA54B900DB06DD /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2B2AB3011EBA54E100DB06DD /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 				0457534A1EBAFB0200CAC781 /* Utility.swift */,
 				0457534C1EBAFB3C00CAC781 /* DBManager.swift */,
 				0457534E1EBAFB7300CAC781 /* MoleculeInfo.swift */,
-				045753491EBAFA5500CAC781 /* mol.db */,
+				049A2D681EBE87FF00F2A178 /* mol.db */,
 			);
 			name = Database;
 			sourceTree = "<group>";

@@ -22,7 +22,7 @@ class DBManager: NSObject {
     private let dbFileName = "mol.db"
     //private var database:FMDatabase!
     //var database = FMDatabase(path: "/Users/kduarte17/ChemStudyApp/Chemistry/Chemistry/database/mol.db") // HARD CODED PATH
-    var database = FMDatabase(path: "/Users/Patrick/Documents/Github/ChemStudyApp/Chemistry/Chemistry/database/mol.db") // HARD CODED PATH
+    var database = FMDatabase(path: "/Users/kshaw17/Documents/ChemStudyApp/Chemistry/Chemistry/databaseInProject/mol.db") // HARD CODED PATH
     
     class func getInstance() -> DBManager // Here is the problem child. I read in a thread that "getInstance" is inadvisable and that sharedInstance should be a static property of the class...? Possibly a solution but unsure how to implement
     {
@@ -46,8 +46,8 @@ class DBManager: NSObject {
             while resultSet.next()
             {
                 let moleculeInfo : MoleculeInfo = MoleculeInfo()
-                moleculeInfo.cid = Int(resultSet.int(forColumn: "cid")) // referencing the column names within the database
-                moleculeInfo.name = resultSet.string(forColumn: "name")
+                moleculeInfo.cid = Int(resultSet.int(forColumn: "mid")) // referencing the column names within the database
+                //moleculeInfo.name = resultSet.string(forColumn: "molName") // these are NULL in the database; need to have an exception for when they are NULL
                 moleculeInfo.IUPAC = resultSet.string(forColumn: "IUPAC")
                 marrStudentInfo.add(moleculeInfo)
                 // print("Here is the info",  moleculeInfo.name, ", ", moleculeInfo.cid, ", ", moleculeInfo.IUPAC, "\n")
