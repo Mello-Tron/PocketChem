@@ -15,14 +15,41 @@ import Foundation
 let sharedInstance = DBManager()
 
 class DBManager: NSObject {
-    
-    //var database: FMDatabase? = nil // the first way of declaring the database. I think the nil is the problem, but if we take that off, it has the same error.
+
+    var databasePath: String = ""
     
     static let shared: DBManager = DBManager() // the second way. both have the same error
     private let dbFileName = "mol.db"
     //private var database:FMDatabase!
     //var database = FMDatabase(path: "/Users/kduarte17/ChemStudyApp/Chemistry/Chemistry/database/mol.db") // HARD CODED PATH
     var database = FMDatabase(path: "/Users/kshaw17/Documents/ChemStudyApp/Chemistry/Chemistry/databaseInProject/mol.db") // HARD CODED PATH
+    
+    func createOrReturnDatabase() -> FMDatabase {
+        
+        let fileManager = FileManager.default
+        let dirPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+        
+        let docsDir = dirPaths[0]
+        
+        let pathForDB = Bundle.main.resourcePath! + "/mol.db"
+        
+        databasePath = docsDir + "/mol.db"
+        
+        if !fileManager.fileExists(atPath: databasePath as String) {
+            print("Database not present, so we created one from \(pathForDB)")
+            do {
+                try fileManager.copyItem(atPath: pathForDB, toPath: databasePath as String)
+            } catch {
+                
+            }
+            print("Copied database to \(databasePath), and a file exists there is: \(fileManager.fileExists(atPath: databasePath as String))")
+            return FMDatabase(path: databasePath as String)
+        } else {
+            print("I returned the database because it exists.")
+            return FMDatabase(path: databasePath as String)
+        }
+        
+    }
     
     class func getInstance() -> DBManager // Here is the problem child. I read in a thread that "getInstance" is inadvisable and that sharedInstance should be a static property of the class...? Possibly a solution but unsure how to implement
     {
