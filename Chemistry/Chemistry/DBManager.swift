@@ -65,9 +65,9 @@ class DBManager: NSObject {
     
     func getAllData() -> NSMutableArray // The important method that should retrieve data into array
     {
-        sharedInstance.database!.open() // Here is where the run fails, but the problem is, I believe, with sharedInstance
+        sharedInstance.database!.open()
         let resultSet: FMResultSet! = sharedInstance.database!.executeQuery("SELECT * FROM mol", withArgumentsIn: nil)
-        let marrStudentInfo : NSMutableArray = NSMutableArray()
+        let moleculeInfoArray : NSMutableArray = NSMutableArray()
         if (resultSet != nil)
         {
             while resultSet.next()
@@ -76,13 +76,61 @@ class DBManager: NSObject {
                 moleculeInfo.cid = Int(resultSet.int(forColumn: "mid")) // referencing the column names within the database
                 //moleculeInfo.name = resultSet.string(forColumn: "molName") // these are NULL in the database; need to have an exception for when they are NULL
                 moleculeInfo.IUPAC = resultSet.string(forColumn: "IUPAC")
-                marrStudentInfo.add(moleculeInfo)
+                moleculeInfoArray.add(moleculeInfo)
                 // print("Here is the info",  moleculeInfo.name, ", ", moleculeInfo.cid, ", ", moleculeInfo.IUPAC, "\n")
             }
         }
         
         sharedInstance.database!.close()
-        return marrStudentInfo
+        return moleculeInfoArray
+    }
+
+    
+    func getASet(num: Int) -> NSMutableArray // Returns a set specified by the parameter, an int that should specify the index of theset from darthMol
+    {
+        sharedInstance.database!.open()
+        let resultSet: FMResultSet! = sharedInstance.database!.executeQuery("SELECT darthMol.sid, mol.mid, mol.IUPAC FROM mol INNER JOIN darthMol ON mol.mid = darthMol.Field2 WHERE darthMol.sid = '1'", withArgumentsIn: nil)
+        let setInfoArray : NSMutableArray = NSMutableArray()
+        if (resultSet != nil)
+        {
+            while resultSet.next()
+            {
+                let moleculeInfo : MoleculeInfo = MoleculeInfo()
+                moleculeInfo.cid = Int(resultSet.int(forColumn: "mid")) // referencing the column names within the database
+                //moleculeInfo.name = resultSet.string(forColumn: "molName") // these are NULL in the database; need to have an exception for when they are NULL
+                moleculeInfo.IUPAC = resultSet.string(forColumn: "IUPAC")
+                setInfoArray.add(moleculeInfo)
+                // print("Here is the info",  moleculeInfo.name, ", ", moleculeInfo.cid, ", ", moleculeInfo.IUPAC, "\n")
+            }
+        }
+        
+        sharedInstance.database!.close()
+        return setInfoArray
+    }
+    
+    func getSetSize(setNum: Int) -> Int // THERE IS DEFINITELY A BETTER WAY TO DO THIS // KATIE COME BACK AND FIX
+    {
+        sharedInstance.database!.open()
+        let resultSet: FMResultSet! = sharedInstance.database!.executeQuery("SELECT darthMol.sid, mol.mid, mol.IUPAC FROM mol INNER JOIN darthMol ON mol.mid = darthMol.Field2 WHERE darthMol.sid = '1'", withArgumentsIn: nil)
+        let setInfoArray : NSMutableArray = NSMutableArray()
+        if (resultSet != nil)
+        {
+            while resultSet.next()
+            {
+                let moleculeInfo : MoleculeInfo = MoleculeInfo()
+                moleculeInfo.cid = Int(resultSet.int(forColumn: "mid")) // referencing the column names within the database
+                //moleculeInfo.name = resultSet.string(forColumn: "molName") // these are NULL in the database; need to have an exception for when they are NULL
+                moleculeInfo.IUPAC = resultSet.string(forColumn: "IUPAC")
+                setInfoArray.add(moleculeInfo)
+                // print("Here is the info",  moleculeInfo.name, ", ", moleculeInfo.cid, ", ", moleculeInfo.IUPAC, "\n")
+            }
+        }
+        
+        print ("set size is: ", setInfoArray.count)
+        
+        sharedInstance.database!.close()
+        return setInfoArray.count
+
     }
     
 }

@@ -6,12 +6,15 @@ class CardViewController: ViewController {
     
     
     var cardView: UIView!
-    var nameView: UIImageView!
+    //var nameView: UIImageView!
     var moleculeView: UIImageView!
     
     var flagView: UIView!
     var flagSelected: UIImageView!
     var flagUnselected: UIImageView!
+    
+    var numberLabel: UILabel!
+    var numberView: UIView!
     
     var nameLabel: UILabel!
     
@@ -23,12 +26,14 @@ class CardViewController: ViewController {
     var setImageList:[String] = ["IUPAC1@0.5x", "IUPAC2@0.5x"]
     var setImageIndex: NSInteger = 0
     
+    let setInfo : NSMutableArray = DBManager().getASet(num: 1) // set parameter to whatever set you want
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //Setting image up
         moleculeView = UIImageView(frame:CGRect(x:0,y:0,width:335, height:270))
-        moleculeView.backgroundColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1)
+        moleculeView.backgroundColor = UIColor(red: 255, green:255, blue: 255, alpha: 1)
         moleculeView.image = UIImage(named: "IUPAC1")
         
         //Setting label up
@@ -36,7 +41,7 @@ class CardViewController: ViewController {
         nameLabel.textAlignment = NSTextAlignment.center
         nameLabel.backgroundColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1)
         nameLabel.font = UIFont(name: "Ubuntu", size: 20)
-        nameLabel.text = "Serine"       //TO-DO: Katie pull from database
+        //nameLabel.text = getSetInfo().      //TO-DO: Katie pull from database
         
         //create a recognizer for user touch
         let singleTap = UITapGestureRecognizer(target:self, action:#selector(self.tapped))
@@ -148,5 +153,4 @@ class CardViewController: ViewController {
             }
         }
     }
-
 }
