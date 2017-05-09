@@ -1,8 +1,9 @@
 import UIKit
 
 class CardViewController: ViewController {
-    @IBOutlet var moleculeNumber: UILabel!
+    //@IBOutlet var moleculeNumber: UILabel!
     @IBOutlet var containerView: UIView!
+    @IBOutlet weak var overviewLabel: textUpdate!
     
     
     var cardView: UIView!
@@ -28,8 +29,20 @@ class CardViewController: ViewController {
     
     let setInfo : NSMutableArray = DBManager().getASet(num: 1) // set parameter to whatever set you want
     
+    ////////////////////
+    //Database Variables
+    ////////////////////
+    var currentSet = 0
+    var setSize = 0
+    var currentMoleculeNumber = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //HARD CODED SETUP FOR ALKANES
+        currentSet = 1
+        setSize = DBManager().getSetSize(setNum: currentSet)
+        currentMoleculeNumber = 0
         
         //Setting image up
         moleculeView = UIImageView(frame:CGRect(x:0,y:0,width:335, height:270))
@@ -41,7 +54,13 @@ class CardViewController: ViewController {
         nameLabel.textAlignment = NSTextAlignment.center
         nameLabel.backgroundColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1)
         nameLabel.font = UIFont(name: "Ubuntu", size: 20)
-        //nameLabel.text = getSetInfo().      //TO-DO: Katie pull from database
+        //nameLabel.text = String(sharedInstance.getSetSize(setNum: 0))     //TO-DO: Katie pull from database
+        
+        //HARD CODED SETUP FOR ALKANES
+        let myArray = DBManager().getASet(num: 1)
+        let currentName: MoleculeInfo = myArray[currentMoleculeNumber] as! MoleculeInfo //not exactly sure what currentName's type is
+        nameLabel.text = currentName.IUPAC
+        moleculeView.image = UIImage(named: String(currentMoleculeNumber + 1) + ".png")
         
         //create a recognizer for user touch
         let singleTap = UITapGestureRecognizer(target:self, action:#selector(self.tapped))
@@ -122,31 +141,47 @@ class CardViewController: ViewController {
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.right:
-                //let tapAlert = UIAlertController(title: "Swiped", message: "You just swiped the view right", preferredStyle: UIAlertControllerStyle.alert)
-                //tapAlert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: nil))
-                //self.present(tapAlert, animated: true, completion: nil)
+                let newMoleculeNumber = currentMoleculeNumber - 1
+                if (newMoleculeNumber >= 0 && newMoleculeNumber < setSize) {
+                    currentMoleculeNumber = newMoleculeNumber
+                    overviewLabel.updateMoleculeNumber(newMoleculeNumber: newMoleculeNumber)
+                    
+                    let myArray = DBManager().getASet(num: 1)
+                    let currentName: MoleculeInfo = myArray[currentMoleculeNumber] as! MoleculeInfo //not exactly sure what currentName's type is
+                    nameLabel.text = currentName.IUPAC
+                    
+                    moleculeView.image = UIImage(named: String(currentMoleculeNumber + 1) + ".png")
+                }
+                
                 if (setImageIndex > 0) {
                     setImageIndex -= 1;
-                    moleculeView.image = UIImage(named: setImageList[setImageIndex])
+                    //moleculeView.image = UIImage(named: setImageList[setImageIndex])
                     
                     //Jimmy-rigged code
                     //self.moleculeName.text = "     SERINE"
-                    nameLabel.text = "Serine"
-                    self.moleculeNumber.text = "1/2"
+                    //nameLabel.text = "Serine"
                 }
                 
             case UISwipeGestureRecognizerDirection.left:
-                //let tapAlert = UIAlertController(title: "Swiped", message: "You just swiped the view left", preferredStyle: UIAlertControllerStyle.alert)
-                //tapAlert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: nil))
-                //self.present(tapAlert, animated: true, completion: nil)
+                let newMoleculeNumber = currentMoleculeNumber + 1
+                if (newMoleculeNumber >= 0 && newMoleculeNumber < setSize) {
+                    currentMoleculeNumber = newMoleculeNumber
+                    overviewLabel.updateMoleculeNumber(newMoleculeNumber: newMoleculeNumber)
+                    
+                    let myArray = DBManager().getASet(num: 1)
+                    let currentName: MoleculeInfo = myArray[currentMoleculeNumber] as! MoleculeInfo //not exactly sure what currentName's type is
+                    nameLabel.text = currentName.IUPAC
+                    
+                    moleculeView.image = UIImage(named: String(currentMoleculeNumber + 1) + ".png")
+                }
+                
                 if (setImageIndex < setImageList.count - 1) {
                     setImageIndex += 1;
-                    moleculeView.image = UIImage(named: setImageList[setImageIndex])
+                    //moleculeView.image = UIImage(named: setImageList[setImageIndex])
                     
                     //Jimmy-rigged code
                     //self.moleculeName.text = "     BENZENE"
-                    nameLabel.text = "Benzene"
-                    self.moleculeNumber.text = "2/2"
+                    //nameLabel.text = "Benzene"
                 }
             default:
                 break

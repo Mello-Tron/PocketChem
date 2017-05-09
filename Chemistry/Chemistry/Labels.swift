@@ -12,6 +12,10 @@ class ShadowLabel: UILabel {
     }
 }
 class textUpdate: UILabel {
+    var currentSet = 0
+    var setSize = 0
+    var currentMoleculeNumber = 0
+    
     override func awakeFromNib() {
         //Shadow
         layer.shadowColor = UIColor.black.cgColor
@@ -20,13 +24,19 @@ class textUpdate: UILabel {
         layer.shadowRadius = 1.0
         layer.shadowOpacity = 0.3
         
-        //text update --> DATABASE
-        
-        let setInfo : Int = DBManager().getSetSize(setNum: 1)
-        
-        var myString = String(setInfo)  // convert to string
-        
-        text = myString
-        
+        //HARD CODED SETUP FOR ALKANES
+        currentSet = 1
+        setSize = DBManager().getSetSize(setNum: currentSet)
+        currentMoleculeNumber = 0
+        updateText()
+    }
+    
+    func updateMoleculeNumber(newMoleculeNumber: Int) {
+        currentMoleculeNumber = newMoleculeNumber
+        updateText()
+    }
+    
+    func updateText() {
+        text = String(currentMoleculeNumber + 1) + "/" + String(setSize)
     }
 }

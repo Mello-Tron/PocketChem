@@ -562,6 +562,7 @@
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="containerView" destination="ps8-nX-lZF" id="st0-fS-1yX"/>
+                        <outlet property="overviewLabel" destination="qE0-UG-gqU" id="8AH-9c-gwS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6u6-0w-Jpk" userLabel="First Responder" sceneMemberID="firstResponder"/>
