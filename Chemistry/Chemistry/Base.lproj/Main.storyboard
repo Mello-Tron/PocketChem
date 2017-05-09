@@ -539,7 +539,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="ps8-nX-lZF" secondAttribute="trailing" id="L9M-eX-Mqs"/>
                                     <constraint firstItem="ps8-nX-lZF" firstAttribute="top" secondItem="pcW-MP-OHD" secondAttribute="top" id="LXk-Fv-H7F"/>
@@ -548,7 +548,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="pcW-MP-OHD" firstAttribute="leading" secondItem="Qqs-5P-NKq" secondAttribute="leading" id="HEx-dH-oSa"/>
                             <constraint firstItem="pcW-MP-OHD" firstAttribute="bottom" secondItem="1Vx-0O-Z9J" secondAttribute="top" id="J4M-Ys-O8c"/>

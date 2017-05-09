@@ -1,7 +1,6 @@
 import UIKit
 
 class CardViewController: ViewController {
-    //@IBOutlet var moleculeNumber: UILabel!
     @IBOutlet var containerView: UIView!
     @IBOutlet weak var overviewLabel: textUpdate!
     
@@ -24,8 +23,6 @@ class CardViewController: ViewController {
     
     let swipeRight = UISwipeGestureRecognizer()
     let swipeLeft = UISwipeGestureRecognizer()
-    var setImageList:[String] = ["IUPAC1@0.5x", "IUPAC2@0.5x"]
-    var setImageIndex: NSInteger = 0
     
     let setInfo : NSMutableArray = DBManager().getASet(num: 1) // set parameter to whatever set you want
     
@@ -125,12 +122,12 @@ class CardViewController: ViewController {
     func grow(){
         print("flag tapped")
         if(flagged){
-            UIView.transition(from: flagSelected, to: flagUnselected, duration: 0.5, options: UIViewAnimationOptions.transitionCrossDissolve, completion: nil)
+            UIView.transition(from: flagSelected, to: flagUnselected, duration: 0.1, options: UIViewAnimationOptions.transitionCrossDissolve, completion: nil)
             flagged = false
             
         }
         else{
-            UIView.transition(from: flagUnselected, to: flagSelected, duration: 0.5, options: UIViewAnimationOptions.transitionCrossDissolve, completion: nil)
+            UIView.transition(from: flagUnselected, to: flagSelected, duration: 0.1, options: UIViewAnimationOptions.transitionCrossDissolve, completion: nil)
             flagged = true
             
         }
@@ -153,15 +150,6 @@ class CardViewController: ViewController {
                     moleculeView.image = UIImage(named: String(currentMoleculeNumber + 1) + ".png")
                 }
                 
-                if (setImageIndex > 0) {
-                    setImageIndex -= 1;
-                    //moleculeView.image = UIImage(named: setImageList[setImageIndex])
-                    
-                    //Jimmy-rigged code
-                    //self.moleculeName.text = "     SERINE"
-                    //nameLabel.text = "Serine"
-                }
-                
             case UISwipeGestureRecognizerDirection.left:
                 let newMoleculeNumber = currentMoleculeNumber + 1
                 if (newMoleculeNumber >= 0 && newMoleculeNumber < setSize) {
@@ -173,15 +161,6 @@ class CardViewController: ViewController {
                     nameLabel.text = currentName.IUPAC
                     
                     moleculeView.image = UIImage(named: String(currentMoleculeNumber + 1) + ".png")
-                }
-                
-                if (setImageIndex < setImageList.count - 1) {
-                    setImageIndex += 1;
-                    //moleculeView.image = UIImage(named: setImageList[setImageIndex])
-                    
-                    //Jimmy-rigged code
-                    //self.moleculeName.text = "     BENZENE"
-                    //nameLabel.text = "Benzene"
                 }
             default:
                 break
