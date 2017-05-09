@@ -24,11 +24,9 @@ class textUpdate: UILabel {
         
         let setInfo : Int = DBManager().getSetSize(setNum: 1)
         
-        // convert to string
-        let xNSNumber = setInfo as NSNumber
-        let xString : String = xNSNumber.stringValue
+        var myString = String(setInfo)  // convert to string
         
-        text = xString
+        text = myString
         
     }
 }
