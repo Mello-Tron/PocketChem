@@ -24,7 +24,7 @@ class CardViewController: ViewController {
     let swipeRight = UISwipeGestureRecognizer()
     let swipeLeft = UISwipeGestureRecognizer()
     
-    let setInfo : NSMutableArray = DBManager().getASet(num: 1) // set parameter to whatever set you want
+    let setInfo : NSMutableArray = DBManager().getASet(num: 4) // set parameter to whatever set you want
     
     ////////////////////
     //Database Variables
@@ -54,7 +54,7 @@ class CardViewController: ViewController {
         //nameLabel.text = String(sharedInstance.getSetSize(setNum: 0))     //TO-DO: Katie pull from database
         
         //HARD CODED SETUP FOR ALKANES
-        let myArray = DBManager().getASet(num: 1)
+        let myArray = DBManager().getASet(num: 4)
         let currentName: MoleculeInfo = myArray[currentMoleculeNumber] as! MoleculeInfo //not exactly sure what currentName's type is
         nameLabel.text = currentName.IUPAC
         moleculeView.image = UIImage(named: String(currentMoleculeNumber + 1) + ".png")
