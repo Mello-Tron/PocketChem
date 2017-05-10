@@ -26,20 +26,10 @@ class CardViewController: ViewController {
     
     let setInfo : NSMutableArray = DBManager().getASet(num: 4) // set parameter to whatever set you want
     
-    ////////////////////
-    //Database Variables
-    ////////////////////
-    var currentSet = 0
-    var setSize = 0
-    var currentMoleculeNumber = 0
+    let mySetManager = SetManager(_setID: 1)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //HARD CODED SETUP FOR ALKANES
-        currentSet = 1
-        setSize = DBManager().getSetSize(setNum: currentSet)
-        currentMoleculeNumber = 0
         
         //Setting image up
         moleculeView = UIImageView(frame:CGRect(x:0,y:0,width:335, height:270))
@@ -53,11 +43,8 @@ class CardViewController: ViewController {
         nameLabel.font = UIFont(name: "Ubuntu", size: 20)
         //nameLabel.text = String(sharedInstance.getSetSize(setNum: 0))     //TO-DO: Katie pull from database
         
-        //HARD CODED SETUP FOR ALKANES
-        let myArray = DBManager().getASet(num: 4)
-        let currentName: MoleculeInfo = myArray[currentMoleculeNumber] as! MoleculeInfo //not exactly sure what currentName's type is
-        nameLabel.text = currentName.IUPAC
-        moleculeView.image = UIImage(named: String(currentMoleculeNumber + 1) + ".png")
+        nameLabel.text = mySetManager.getCurrentMoleculeName()
+        moleculeView.image = UIImage(named: String(mySetManager.getCurrentMoleculeID() + 1) + ".png")
         
         //create a recognizer for user touch
         let singleTap = UITapGestureRecognizer(target:self, action:#selector(self.tapped))
@@ -138,29 +125,17 @@ class CardViewController: ViewController {
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.right:
-                let newMoleculeNumber = currentMoleculeNumber - 1
-                if (newMoleculeNumber >= 0 && newMoleculeNumber < setSize) {
-                    currentMoleculeNumber = newMoleculeNumber
-                    overviewLabel.updateMoleculeNumber(newMoleculeNumber: newMoleculeNumber)
-                    
-                    let myArray = DBManager().getASet(num: 1)
-                    let currentName: MoleculeInfo = myArray[currentMoleculeNumber] as! MoleculeInfo //not exactly sure what currentName's type is
-                    nameLabel.text = currentName.IUPAC
-                    
-                    moleculeView.image = UIImage(named: String(currentMoleculeNumber + 1) + ".png")
+                if (mySetManager.changeMolecule(_shift: -1)) {
+                    overviewLabel.updateMoleculeNumber(newMoleculeNumber: mySetManager.getCurrentMoleculeID())
+                    nameLabel.text = mySetManager.getCurrentMoleculeName()
+                    moleculeView.image = UIImage(named: String(mySetManager.getCurrentMoleculeID() + 1) + ".png")
                 }
                 
             case UISwipeGestureRecognizerDirection.left:
-                let newMoleculeNumber = currentMoleculeNumber + 1
-                if (newMoleculeNumber >= 0 && newMoleculeNumber < setSize) {
-                    currentMoleculeNumber = newMoleculeNumber
-                    overviewLabel.updateMoleculeNumber(newMoleculeNumber: newMoleculeNumber)
-                    
-                    let myArray = DBManager().getASet(num: 1)
-                    let currentName: MoleculeInfo = myArray[currentMoleculeNumber] as! MoleculeInfo //not exactly sure what currentName's type is
-                    nameLabel.text = currentName.IUPAC
-                    
-                    moleculeView.image = UIImage(named: String(currentMoleculeNumber + 1) + ".png")
+                if (mySetManager.changeMolecule(_shift: 1)) {
+                    overviewLabel.updateMoleculeNumber(newMoleculeNumber: mySetManager.getCurrentMoleculeID())
+                    nameLabel.text = mySetManager.getCurrentMoleculeName()
+                    moleculeView.image = UIImage(named: String(mySetManager.getCurrentMoleculeID() + 1) + ".png")
                 }
             default:
                 break
