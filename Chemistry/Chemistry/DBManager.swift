@@ -89,7 +89,8 @@ class DBManager: NSObject {
     func getASet(num: Int) -> NSMutableArray // Returns a set specified by the parameter, an int that should specify the index of theset from darthMol
     {
         sharedInstance.database!.open()
-        let resultSet: FMResultSet! = sharedInstance.database!.executeQuery("SELECT darthMol.sid, mol.mid, mol.IUPAC FROM mol INNER JOIN darthMol ON mol.mid = darthMol.mid WHERE darthMol.sid = '1'", withArgumentsIn: nil)
+        let resultSet: FMResultSet! = sharedInstance.database!.executeQuery("SELECT darthMol.sid, mol.mid, mol.IUPAC FROM mol INNER JOIN darthMol ON mol.mid = darthMol.mid WHERE darthMol.sid = '\(num)'", withArgumentsIn: nil)
+        print ("NUM: ", num)
         let setInfoArray : NSMutableArray = NSMutableArray()
         if (resultSet != nil)
         {
@@ -111,7 +112,7 @@ class DBManager: NSObject {
     func getSetSize(setNum: Int) -> Int // THERE IS DEFINITELY A BETTER WAY TO DO THIS // KATIE COME BACK AND FIX
     {
         sharedInstance.database!.open()
-        let resultSet: FMResultSet! = sharedInstance.database!.executeQuery("SELECT darthMol.sid, mol.mid, mol.IUPAC FROM mol INNER JOIN darthMol ON mol.mid = darthMol.mid WHERE darthMol.sid = '1'", withArgumentsIn: nil)
+        let resultSet: FMResultSet! = sharedInstance.database!.executeQuery("SELECT darthMol.sid, mol.mid, mol.IUPAC FROM mol INNER JOIN darthMol ON mol.mid = darthMol.mid WHERE darthMol.sid = '\(setNum)'", withArgumentsIn: nil)
         let setInfoArray : NSMutableArray = NSMutableArray()
         if (resultSet != nil)
         {

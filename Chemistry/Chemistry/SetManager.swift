@@ -44,6 +44,12 @@ class SetManager {
         return currentMoleculeID
     }
     
+    
+    // Katie added this
+    func getMoleculeImageNum() -> Int{
+        return currentMolecule.cid
+    }
+    
     func getCurrentMoleculeName() -> String {
         return currentMolecule.IUPAC
     }

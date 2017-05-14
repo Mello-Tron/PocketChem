@@ -34,7 +34,6 @@
 		C8053D381EB0F431008A58E3 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8053D371EB0F431008A58E3 /* MyCollectionViewCell.swift */; };
 		CD4D1D2D1EC3734400EB15FF /* SetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D1D2C1EC3734400EB15FF /* SetManager.swift */; };
 		CDBB1FC71EC125D400213BF9 /* (null) in Resources */ = {isa = PBXBuildFile; };
-		CDBB1FC81EC1291900213BF9 /* mol.db in Resources */ = {isa = PBXBuildFile; fileRef = 049A2D681EBE87FF00F2A178 /* mol.db */; };
 		CDBEFDA51EA46CEB00697468 /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBEFDA41EA46CEB00697468 /* KDCircularProgress.swift */; };
 		CDF1ED881EB937ED00FF9137 /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDF1ED801EB937ED00FF9137 /* Ubuntu-Light.ttf */; };
 		CDF1ED891EB937ED00FF9137 /* Ubuntu-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDF1ED811EB937ED00FF9137 /* Ubuntu-LightItalic.ttf */; };
@@ -47,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		042BDAD11EC90F9300F086B8 /* mol.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = mol.db; path = databaseInProject/mol.db; sourceTree = "<group>"; };
 		045753241EBAF7A600CAC781 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		045753381EBAF8D200CAC781 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = FMDB/FMDatabase.h; sourceTree = "<group>"; };
 		045753391EBAF8D200CAC781 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = FMDB/FMDatabase.m; sourceTree = "<group>"; };
@@ -64,7 +64,6 @@
 		0457534C1EBAFB3C00CAC781 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		0457534E1EBAFB7300CAC781 /* MoleculeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoleculeInfo.swift; sourceTree = "<group>"; };
 		045753521EBB099900CAC781 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		049A2D681EBE87FF00F2A178 /* mol.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = mol.db; path = databaseInProject/mol.db; sourceTree = "<group>"; };
 		2B2AB2FC1EBA523600DB06DD /* SetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetViewController.swift; sourceTree = "<group>"; };
 		2B2AB2FF1EBA54B900DB06DD /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2B2AB3011EBA54E100DB06DD /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
@@ -114,7 +113,7 @@
 				0457534A1EBAFB0200CAC781 /* Utility.swift */,
 				0457534C1EBAFB3C00CAC781 /* DBManager.swift */,
 				0457534E1EBAFB7300CAC781 /* MoleculeInfo.swift */,
-				049A2D681EBE87FF00F2A178 /* mol.db */,
+				042BDAD11EC90F9300F086B8 /* mol.db */,
 				CD4D1D2C1EC3734400EB15FF /* SetManager.swift */,
 			);
 			name = Database;
@@ -289,7 +288,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDBB1FC81EC1291900213BF9 /* mol.db in Resources */,
 				CDF1ED8C1EB937ED00FF9137 /* Ubuntu-BoldItalic.ttf in Resources */,
 				CDF1ED8B1EB937ED00FF9137 /* Ubuntu-MediumItalic.ttf in Resources */,
 				CDBB1FC71EC125D400213BF9 /* (null) in Resources */,

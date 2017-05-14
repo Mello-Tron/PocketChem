@@ -24,7 +24,7 @@ class CardViewController: ViewController {
     let swipeRight = UISwipeGestureRecognizer()
     let swipeLeft = UISwipeGestureRecognizer()
     
-    let setInfo : NSMutableArray = DBManager().getASet(num: 4) // set parameter to whatever set you want
+    let setInfo : NSMutableArray = DBManager().getASet(num: 1) // set parameter to whatever set you want
     
     let mySetManager = SetManager(_setID: 1)
     
@@ -45,6 +45,7 @@ class CardViewController: ViewController {
         
         nameLabel.text = mySetManager.getCurrentMoleculeName()
         moleculeView.image = UIImage(named: String(mySetManager.getCurrentMoleculeID() + 1) + ".png")
+        
         
         //create a recognizer for user touch
         let singleTap = UITapGestureRecognizer(target:self, action:#selector(self.tapped))
@@ -128,14 +129,18 @@ class CardViewController: ViewController {
                 if (mySetManager.changeMolecule(_shift: -1)) {
                     overviewLabel.updateMoleculeNumber(newMoleculeNumber: mySetManager.getCurrentMoleculeID())
                     nameLabel.text = mySetManager.getCurrentMoleculeName()
-                    moleculeView.image = UIImage(named: String(mySetManager.getCurrentMoleculeID() + 1) + ".png")
+                    moleculeView.image = UIImage(named: String(mySetManager.getMoleculeImageNum()) + ".png") // took out "+1" because using the molecule image ID insted of currentMoleculeID
+                    print ("Current ID: ", mySetManager.getCurrentMoleculeID())
+                    print ("Current imageID: ", mySetManager.getMoleculeImageNum())
                 }
                 
             case UISwipeGestureRecognizerDirection.left:
                 if (mySetManager.changeMolecule(_shift: 1)) {
                     overviewLabel.updateMoleculeNumber(newMoleculeNumber: mySetManager.getCurrentMoleculeID())
                     nameLabel.text = mySetManager.getCurrentMoleculeName()
-                    moleculeView.image = UIImage(named: String(mySetManager.getCurrentMoleculeID() + 1) + ".png")
+                    moleculeView.image = UIImage(named: String(mySetManager.getMoleculeImageNum()) + ".png")
+                    print ("Current ID: ", mySetManager.getCurrentMoleculeID())
+                    print ("Current imageID: ", mySetManager.getMoleculeImageNum())
                 }
             default:
                 break
