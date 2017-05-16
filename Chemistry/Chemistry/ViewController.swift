@@ -11,9 +11,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
         // TESTING BY PRINTING DATABASE
         sharedInstance.database = sharedInstance.createOrReturnDatabase()
         
-        let marrMolInfo : NSMutableArray = sharedInstance.getAllData()
-        let moleculeInfo : MoleculeInfo = marrMolInfo.object(at: 0) as! MoleculeInfo
-        print ("Num: ", moleculeInfo.getImageNum(), "; Name: ", moleculeInfo.getMolName(), "; IUPAC: ", moleculeInfo.getMolIUPAC())
+        //let marrMolInfo : NSMutableArray = sharedInstance.getAllData()
+        //let moleculeInfo : MoleculeInfo = marrMolInfo.object(at: 0) as! MoleculeInfo
+        //print ("Num: ", moleculeInfo.getImageNum(), "; Name: ", moleculeInfo.getMolName(), "; IUPAC: ", moleculeInfo.getMolIUPAC())
         
         //print(marrMolInfo)
     }

@@ -35,6 +35,7 @@
 		CD4D1D2D1EC3734400EB15FF /* SetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D1D2C1EC3734400EB15FF /* SetManager.swift */; };
 		CDBB1FC71EC125D400213BF9 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		CDBEFDA51EA46CEB00697468 /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBEFDA41EA46CEB00697468 /* KDCircularProgress.swift */; };
+		CDC180981ECB8AE20086ABC8 /* mol.db in Resources */ = {isa = PBXBuildFile; fileRef = 042BDAD11EC90F9300F086B8 /* mol.db */; };
 		CDF1ED881EB937ED00FF9137 /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDF1ED801EB937ED00FF9137 /* Ubuntu-Light.ttf */; };
 		CDF1ED891EB937ED00FF9137 /* Ubuntu-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDF1ED811EB937ED00FF9137 /* Ubuntu-LightItalic.ttf */; };
 		CDF1ED8A1EB937ED00FF9137 /* Ubuntu-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDF1ED821EB937ED00FF9137 /* Ubuntu-Italic.ttf */; };
@@ -288,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDC180981ECB8AE20086ABC8 /* mol.db in Resources */,
 				CDF1ED8C1EB937ED00FF9137 /* Ubuntu-BoldItalic.ttf in Resources */,
 				CDF1ED8B1EB937ED00FF9137 /* Ubuntu-MediumItalic.ttf in Resources */,
 				CDBB1FC71EC125D400213BF9 /* (null) in Resources */,
