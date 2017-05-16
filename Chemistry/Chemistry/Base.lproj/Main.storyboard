@@ -139,7 +139,7 @@
                                                     <constraint firstAttribute="width" constant="182" id="BNg-Em-N1t"/>
                                                     <constraint firstAttribute="height" constant="182" id="mZs-kb-ChX"/>
                                                 </constraints>
-                                                <state key="normal" image="IUPAC1@0.5x">
+                                                <state key="normal" image="ScienceRed">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -153,7 +153,7 @@
                                                     <constraint firstAttribute="height" constant="182" id="xiJ-y5-QgR"/>
                                                     <constraint firstAttribute="width" constant="182" id="zGq-IY-4Gp"/>
                                                 </constraints>
-                                                <state key="normal" image="IUPAC2@0.5x">
+                                                <state key="normal" image="ScienceBlue">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                             </button>
@@ -164,7 +164,7 @@
                                                     <constraint firstAttribute="height" constant="182" id="2NT-lh-xZK"/>
                                                     <constraint firstAttribute="width" constant="182" id="JiF-iX-Pkh"/>
                                                 </constraints>
-                                                <state key="normal" image="IUPAC2@0.5x">
+                                                <state key="normal" image="ScienceYellow">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                             </button>
@@ -175,7 +175,7 @@
                                                     <constraint firstAttribute="height" constant="182" id="kUE-pm-fQa"/>
                                                     <constraint firstAttribute="width" constant="182" id="njS-Z4-sCj"/>
                                                 </constraints>
-                                                <state key="normal" image="IUPAC1@0.5x">
+                                                <state key="normal" image="ScienceGreen">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                             </button>
@@ -278,7 +278,7 @@
                                     <constraint firstAttribute="width" constant="60" id="2Ca-ti-hYj"/>
                                     <constraint firstAttribute="height" constant="60" id="CKO-i9-IDD"/>
                                 </constraints>
-                                <state key="normal" image="PlusSign">
+                                <state key="normal" image="Hamburger">
                                     <color key="titleColor" red="0.9959825873" green="0.99621325729999999" blue="0.99187678099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -292,7 +292,7 @@
                                     <constraint firstAttribute="height" constant="90" id="2Px-iX-8bN"/>
                                     <constraint firstAttribute="width" constant="90" id="mGJ-if-7lU"/>
                                 </constraints>
-                                <state key="normal" image="cameraBtn@0.25x">
+                                <state key="normal" image="PhotoButton">
                                     <color key="titleColor" red="0.9959825873" green="0.99621325729999999" blue="0.99187678099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -315,16 +315,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="POCKETCHEM" id="VAc-uL-fcI">
                         <barButtonItem key="backBarButtonItem" title="HOME" id="3Sy-S4-SVs"/>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="sRs-LH-qoY">
-                            <button key="customView" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="F8U-Yg-OZ4">
-                                <rect key="frame" x="339" y="12" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="gear"/>
-                                <connections>
-                                    <segue destination="cW9-hM-Ppq" kind="show" id="Dit-or-ijy"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="758"/>
@@ -932,12 +922,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Hamburger" width="576" height="576"/>
         <image name="IUPAC1" width="500" height="500"/>
-        <image name="IUPAC1@0.5x" width="251" height="251"/>
-        <image name="IUPAC2@0.5x" width="251" height="251"/>
         <image name="MaleProfile" width="375" height="375"/>
-        <image name="PlusSign" width="576" height="576"/>
-        <image name="cameraBtn@0.25x" width="150" height="150"/>
-        <image name="gear" width="512" height="512"/>
+        <image name="PhotoButton" width="250" height="250"/>
+        <image name="ScienceBlue" width="400" height="400"/>
+        <image name="ScienceGreen" width="400" height="400"/>
+        <image name="ScienceRed" width="400" height="400"/>
+        <image name="ScienceYellow" width="400" height="400"/>
     </resources>
 </document>
