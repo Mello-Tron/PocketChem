@@ -865,8 +865,8 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSe-Rw-Nmt">
-                                                <rect key="frame" x="166" y="151" width="42" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1/21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSe-Rw-Nmt">
+                                                <rect key="frame" x="161" y="151" width="51" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="Vwp-Ab-Jfk"/>
                                                 </constraints>
@@ -879,7 +879,6 @@
                                         <constraints>
                                             <constraint firstItem="ByO-4r-kUc" firstAttribute="leading" secondItem="wwM-5Z-D44" secondAttribute="leading" constant="16" id="2iB-Ne-mN8"/>
                                             <constraint firstAttribute="trailing" secondItem="ByO-4r-kUc" secondAttribute="trailing" constant="16" id="8pd-Ol-OXe"/>
-                                            <constraint firstItem="XSe-Rw-Nmt" firstAttribute="leading" secondItem="wwM-5Z-D44" secondAttribute="leading" constant="166" id="AQr-nj-TzZ"/>
                                             <constraint firstItem="J3N-DF-CU8" firstAttribute="top" secondItem="wwM-5Z-D44" secondAttribute="top" constant="21" id="DUJ-7O-sIu"/>
                                             <constraint firstItem="ByO-4r-kUc" firstAttribute="top" secondItem="wwM-5Z-D44" secondAttribute="top" constant="83" id="H7B-MC-ljj"/>
                                             <constraint firstItem="Flz-Es-DsA" firstAttribute="top" secondItem="wwM-5Z-D44" secondAttribute="top" constant="21" id="M4G-Fl-hHp"/>
@@ -891,9 +890,9 @@
                                             <constraint firstAttribute="trailing" secondItem="sRs-re-a0M" secondAttribute="trailing" constant="16" id="aiO-nx-tHT"/>
                                             <constraint firstItem="YDw-xz-FSd" firstAttribute="top" secondItem="wwM-5Z-D44" secondAttribute="top" constant="138" id="dW0-uh-G8Z"/>
                                             <constraint firstAttribute="trailing" secondItem="YDw-xz-FSd" secondAttribute="trailing" constant="16" id="lOq-dH-hCP"/>
+                                            <constraint firstItem="XSe-Rw-Nmt" firstAttribute="centerX" secondItem="wwM-5Z-D44" secondAttribute="centerX" id="qb2-wo-60A"/>
                                             <constraint firstAttribute="trailing" secondItem="Flz-Es-DsA" secondAttribute="trailing" constant="116" id="tC9-eA-1ao"/>
                                             <constraint firstItem="sRs-re-a0M" firstAttribute="top" secondItem="wwM-5Z-D44" secondAttribute="top" constant="21" id="uHN-nK-T8X"/>
-                                            <constraint firstAttribute="trailing" secondItem="XSe-Rw-Nmt" secondAttribute="trailing" constant="167" id="uId-92-NjO"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -918,6 +917,10 @@
                     <navigationItem key="navigationItem" title="ALKANES" id="F8q-ZW-A9v"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="moleculeNumber" destination="XSe-Rw-Nmt" id="iLQ-a6-GRh"/>
+                        <outlet property="swipeLabel" destination="YDw-xz-FSd" id="pCe-AY-Msj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EEb-fz-lUI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

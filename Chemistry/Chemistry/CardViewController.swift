@@ -26,7 +26,7 @@ class CardViewController: ViewController {
     
     let setInfo : NSMutableArray = DBManager().getASet(num: 1) // set parameter to whatever set you want
     
-    let mySetManager = SetManager(_setID: 2)
+    let mySetManager = SetManager(_setID: 1)
     
     override func viewDidLoad() {
         super.viewDidLoad()
