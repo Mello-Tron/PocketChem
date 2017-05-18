@@ -3,6 +3,7 @@ import UIKit
 class QuizViewController: ViewController {
     @IBOutlet var swipeLabel: ShadowUIImageView!
     @IBOutlet var moleculeNumber: UILabel!
+    @IBOutlet var userAnswer: UITextField!
     
     let swipeRight = UISwipeGestureRecognizer()
     let swipeLeft = UISwipeGestureRecognizer()
@@ -14,8 +15,14 @@ class QuizViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        userAnswer.becomeFirstResponder()
+        userAnswer.returnKeyType = UIReturnKeyType.done
+        
+        userAnswer.autocorrectionType = .no
+        //userAnswer.enablesReturnKeyAutomatically = false
+        
         mySetManager.changeSet(_setID: databaseID)
-        moleculeNumber.text = String(mySetManager.getCurrentMoleculeID() + 1) + "/" + String(mySetManager.getSetSize())
+        moleculeNumber.text = "     " + String(mySetManager.getCurrentMoleculeID() + 1) + "/" + String(mySetManager.getSetSize())
         swipeLabel.image = UIImage(named: String(mySetManager.getMoleculeImageNum()) + ".png")
         
         swipeRight.direction = UISwipeGestureRecognizerDirection.right
@@ -34,7 +41,7 @@ class QuizViewController: ViewController {
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.right:
                 if (mySetManager.changeMolecule(_shift: -1)) {
-                    moleculeNumber.text = String(mySetManager.getCurrentMoleculeID() + 1) + "/" + String(mySetManager.getSetSize())
+                    moleculeNumber.text = "     " + String(mySetManager.getCurrentMoleculeID() + 1) + "/" + String(mySetManager.getSetSize())
                     //moleculeName.text = mySetManager.getCurrentMoleculeName()
                     swipeLabel.image = UIImage(named: String(mySetManager.getMoleculeImageNum()) + ".png") // took out "+1" because using the molecule image ID insted of currentMoleculeID
                     print ("Current ID: ", mySetManager.getCurrentMoleculeID())
@@ -43,7 +50,7 @@ class QuizViewController: ViewController {
                 
             case UISwipeGestureRecognizerDirection.left:
                 if (mySetManager.changeMolecule(_shift: 1)) {
-                    moleculeNumber.text = String(mySetManager.getCurrentMoleculeID() + 1) + "/" + String(mySetManager.getSetSize())
+                    moleculeNumber.text = "     " + String(mySetManager.getCurrentMoleculeID() + 1) + "/" + String(mySetManager.getSetSize())
                     //moleculeName.text = mySetManager.getCurrentMoleculeName()
                     swipeLabel.image = UIImage(named: String(mySetManager.getMoleculeImageNum()) + ".png") // took out "+1" because using the molecule image ID insted of currentMoleculeID
                     print ("Current ID: ", mySetManager.getCurrentMoleculeID())

@@ -819,14 +819,7 @@
                                     <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wwM-5Z-D44" userLabel="ContainerView">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="616"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IUPAC1" translatesAutoresizingMaskIntoConstraints="NO" id="YDw-xz-FSd" customClass="ShadowUIImageView" customModule="PocketChem" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="138" width="343" height="269"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="269" id="L84-kN-su8"/>
-                                                </constraints>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     AMINO ACIDS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRs-re-a0M" userLabel="Molecule Label" customClass="ShadowLabel" customModule="PocketChem" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     1/11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRs-re-a0M" userLabel="Molecule Label" customClass="ShadowLabel" customModule="PocketChem" customModuleProvider="target">
                                                 <rect key="frame" x="16" y="21" width="343" height="45"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -856,41 +849,42 @@
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ByO-4r-kUc">
-                                                <rect key="frame" x="16" y="83" width="343" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="ucp-EB-v98"/>
-                                                </constraints>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IUPAC1" translatesAutoresizingMaskIntoConstraints="NO" id="YDw-xz-FSd" customClass="ShadowUIImageView" customModule="PocketChem" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="86" width="343" height="157"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7f-9A-iZX" customClass="ShadowLabel" customModule="PocketChem" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="263" width="343" height="105"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ByO-4r-kUc">
+                                                <rect key="frame" x="31" y="314" width="314" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1/21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSe-Rw-Nmt">
-                                                <rect key="frame" x="161" y="151" width="51" height="21"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="21" id="Vwp-Ab-Jfk"/>
-                                                </constraints>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WHAT IS THE NAME OF THIS MOLECULE?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9J-Cz-pzq">
+                                                <rect key="frame" x="31" y="280" width="314" height="26"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
-                                                <color key="textColor" red="0.40784313725490196" green="0.40784313725490196" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="ByO-4r-kUc" firstAttribute="leading" secondItem="wwM-5Z-D44" secondAttribute="leading" constant="16" id="2iB-Ne-mN8"/>
-                                            <constraint firstAttribute="trailing" secondItem="ByO-4r-kUc" secondAttribute="trailing" constant="16" id="8pd-Ol-OXe"/>
                                             <constraint firstItem="J3N-DF-CU8" firstAttribute="top" secondItem="wwM-5Z-D44" secondAttribute="top" constant="21" id="DUJ-7O-sIu"/>
-                                            <constraint firstItem="ByO-4r-kUc" firstAttribute="top" secondItem="wwM-5Z-D44" secondAttribute="top" constant="83" id="H7B-MC-ljj"/>
                                             <constraint firstItem="Flz-Es-DsA" firstAttribute="top" secondItem="wwM-5Z-D44" secondAttribute="top" constant="21" id="M4G-Fl-hHp"/>
                                             <constraint firstAttribute="trailing" secondItem="J3N-DF-CU8" secondAttribute="trailing" constant="16" id="NMZ-p8-H0W"/>
-                                            <constraint firstItem="YDw-xz-FSd" firstAttribute="leading" secondItem="wwM-5Z-D44" secondAttribute="leading" constant="16" id="Nx5-nw-zNu"/>
                                             <constraint firstAttribute="height" constant="616" id="O5a-l3-Ng1"/>
                                             <constraint firstItem="sRs-re-a0M" firstAttribute="leading" secondItem="wwM-5Z-D44" secondAttribute="leading" constant="16" id="SA3-Iu-F0a"/>
-                                            <constraint firstItem="XSe-Rw-Nmt" firstAttribute="top" secondItem="wwM-5Z-D44" secondAttribute="top" constant="151" id="Zrg-2A-2TN"/>
                                             <constraint firstAttribute="trailing" secondItem="sRs-re-a0M" secondAttribute="trailing" constant="16" id="aiO-nx-tHT"/>
-                                            <constraint firstItem="YDw-xz-FSd" firstAttribute="top" secondItem="wwM-5Z-D44" secondAttribute="top" constant="138" id="dW0-uh-G8Z"/>
-                                            <constraint firstAttribute="trailing" secondItem="YDw-xz-FSd" secondAttribute="trailing" constant="16" id="lOq-dH-hCP"/>
-                                            <constraint firstItem="XSe-Rw-Nmt" firstAttribute="centerX" secondItem="wwM-5Z-D44" secondAttribute="centerX" id="qb2-wo-60A"/>
                                             <constraint firstAttribute="trailing" secondItem="Flz-Es-DsA" secondAttribute="trailing" constant="116" id="tC9-eA-1ao"/>
                                             <constraint firstItem="sRs-re-a0M" firstAttribute="top" secondItem="wwM-5Z-D44" secondAttribute="top" constant="21" id="uHN-nK-T8X"/>
                                         </constraints>
@@ -918,8 +912,9 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
-                        <outlet property="moleculeNumber" destination="XSe-Rw-Nmt" id="iLQ-a6-GRh"/>
+                        <outlet property="moleculeNumber" destination="sRs-re-a0M" id="Ehi-LJ-32A"/>
                         <outlet property="swipeLabel" destination="YDw-xz-FSd" id="pCe-AY-Msj"/>
+                        <outlet property="userAnswer" destination="ByO-4r-kUc" id="xjJ-Gf-ww3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EEb-fz-lUI" userLabel="First Responder" sceneMemberID="firstResponder"/>

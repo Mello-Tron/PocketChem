@@ -134,4 +134,22 @@ class DBManager: NSObject {
 
     }
     
+    func getSetName(setNum: Int) -> String // THERE IS DEFINITELY A BETTER WAY TO DO THIS // KATIE COME BACK AND FIX
+    {
+        sharedInstance.database!.open()
+        let resultSet: FMResultSet! = sharedInstance.database!.executeQuery("SELECT setName FROM sets WHERE sid = '\(setNum)'", withArgumentsIn: nil)
+        //let setInfoArray : NSMutableArray = NSMutableArray()
+        if (resultSet != nil)
+        {
+            
+        }
+        
+        //print ("set size is: ", setInfoArray.count)
+        
+        sharedInstance.database!.close()
+        return resultSet.string(forColumn: "setName")
+        
+    }
+
+    
 }
