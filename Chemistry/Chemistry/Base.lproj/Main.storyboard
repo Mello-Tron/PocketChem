@@ -143,7 +143,8 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="mzH-pc-YNH" kind="show" id="zr1-Dw-Vz3"/>
+                                                    <action selector="alkanesButtonPress:" destination="vDT-tS-OhI" eventType="touchUpInside" id="sWC-tF-fqZ"/>
+                                                    <segue destination="mzH-pc-YNH" kind="show" customClass="passIDSegue" customModule="PocketChem" customModuleProvider="target" id="zr1-Dw-Vz3"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0Z-3t-cmt" userLabel="Draw Button" customClass="ShadowButton" customModule="PocketChem" customModuleProvider="target">
@@ -156,6 +157,10 @@
                                                 <state key="normal" image="ScienceBlue">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="alkenesButtonPress:" destination="vDT-tS-OhI" eventType="touchUpInside" id="Qug-Od-5No"/>
+                                                    <segue destination="mzH-pc-YNH" kind="show" customClass="passIDSegue" customModule="PocketChem" customModuleProvider="target" id="Vj1-R0-ysZ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPH-FJ-ZTg" userLabel="Draw Button" customClass="ShadowButton" customModule="PocketChem" customModuleProvider="target">
                                                 <rect key="frame" x="3" y="503" width="182" height="182"/>
@@ -167,6 +172,10 @@
                                                 <state key="normal" image="ScienceYellow">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="alcoholsButtonPress:" destination="vDT-tS-OhI" eventType="touchUpInside" id="CsO-AL-se8"/>
+                                                    <segue destination="mzH-pc-YNH" kind="show" customClass="passIDSegue" customModule="PocketChem" customModuleProvider="target" id="s3w-md-o3s"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1NK-pv-y6t" userLabel="Draw Button" customClass="ShadowButton" customModule="PocketChem" customModuleProvider="target">
                                                 <rect key="frame" x="190" y="503" width="182" height="182"/>
@@ -178,8 +187,12 @@
                                                 <state key="normal" image="ScienceGreen">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="benzeneButton:" destination="vDT-tS-OhI" eventType="touchUpInside" id="xn2-eH-awt"/>
+                                                    <segue destination="mzH-pc-YNH" kind="show" customClass="passIDSegue" customModule="PocketChem" customModuleProvider="target" id="HdF-2n-fae"/>
+                                                </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="26" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkO-Nr-wlw">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkO-Nr-wlw">
                                                 <rect key="frame" x="41" y="329" width="106" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="cSZ-VT-hjL"/>
@@ -189,7 +202,27 @@
                                                 <color key="textColor" red="0.2130832765" green="0.58307471460000004" blue="0.60577372289999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="26" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgb-1S-PuA">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNB-ma-UB6">
+                                                <rect key="frame" x="41" y="518" width="106" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="106" id="lge-g7-OVZ"/>
+                                                    <constraint firstAttribute="height" constant="21" id="tTp-xM-yRQ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                                                <color key="textColor" red="0.2130832765" green="0.58307471460000004" blue="0.60577372289999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lr6-W6-zI1">
+                                                <rect key="frame" x="228" y="518" width="106" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="106" id="KQI-G6-fkx"/>
+                                                    <constraint firstAttribute="height" constant="21" id="YAv-wd-xpF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                                                <color key="textColor" red="0.2130832765" green="0.58307471460000004" blue="0.60577372289999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgb-1S-PuA">
                                                 <rect key="frame" x="228" y="329" width="106" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="106" id="0d3-og-yzN"/>
@@ -209,11 +242,31 @@
                                                 <color key="textColor" red="0.2130832765" green="0.58307471460000004" blue="0.60577372289999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALCOHOLS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Idd-gY-J7l">
+                                                <rect key="frame" x="41" y="645" width="106" height="23"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="23" id="NJk-CP-6BC"/>
+                                                    <constraint firstAttribute="width" constant="106" id="Vdv-aI-TwG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="20"/>
+                                                <color key="textColor" red="0.2130832765" green="0.58307471460000004" blue="0.60577372289999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALKENES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxq-Fn-WEb">
                                                 <rect key="frame" x="228" y="454" width="106" height="23"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="23" id="gPx-aa-tfX"/>
                                                     <constraint firstAttribute="width" constant="106" id="sCA-0R-0xR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="20"/>
+                                                <color key="textColor" red="0.2130832765" green="0.58307471460000004" blue="0.60577372289999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BENZENE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xF-XK-Dea">
+                                                <rect key="frame" x="228" y="645" width="106" height="23"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="23" id="Kge-aU-gZ6"/>
+                                                    <constraint firstAttribute="width" constant="106" id="uas-YF-1MV"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="20"/>
                                                 <color key="textColor" red="0.2130832765" green="0.58307471460000004" blue="0.60577372289999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -225,10 +278,14 @@
                                             <constraint firstItem="lY0-Oh-GBd" firstAttribute="top" secondItem="uEj-0m-6rg" secondAttribute="top" constant="270" id="3YE-Yb-fGn"/>
                                             <constraint firstItem="bBo-4r-PsI" firstAttribute="leading" secondItem="uEj-0m-6rg" secondAttribute="leading" id="6rq-fb-gBH"/>
                                             <constraint firstAttribute="trailing" secondItem="yVF-VW-Pzh" secondAttribute="trailing" id="7yu-EI-8r2"/>
+                                            <constraint firstItem="Idd-gY-J7l" firstAttribute="top" secondItem="uEj-0m-6rg" secondAttribute="top" constant="645" id="86i-Gq-Lvq"/>
                                             <constraint firstItem="IjP-qZ-HBy" firstAttribute="top" secondItem="uEj-0m-6rg" secondAttribute="top" constant="-1" id="97e-dJ-LSJ"/>
                                             <constraint firstItem="FXF-F4-KVP" firstAttribute="centerX" secondItem="uEj-0m-6rg" secondAttribute="centerX" id="A93-aa-2Cn"/>
                                             <constraint firstItem="u0Z-3t-cmt" firstAttribute="top" secondItem="uEj-0m-6rg" secondAttribute="top" constant="313" id="AtJ-ks-JLN"/>
+                                            <constraint firstAttribute="trailing" secondItem="lr6-W6-zI1" secondAttribute="trailing" constant="41" id="CpD-Ku-qMz"/>
                                             <constraint firstItem="FXF-F4-KVP" firstAttribute="top" secondItem="uEj-0m-6rg" secondAttribute="top" constant="188" id="DB1-Nw-yUK"/>
+                                            <constraint firstItem="MNB-ma-UB6" firstAttribute="leading" secondItem="uEj-0m-6rg" secondAttribute="leading" constant="41" id="HOi-Ub-S67"/>
+                                            <constraint firstItem="MNB-ma-UB6" firstAttribute="top" secondItem="uEj-0m-6rg" secondAttribute="top" constant="518" id="IQg-98-Ijm"/>
                                             <constraint firstItem="yVF-VW-Pzh" firstAttribute="centerX" secondItem="uEj-0m-6rg" secondAttribute="centerX" id="Isq-u1-UJS"/>
                                             <constraint firstItem="d7v-2i-3EO" firstAttribute="leading" secondItem="uEj-0m-6rg" secondAttribute="leading" constant="18" id="K6j-jc-kGp"/>
                                             <constraint firstItem="l0S-N4-vxt" firstAttribute="top" secondItem="uEj-0m-6rg" secondAttribute="top" constant="455" id="LgA-Wa-vd7"/>
@@ -238,12 +295,14 @@
                                             <constraint firstAttribute="trailing" secondItem="bBo-4r-PsI" secondAttribute="trailing" id="VeC-oU-8vy"/>
                                             <constraint firstItem="TBV-43-FoA" firstAttribute="top" secondItem="uEj-0m-6rg" secondAttribute="top" constant="18" id="Wb3-ab-xaW"/>
                                             <constraint firstItem="d7v-2i-3EO" firstAttribute="top" secondItem="uEj-0m-6rg" secondAttribute="top" constant="270" id="Zbg-HZ-TFc"/>
+                                            <constraint firstAttribute="trailing" secondItem="0xF-XK-Dea" secondAttribute="trailing" constant="41" id="Zhw-Ai-3TU"/>
                                             <constraint firstAttribute="trailing" secondItem="1NK-pv-y6t" secondAttribute="trailing" constant="3" id="aQ8-jd-HkM"/>
                                             <constraint firstItem="VYe-T9-ucy" firstAttribute="centerX" secondItem="uEj-0m-6rg" secondAttribute="centerX" id="aq4-AP-pqi"/>
                                             <constraint firstItem="rPH-FJ-ZTg" firstAttribute="top" secondItem="uEj-0m-6rg" secondAttribute="top" constant="503" id="b17-Q3-QB2"/>
                                             <constraint firstItem="GBI-8q-Ual" firstAttribute="top" secondItem="uEj-0m-6rg" secondAttribute="top" constant="313" id="bjF-tG-eNU"/>
                                             <constraint firstAttribute="trailing" secondItem="fgb-1S-PuA" secondAttribute="trailing" constant="41" id="e3H-US-Uzr"/>
                                             <constraint firstItem="l0S-N4-vxt" firstAttribute="leading" secondItem="uEj-0m-6rg" secondAttribute="leading" constant="41" id="eNh-5h-Rti"/>
+                                            <constraint firstItem="Idd-gY-J7l" firstAttribute="leading" secondItem="uEj-0m-6rg" secondAttribute="leading" constant="41" id="fmc-to-O9O"/>
                                             <constraint firstItem="yVF-VW-Pzh" firstAttribute="leading" secondItem="uEj-0m-6rg" secondAttribute="leading" id="gq4-hd-Nk0"/>
                                             <constraint firstItem="TBV-43-FoA" firstAttribute="centerX" secondItem="uEj-0m-6rg" secondAttribute="centerX" id="hag-u9-a5r"/>
                                             <constraint firstAttribute="height" constant="758" id="htZ-FZ-XnP"/>
@@ -253,7 +312,9 @@
                                             <constraint firstItem="IjP-qZ-HBy" firstAttribute="centerX" secondItem="uEj-0m-6rg" secondAttribute="centerX" id="qv7-av-YCv"/>
                                             <constraint firstItem="yVF-VW-Pzh" firstAttribute="top" secondItem="uEj-0m-6rg" secondAttribute="top" constant="-12" id="r86-6j-Dch"/>
                                             <constraint firstItem="wxq-Fn-WEb" firstAttribute="top" secondItem="uEj-0m-6rg" secondAttribute="top" constant="454" id="uDd-XM-WXX"/>
+                                            <constraint firstItem="0xF-XK-Dea" firstAttribute="top" secondItem="uEj-0m-6rg" secondAttribute="top" constant="645" id="vpz-Cj-DZr"/>
                                             <constraint firstItem="rPH-FJ-ZTg" firstAttribute="leading" secondItem="uEj-0m-6rg" secondAttribute="leading" constant="3" id="vqI-aL-mmW"/>
+                                            <constraint firstItem="lr6-W6-zI1" firstAttribute="top" secondItem="uEj-0m-6rg" secondAttribute="top" constant="518" id="vxc-sL-PbD"/>
                                             <constraint firstItem="GBI-8q-Ual" firstAttribute="leading" secondItem="uEj-0m-6rg" secondAttribute="leading" constant="3" id="w1z-C3-y4T"/>
                                             <constraint firstAttribute="trailing" secondItem="wxq-Fn-WEb" secondAttribute="trailing" constant="41" id="wF9-wG-gI1"/>
                                             <constraint firstAttribute="trailing" secondItem="lY0-Oh-GBd" secondAttribute="trailing" constant="18" id="yRh-p1-xeo"/>
@@ -319,6 +380,10 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="758"/>
                     <connections>
+                        <outlet property="alcoholsButton" destination="rPH-FJ-ZTg" id="q0F-PT-bU9"/>
+                        <outlet property="alkanesButton" destination="GBI-8q-Ual" id="Xgw-X8-dhz"/>
+                        <outlet property="alkenesButton" destination="u0Z-3t-cmt" id="H7a-ne-YeC"/>
+                        <outlet property="benzeneButton" destination="1NK-pv-y6t" id="6tb-mK-Qks"/>
                         <outlet property="cameraButton" destination="Zmd-Ao-F5o" id="Ebe-fq-92o"/>
                         <outlet property="plusButton" destination="JWS-vn-I0X" id="x7T-7h-Slz"/>
                     </connections>
@@ -379,7 +444,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="JXs-Ih-UqG" kind="show" id="4uG-wY-qMf"/>
+                                                    <segue destination="JXs-Ih-UqG" kind="show" customClass="passIDSegue" customModule="PocketChem" customModuleProvider="target" id="4uG-wY-qMf"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T83-Nb-SfM" userLabel="Draw Button" customClass="ShadowButton" customModule="PocketChem" customModuleProvider="target">
@@ -393,7 +458,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="a4y-zH-zvJ" kind="show" id="ZPY-40-MKa"/>
+                                                    <segue destination="a4y-zH-zvJ" kind="show" customClass="passIDSegue" customModule="PocketChem" customModuleProvider="target" id="ZPY-40-MKa"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGe-mE-c49" userLabel="Quiz Button" customClass="ShadowButton" customModule="PocketChem" customModuleProvider="target">
@@ -407,7 +472,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="FEg-Ek-nEM" kind="show" id="I38-Hc-ddv"/>
+                                                    <segue destination="FEg-Ek-nEM" kind="show" customClass="passIDSegue" customModule="PocketChem" customModuleProvider="target" id="I38-Hc-ddv"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     SERINE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZQ-v3-vyl" userLabel="Molecule Label" customClass="ShadowLabel" customModule="PocketChem" customModuleProvider="target">
@@ -431,7 +496,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IUPAC1" translatesAutoresizingMaskIntoConstraints="NO" id="9aA-kv-mGg" customClass="ShadowUIImageView" customModule="PocketChem" customModuleProvider="target">
+                                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IUPAC1" translatesAutoresizingMaskIntoConstraints="NO" id="9aA-kv-mGg" customClass="ShadowUIImageView" customModule="PocketChem" customModuleProvider="target">
                                                 <rect key="frame" x="19" y="350" width="337" height="208"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <gestureRecognizers/>
@@ -489,6 +554,7 @@
                     <connections>
                         <outlet property="moleculeName" destination="eZQ-v3-vyl" id="c4s-rP-RGv"/>
                         <outlet property="moleculeNumber" destination="URS-Ls-bXM" id="XXO-xK-cqm"/>
+                        <outlet property="navSetName" destination="dr0-Rz-dxg" id="ebW-7Y-vUJ"/>
                         <outlet property="swipeView" destination="9aA-kv-mGg" id="cy2-F7-XzX"/>
                     </connections>
                 </viewController>
@@ -931,4 +997,7 @@
         <image name="ScienceRed" width="400" height="400"/>
         <image name="ScienceYellow" width="400" height="400"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Vj1-R0-ysZ"/>
+    </inferredMetricsTieBreakers>
 </document>

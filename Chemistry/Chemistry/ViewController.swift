@@ -4,6 +4,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,
     UINavigationControllerDelegate {
 
     //let myDB = DBManager()
+    var databaseID : Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()

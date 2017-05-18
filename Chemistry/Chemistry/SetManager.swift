@@ -7,6 +7,7 @@ class SetManager {
     private var setSize: Int
     private var currentMolecule: MoleculeInfo
     private var currentMoleculeID: Int
+    //private var setName: String
     
     init(_setID: Int) {
         setID = _setID
@@ -16,6 +17,8 @@ class SetManager {
         
         set = DBManager().getASet(num: setID)
         currentMolecule = set[currentMoleculeID] as! MoleculeInfo
+        
+        //setName = DBManager().getSetName(num: setID)
     }
     
     func changeSet(_setID: Int) {

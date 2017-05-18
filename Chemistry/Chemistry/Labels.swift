@@ -31,6 +31,10 @@ class textUpdate: UILabel {
         updateText()
     }
     
+    func setSetSize(size: Int) {
+        setSize = size
+    }
+    
     func updateMoleculeNumber(newMoleculeNumber: Int) {
         currentMoleculeNumber = newMoleculeNumber
         updateText()

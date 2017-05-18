@@ -3,6 +3,27 @@ import UIKit
 class HomeViewController: ViewController {
     //plus button
     @IBOutlet var plusButton: RoundButton!
+    @IBOutlet var alkanesButton: ShadowButton!
+    @IBOutlet var alkenesButton: ShadowButton!
+    @IBOutlet var alcoholsButton: ShadowButton!
+    @IBOutlet var benzeneButton: ShadowButton!
+    
+    
+    @IBAction func alkanesButtonPress(_ sender: Any) {
+        self.databaseID = 1
+    }
+    
+    @IBAction func alkenesButtonPress(_ sender: Any) {
+        self.databaseID = 2
+    }
+    
+    @IBAction func alcoholsButtonPress(_ sender: Any) {
+        self.databaseID = 3
+    }
+    
+    @IBAction func benzeneButton(_ sender: Any) {
+        self.databaseID = 4
+    }
     
     @IBAction func plusButtonPress(_ sender: AnyObject) {
         if (self.plusButton.isPressed) {

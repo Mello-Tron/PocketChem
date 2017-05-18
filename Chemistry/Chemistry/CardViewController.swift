@@ -26,10 +26,13 @@ class CardViewController: ViewController {
     
     let setInfo : NSMutableArray = DBManager().getASet(num: 1) // set parameter to whatever set you want
     
-    let mySetManager = SetManager(_setID: 1)
+    let mySetManager = SetManager(_setID: 2)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        mySetManager.changeSet(_setID: databaseID)
+        overviewLabel.setSetSize(size: mySetManager.getSetSize())
+        overviewLabel.updateMoleculeNumber(newMoleculeNumber: mySetManager.getCurrentMoleculeID())
         
         //Setting image up
         moleculeView = UIImageView(frame:CGRect(x:0,y:0,width:335, height:270))
