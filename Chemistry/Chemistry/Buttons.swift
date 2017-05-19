@@ -16,14 +16,14 @@ class ShadowButton: UIButton {
 
 class CameraButton: UIButton {
     override func awakeFromNib() {
-        alpha = 0.0
-        isEnabled = false
+        //alpha = 0.0
+        //isEnabled = false
         
         //Shadow
         layer.shadowColor = UIColor.black.cgColor
-        layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        layer.shadowOffset = CGSize(width: 0.0, height: 4.0)
         layer.masksToBounds = false
-        layer.shadowRadius = 1.0
+        layer.shadowRadius = 3.0
         layer.shadowOpacity = 0.3
         
         //Rounded

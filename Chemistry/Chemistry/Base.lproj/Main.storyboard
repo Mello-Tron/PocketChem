@@ -331,7 +331,7 @@
                                     <constraint firstItem="uEj-0m-6rg" firstAttribute="leading" secondItem="rM6-pS-scb" secondAttribute="leading" id="pNZ-TZ-by7"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWS-vn-I0X" customClass="RoundButton" customModule="PocketChem" customModuleProvider="target">
+                            <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWS-vn-I0X" customClass="RoundButton" customModule="PocketChem" customModuleProvider="target">
                                 <rect key="frame" x="293" y="676" width="60" height="60"/>
                                 <color key="backgroundColor" red="0.92692637440000003" green="0.3385889232" blue="0.40648648139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
@@ -347,11 +347,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zmd-Ao-F5o" customClass="CameraButton" customModule="PocketChem" customModuleProvider="target">
-                                <rect key="frame" x="222" y="605" width="90" height="90"/>
+                                <rect key="frame" x="279" y="664" width="76" height="76"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="2Px-iX-8bN"/>
-                                    <constraint firstAttribute="width" constant="90" id="mGJ-if-7lU"/>
+                                    <constraint firstAttribute="height" constant="76" id="2Px-iX-8bN"/>
+                                    <constraint firstAttribute="width" constant="76" id="mGJ-if-7lU"/>
                                 </constraints>
                                 <state key="normal" image="PhotoButton">
                                     <color key="titleColor" red="0.9959825873" green="0.99621325729999999" blue="0.99187678099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -366,11 +366,11 @@
                             <constraint firstItem="uEj-0m-6rg" firstAttribute="width" secondItem="sGu-OJ-SWf" secondAttribute="width" id="3f9-d3-sWR"/>
                             <constraint firstAttribute="trailing" secondItem="rM6-pS-scb" secondAttribute="trailing" id="87W-Gn-xbW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="JWS-vn-I0X" secondAttribute="trailing" constant="6" id="Dl6-J4-PZl"/>
-                            <constraint firstItem="ImH-f9-Fv6" firstAttribute="top" secondItem="Zmd-Ao-F5o" secondAttribute="bottom" constant="63" id="JHB-XS-8Bh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zmd-Ao-F5o" secondAttribute="trailing" constant="4" id="IRY-NW-9l1"/>
                             <constraint firstItem="ImH-f9-Fv6" firstAttribute="top" secondItem="rM6-pS-scb" secondAttribute="bottom" id="Tdp-0t-Atb"/>
+                            <constraint firstItem="ImH-f9-Fv6" firstAttribute="top" secondItem="Zmd-Ao-F5o" secondAttribute="bottom" constant="18" id="cbe-fS-Chw"/>
                             <constraint firstItem="rM6-pS-scb" firstAttribute="leading" secondItem="sGu-OJ-SWf" secondAttribute="leading" id="dA4-7V-gQz"/>
                             <constraint firstItem="ImH-f9-Fv6" firstAttribute="top" secondItem="JWS-vn-I0X" secondAttribute="bottom" constant="22" id="fdn-vW-850"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Zmd-Ao-F5o" secondAttribute="trailing" constant="47" id="flO-FW-Z4l"/>
                             <constraint firstItem="rM6-pS-scb" firstAttribute="top" secondItem="sGu-OJ-SWf" secondAttribute="top" id="lXl-6w-nJ5"/>
                         </constraints>
                     </view>
@@ -390,7 +390,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ubn-Hz-RNw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="849" y="83"/>
+            <point key="canvasLocation" x="848.79999999999995" y="82.758620689655174"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="s8Y-2L-aC5">
