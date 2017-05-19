@@ -8,6 +8,24 @@ class HomeViewController: ViewController {
     @IBOutlet var alcoholsButton: ShadowButton!
     @IBOutlet var benzeneButton: ShadowButton!
     
+    //Kat this is the added code from Jason's link
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let file = "myFile.txt"
+        if let dir : NSString = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true).first as NSString? {
+            let sPath = dir.appendingPathComponent(file);
+            print(sPath)
+            
+            let url: NSURL = NSURL(string: sPath)!
+            
+            let destinationFile = "myFile.txt"
+            session.upload(url, path: destinationFile) {
+                (result, error) -> Void in
+                print("- Result:\n\(result), error: \(error)\n\n")
+            }
+        }
+    }
     
     @IBAction func alkanesButtonPress(_ sender: Any) {
         self.databaseID = 1
