@@ -18,7 +18,7 @@ class SetManager {
         set = DBManager().getASet(num: setID)
         currentMolecule = set[currentMoleculeID] as! MoleculeInfo
         
-        //setName = DBManager().getSetName(num: setID)
+        //setName = DBManager().getSetName(setNum: setID)
     }
     
     func changeSet(_setID: Int) {
@@ -29,6 +29,8 @@ class SetManager {
         
         set = DBManager().getASet(num: setID)
         currentMolecule = set[currentMoleculeID] as! MoleculeInfo
+        
+        //setName = DBManager().getSetName(setNum: setID)
     }
     
     func changeMolecule(_shift: Int) -> Bool {
@@ -47,6 +49,9 @@ class SetManager {
         return currentMoleculeID
     }
     
+    //func getSetName() -> String {
+        //return setName
+    //}
     
     // Katie added this
     func getMoleculeImageNum() -> Int{

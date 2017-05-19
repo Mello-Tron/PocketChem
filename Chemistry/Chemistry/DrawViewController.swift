@@ -4,6 +4,9 @@ class DrawViewController: ViewController {
     @IBOutlet var moleculeNumber: UILabel!
     @IBOutlet var moleculeName: UILabel!
     @IBOutlet var swipeLabel: ShadowLabel!
+    @IBOutlet var navSetName: UINavigationItem!
+    @IBOutlet var moleculeNumberTop: ShadowLabel!
+    
     
     let swipeRight = UISwipeGestureRecognizer()
     let swipeLeft = UISwipeGestureRecognizer()
@@ -15,8 +18,21 @@ class DrawViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Hard Coded for now
+        if (self.databaseID == 1) {
+            navSetName.title = "ALKANES" }
+        else if (self.databaseID == 2) {
+            navSetName.title = "ALKENES" }
+        else if (self.databaseID == 3) {
+            navSetName.title = "ALCOHOLS" }
+        else if (self.databaseID == 4) {
+            navSetName.title = "BENZENE" }
+        
+        moleculeNumber.isHidden = true
+        
         mySetManager.changeSet(_setID: databaseID)
         moleculeNumber.text = String(mySetManager.getCurrentMoleculeID() + 1) + "/" + String(mySetManager.getSetSize())
+        moleculeNumberTop.text = String(mySetManager.getCurrentMoleculeID() + 1) + "/" + String(mySetManager.getSetSize())
         moleculeName.text = mySetManager.getCurrentMoleculeName()
         
         swipeRight.direction = UISwipeGestureRecognizerDirection.right
@@ -54,6 +70,7 @@ class DrawViewController: ViewController {
                 if (mySetManager.changeMolecule(_shift: -1)) {
                     moleculeNumber.text = String(mySetManager.getCurrentMoleculeID() + 1) + "/" + String(mySetManager.getSetSize())
                     moleculeName.text = mySetManager.getCurrentMoleculeName()
+                    moleculeNumberTop.text = String(mySetManager.getCurrentMoleculeID() + 1) + "/" + String(mySetManager.getSetSize())
                     //moleculeView.image = UIImage(named: String(mySetManager.getMoleculeImageNum()) + ".png") // took out "+1" because using the molecule image ID insted of currentMoleculeID
                     print ("Current ID: ", mySetManager.getCurrentMoleculeID())
                     print ("Current imageID: ", mySetManager.getMoleculeImageNum())
@@ -63,6 +80,7 @@ class DrawViewController: ViewController {
                 if (mySetManager.changeMolecule(_shift: 1)) {
                     moleculeNumber.text = String(mySetManager.getCurrentMoleculeID() + 1) + "/" + String(mySetManager.getSetSize())
                     moleculeName.text = mySetManager.getCurrentMoleculeName()
+                    moleculeNumberTop.text = String(mySetManager.getCurrentMoleculeID() + 1) + "/" + String(mySetManager.getSetSize())
                     //moleculeView.image = UIImage(named: String(mySetManager.getMoleculeImageNum()) + ".png") // took out "+1" because using the molecule image ID insted of currentMoleculeID
                     print ("Current ID: ", mySetManager.getCurrentMoleculeID())
                     print ("Current imageID: ", mySetManager.getMoleculeImageNum())

@@ -3,11 +3,12 @@ import UIKit
 class CardViewController: ViewController {
     @IBOutlet var containerView: UIView!
     @IBOutlet weak var overviewLabel: textUpdate!
+    @IBOutlet var navSetName: UINavigationItem!
     
     
-    var cardView: UIView!
+    var cardView: ShadowUIView!
     //var nameView: UIImageView!
-    var moleculeView: UIImageView!
+    var moleculeView: ShadowUIImageView!
     
     var flagView: UIView!
     var flagSelected: UIImageView!
@@ -30,12 +31,23 @@ class CardViewController: ViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Hard Coded for now
+        if (self.databaseID == 1) {
+            navSetName.title = "ALKANES" }
+        else if (self.databaseID == 2) {
+            navSetName.title = "ALKENES" }
+        else if (self.databaseID == 3) {
+            navSetName.title = "ALCOHOLS" }
+        else if (self.databaseID == 4) {
+            navSetName.title = "BENZENE" }
+        
         mySetManager.changeSet(_setID: databaseID)
         overviewLabel.setSetSize(size: mySetManager.getSetSize())
         overviewLabel.updateMoleculeNumber(newMoleculeNumber: mySetManager.getCurrentMoleculeID())
         
         //Setting image up
-        moleculeView = UIImageView(frame:CGRect(x:0,y:0,width:335, height:270))
+        moleculeView = ShadowUIImageView(frame:CGRect(x:0,y:0,width:335, height:270))
         moleculeView.backgroundColor = UIColor(red: 255, green:255, blue: 255, alpha: 1)
         moleculeView.image = UIImage(named: "IUPAC1")
         
@@ -56,7 +68,7 @@ class CardViewController: ViewController {
         
         let rect = CGRect(x:18, y:120, width:335, height:270)
         
-        cardView = UIView(frame:rect)
+        cardView = ShadowUIView(frame:rect)
         cardView.addGestureRecognizer(singleTap)
         cardView.isUserInteractionEnabled = true
         cardView.addSubview(moleculeView)

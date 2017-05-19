@@ -618,6 +618,7 @@
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="containerView" destination="ps8-nX-lZF" id="st0-fS-1yX"/>
+                        <outlet property="navSetName" destination="4o3-Co-yRc" id="cQB-5w-EOe"/>
                         <outlet property="overviewLabel" destination="qE0-UG-gqU" id="8AH-9c-gwS"/>
                     </connections>
                 </viewController>
@@ -643,7 +644,7 @@
                                     <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ilV-Kl-j0i" userLabel="ContainerView">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="616"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     AMINO ACIDS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YA-Le-DVC" userLabel="Molecule Label" customClass="ShadowLabel" customModule="PocketChem" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YA-Le-DVC" userLabel="Molecule Label" customClass="ShadowLabel" customModule="PocketChem" customModuleProvider="target">
                                                 <rect key="frame" x="16" y="21" width="343" height="45"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -651,26 +652,6 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
                                                 <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 WRONG" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUy-jp-LKE">
-                                                <rect key="frame" x="267" y="21" width="96" height="45"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="45" id="XDD-dL-olp"/>
-                                                    <constraint firstAttribute="width" constant="96" id="xZe-Zl-SOJ"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
-                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 RIGHT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ms9-vS-fk1">
-                                                <rect key="frame" x="191" y="21" width="68" height="45"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="45" id="Bs8-R4-vnb"/>
-                                                    <constraint firstAttribute="width" constant="68" id="fnq-sh-HCt"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
-                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mV9-b1-8g3" customClass="ShadowLabel" customModule="PocketChem" customModuleProvider="target">
@@ -741,11 +722,9 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="Ms9-vS-fk1" firstAttribute="top" secondItem="ilV-Kl-j0i" secondAttribute="top" constant="21" id="1dF-q4-fRf"/>
                                             <constraint firstItem="mV9-b1-8g3" firstAttribute="leading" secondItem="ilV-Kl-j0i" secondAttribute="leading" constant="16" id="1np-Aq-3DQ"/>
                                             <constraint firstAttribute="trailing" secondItem="0YA-Le-DVC" secondAttribute="trailing" constant="16" id="4Wn-JQ-sC3"/>
                                             <constraint firstAttribute="trailing" secondItem="mV9-b1-8g3" secondAttribute="trailing" constant="16" id="675-se-lzF"/>
-                                            <constraint firstAttribute="trailing" secondItem="Ms9-vS-fk1" secondAttribute="trailing" constant="116" id="7Sc-ga-fHf"/>
                                             <constraint firstItem="5LN-Fn-ZjX" firstAttribute="top" secondItem="ilV-Kl-j0i" secondAttribute="top" constant="222" id="9xP-yS-rvf"/>
                                             <constraint firstItem="5LN-Fn-ZjX" firstAttribute="leading" secondItem="ilV-Kl-j0i" secondAttribute="leading" constant="16" id="CHz-rE-HQg"/>
                                             <constraint firstItem="F5n-ea-YQO" firstAttribute="top" secondItem="ilV-Kl-j0i" secondAttribute="top" constant="83" id="Ek6-L9-b9C"/>
@@ -754,7 +733,6 @@
                                             <constraint firstItem="QWe-e5-fyY" firstAttribute="leading" secondItem="ilV-Kl-j0i" secondAttribute="leading" constant="16" id="PMc-GQ-A83"/>
                                             <constraint firstAttribute="trailing" secondItem="5LN-Fn-ZjX" secondAttribute="trailing" constant="16" id="Rj2-mt-vyL"/>
                                             <constraint firstAttribute="trailing" secondItem="d2T-3B-jzj" secondAttribute="trailing" constant="16" id="Tz3-ae-clG"/>
-                                            <constraint firstAttribute="trailing" secondItem="KUy-jp-LKE" secondAttribute="trailing" constant="12" id="VGc-5Q-qxs"/>
                                             <constraint firstItem="Qal-1h-cZs" firstAttribute="top" secondItem="ilV-Kl-j0i" secondAttribute="top" constant="380" id="WNL-gn-bGk"/>
                                             <constraint firstAttribute="trailing" secondItem="QWe-e5-fyY" secondAttribute="trailing" constant="16" id="b0W-Dc-zCH"/>
                                             <constraint firstAttribute="height" constant="616" id="d2s-PP-ppe"/>
@@ -762,7 +740,6 @@
                                             <constraint firstItem="QWe-e5-fyY" firstAttribute="top" secondItem="ilV-Kl-j0i" secondAttribute="top" constant="148" id="gpI-4c-odS"/>
                                             <constraint firstItem="0YA-Le-DVC" firstAttribute="leading" secondItem="ilV-Kl-j0i" secondAttribute="leading" constant="16" id="hc8-iB-ize"/>
                                             <constraint firstItem="F5n-ea-YQO" firstAttribute="leading" secondItem="ilV-Kl-j0i" secondAttribute="leading" constant="16" id="jlO-F6-3do"/>
-                                            <constraint firstItem="KUy-jp-LKE" firstAttribute="top" secondItem="ilV-Kl-j0i" secondAttribute="top" constant="21" id="nd0-Du-eEp"/>
                                             <constraint firstItem="d2T-3B-jzj" firstAttribute="leading" secondItem="ilV-Kl-j0i" secondAttribute="leading" constant="16" id="r4V-Pc-GIL"/>
                                             <constraint firstItem="0YA-Le-DVC" firstAttribute="top" secondItem="ilV-Kl-j0i" secondAttribute="top" constant="21" id="sCs-Ni-Nrh"/>
                                             <constraint firstAttribute="trailing" secondItem="Qal-1h-cZs" secondAttribute="trailing" constant="16" id="uGO-ek-xMU"/>
@@ -794,6 +771,8 @@
                     <connections>
                         <outlet property="moleculeName" destination="5LN-Fn-ZjX" id="wLc-j0-XCt"/>
                         <outlet property="moleculeNumber" destination="F5n-ea-YQO" id="Ena-UA-wZs"/>
+                        <outlet property="moleculeNumberTop" destination="0YA-Le-DVC" id="Uc7-jv-qp3"/>
+                        <outlet property="navSetName" destination="4AN-Wu-aYy" id="Mw0-0p-bnr"/>
                         <outlet property="swipeLabel" destination="mV9-b1-8g3" id="4c7-Om-boG"/>
                     </connections>
                 </viewController>
@@ -819,7 +798,7 @@
                                     <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wwM-5Z-D44" userLabel="ContainerView">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="616"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     1/11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRs-re-a0M" userLabel="Molecule Label" customClass="ShadowLabel" customModule="PocketChem" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/11" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRs-re-a0M" userLabel="Molecule Label" customClass="ShadowLabel" customModule="PocketChem" customModuleProvider="target">
                                                 <rect key="frame" x="16" y="21" width="343" height="45"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -827,26 +806,6 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
                                                 <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 RIGHT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Flz-Es-DsA">
-                                                <rect key="frame" x="191" y="21" width="68" height="45"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="68" id="J5h-WK-tUH"/>
-                                                    <constraint firstAttribute="height" constant="45" id="Vzq-n2-c7I"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
-                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 WRONG" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3N-DF-CU8">
-                                                <rect key="frame" x="267" y="21" width="92" height="45"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="92" id="Eyn-Zd-q9W"/>
-                                                    <constraint firstAttribute="height" constant="45" id="HPr-yb-ker"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
-                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IUPAC1" translatesAutoresizingMaskIntoConstraints="NO" id="YDw-xz-FSd" customClass="ShadowUIImageView" customModule="PocketChem" customModuleProvider="target">
@@ -868,6 +827,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="userClicksEnter:" destination="FEg-Ek-nEM" eventType="primaryActionTriggered" id="Uxz-Aa-uod"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WHAT IS THE NAME OF THIS MOLECULE?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9J-Cz-pzq">
                                                 <rect key="frame" x="31" y="280" width="314" height="26"/>
@@ -879,13 +841,9 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="J3N-DF-CU8" firstAttribute="top" secondItem="wwM-5Z-D44" secondAttribute="top" constant="21" id="DUJ-7O-sIu"/>
-                                            <constraint firstItem="Flz-Es-DsA" firstAttribute="top" secondItem="wwM-5Z-D44" secondAttribute="top" constant="21" id="M4G-Fl-hHp"/>
-                                            <constraint firstAttribute="trailing" secondItem="J3N-DF-CU8" secondAttribute="trailing" constant="16" id="NMZ-p8-H0W"/>
                                             <constraint firstAttribute="height" constant="616" id="O5a-l3-Ng1"/>
                                             <constraint firstItem="sRs-re-a0M" firstAttribute="leading" secondItem="wwM-5Z-D44" secondAttribute="leading" constant="16" id="SA3-Iu-F0a"/>
                                             <constraint firstAttribute="trailing" secondItem="sRs-re-a0M" secondAttribute="trailing" constant="16" id="aiO-nx-tHT"/>
-                                            <constraint firstAttribute="trailing" secondItem="Flz-Es-DsA" secondAttribute="trailing" constant="116" id="tC9-eA-1ao"/>
                                             <constraint firstItem="sRs-re-a0M" firstAttribute="top" secondItem="wwM-5Z-D44" secondAttribute="top" constant="21" id="uHN-nK-T8X"/>
                                         </constraints>
                                     </view>
@@ -913,6 +871,7 @@
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="moleculeNumber" destination="sRs-re-a0M" id="Ehi-LJ-32A"/>
+                        <outlet property="navSetName" destination="F8q-ZW-A9v" id="BMX-NW-wNC"/>
                         <outlet property="swipeLabel" destination="YDw-xz-FSd" id="pCe-AY-Msj"/>
                         <outlet property="userAnswer" destination="ByO-4r-kUc" id="xjJ-Gf-ww3"/>
                     </connections>

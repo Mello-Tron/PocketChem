@@ -17,6 +17,17 @@ class SetViewController: ViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Hard Coded for now
+        if (self.databaseID == 1) {
+            navSetName.title = "ALKANES" }
+        else if (self.databaseID == 2) {
+            navSetName.title = "ALKENES" }
+        else if (self.databaseID == 3) {
+            navSetName.title = "ALCOHOLS" }
+        else if (self.databaseID == 4) {
+            navSetName.title = "BENZENE" }
+        
+        
         mySetManager.changeSet(_setID: self.databaseID)
         moleculeNumber.text = String(mySetManager.getCurrentMoleculeID() + 1) + "/" + String(mySetManager.getSetSize())
         moleculeName.text = "     " + mySetManager.getCurrentMoleculeName()
@@ -32,7 +43,7 @@ class SetViewController: ViewController{
         
         swipeView.isUserInteractionEnabled = true
         
-        //navSetName.title = mySetManager.getSetName
+        //navSetName.title = mySetManager.getSetName()
     }
     
     func swipedView(gesture: UIGestureRecognizer) {
